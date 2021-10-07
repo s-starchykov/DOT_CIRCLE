@@ -1,0 +1,36 @@
+.Header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2%;
+}
+.Header .activeLink {
+  color: orangered;
+  font-weight: bold;
+}
+.Header .logo {
+  width: 20%;
+}
+.Header .nav {
+  width: 70%;
+}
+.Header .nav a {
+  text-decoration: none;
+}
+.Header .nav .topLine {
+  display: flex;
+  justify-content: space-between;
+}
+.Header .nav .botLine {
+  display: flex;
+  justify-content: space-between;
+}
+.Header .langPanel {
+  position: absolute;
+  top: 1%;
+  right: 3%;
+}
+
+/*# sourceMappingURL=Header.module.css.map */

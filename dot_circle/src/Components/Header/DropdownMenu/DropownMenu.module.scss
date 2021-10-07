@@ -1,0 +1,65 @@
+//
+// This module represents styles for Dropdown Menu Item component
+
+// Header menu item
+.dropdown {
+  position: relative;
+  width: 260px;
+  border-top: 2px solid transparent;
+
+  // Action on hover for header item
+  &:hover {
+    border-top: 2px solid orangered;
+  }
+
+  &_arrow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #eee;
+    border-radius: 3px;
+  }
+
+  // Dropdown list
+  .list {
+    position: absolute;
+    transition: max-height .6s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: white;
+  }
+
+  // Open dropped list
+  .droppedList {
+    position: absolute;
+    max-height: 1000px;
+    opacity: 1;
+  }
+
+  // Dropped list menu item
+  .listItem {
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    list-style: none;
+    padding: 15px;
+  }
+
+  // Active menu item
+  .activeItem {
+    color: white;
+    font-weight: bold;
+    background: orangered;
+  }
+}
+
+// Active page menu marker
+.current {
+  border-top: 2px solid orangered;
+}
