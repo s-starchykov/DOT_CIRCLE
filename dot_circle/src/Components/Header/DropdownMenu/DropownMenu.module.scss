@@ -38,13 +38,14 @@
 
   // Open dropped list
   .droppedList {
-    position: absolute;
+    width: 100%;
     max-height: 1000px;
     opacity: 1;
   }
 
   // Dropped list menu item
   .listItem {
+    width: 100%;
     border-bottom: 1px solid #eee;
     cursor: pointer;
     list-style: none;

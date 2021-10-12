@@ -1,10 +1,23 @@
 .Header {
-  position: fixed;
   top: 0;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   padding: 2%;
+
+  .logo {
+    padding: 15px;
+  }
+
+  .headerItem {
+    padding: 15px;
+    width: 265px;
+    border-top: 2px solid transparent;
+
+    &:hover {
+      border-top: 2px solid orangered;
+    }
+  }
 
   .activeLink {
     color: orangered;

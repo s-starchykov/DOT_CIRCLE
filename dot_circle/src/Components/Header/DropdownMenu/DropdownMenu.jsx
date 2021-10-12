@@ -34,6 +34,7 @@ class Dropdown extends React.Component {
     menuItems() {
         // Check is menu items exists
         if (!this.props.content) return;
+
         // Map items array from props into list item
         return this.props.content.map((content, el) =>
             <li onClick={evt => this.itemClick(el)}
