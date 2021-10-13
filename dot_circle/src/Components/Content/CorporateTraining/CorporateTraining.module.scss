@@ -1,5 +1,7 @@
+
+
 .CorporateTraining {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   border: 30px;
@@ -19,14 +21,18 @@
     }
 
       .rightContent {
-        width: 50%;
+        width: 70%;
 
       }
 
 
 
   }
-
+svg {
+  height: 40%;
+  color: red;
+  background: black;
+}
   .item {
     width: 30%;
   }

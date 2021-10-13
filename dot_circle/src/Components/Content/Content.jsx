@@ -1,6 +1,8 @@
 import style from "./Content.module.css";
 import CorporateTraining from "./CorporateTraining/CorporateTraining";
 import VideoBox from "./VideoBox/VideoBox";
+import TextBox from "./TextBox/TextBox";
+import AboutMeBox from "./AboutMeBox/AboutMeBox";
 
 
 const Content = () => {
@@ -65,22 +67,31 @@ const Content = () => {
                                                    name={v.name}
                                                    text={v.text}/>);
 
-    let corporateTraining = boxContent.map(c => <CorporateTraining boxName={c.boxName} content={c.content}
-                                                                   itemOneName={c.itemOneName}
-                                                                   itemOneContent={c.itemOneContent}
-                                                                   itemTwoName={c.itemTwoName}
-                                                                   itemTwoContent={c.itemTwoContent}
-                                                                   itemThreeName={c.itemThreeName}
-                                                                   itemThreeContent={c.itemThreeContent}/>);
+    let corporateTraining = boxContent.map(c =>
+        <CorporateTraining
+            boxName={c.boxName} content={c.content}
+            itemOneName={c.itemOneName}
+            itemOneContent={c.itemOneContent}
+            itemTwoName={c.itemTwoName}
+            itemTwoContent={c.itemTwoContent}
+            itemThreeName={c.itemThreeName}
+            itemThreeContent={c.itemThreeContent}/>);
 
     return (
         <div className={style.Content}>
             {/*<Slider />*/}
-            <div className="trainingBox">
+            <div className={style.trainingBox}>
                 {corporateTraining}
             </div>
-            <div className="videoBox">
+            <div className={style.textBox}>
+                <TextBox/>
+            </div>
+
+            <div className={style.videoBox}>
                 {videoBox}
+            </div>
+            <div className={style.aboutMeBox}>
+                <AboutMeBox/>
             </div>
 
         </div>

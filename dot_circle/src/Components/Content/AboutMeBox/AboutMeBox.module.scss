@@ -1,0 +1,15 @@
+.AboutMeBox {
+  display: flex;
+  width: 100%;
+  .leftContent {
+    width: 60%;
+
+  }
+  .rightContent {
+    img {
+      width: 100%;
+    }
+    width: 30%;
+
+  }
+}

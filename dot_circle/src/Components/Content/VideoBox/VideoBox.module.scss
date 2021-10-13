@@ -1,9 +1,30 @@
+
+
 .VideoBox {
-  width: 80%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2vw;
   .leftContent {
+    width: 30%;
+
+  }
+  .rightContent{
     width: 50%;
-    div {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    h1{
+      width: 100%;
+      color: red;
+    }
+    span{
       width: 100%;
     }
+
   }
+
 }
