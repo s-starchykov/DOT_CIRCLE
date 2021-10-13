@@ -1,14 +1,14 @@
+import style from './App.module.css'
 import Content from './Components/Content/Content.jsx'
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, Route} from "react-router-dom";
 
 
 const App = () => {
     return (
-        // Wrap App component with BrowserRouter to use Route
         <BrowserRouter>
-            <div>
+            <div className={style.app}>
                 <Header/>
                 <Content/>
                 <Footer/>
