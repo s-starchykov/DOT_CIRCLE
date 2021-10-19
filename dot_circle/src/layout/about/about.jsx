@@ -8,7 +8,7 @@ import AboutMeBox from "./AboutMeBox/AboutMeBox";
 const About = () => {
     let boxContent = [
         {
-            boxName: 'Corporate Training ',
+            boxName: 'Corporate Training',
             content: 'Corporate training programs ' +
                 'can effectively improve the effectiveness of teamwork. In the process of implementation, issues of simultaneous training of several ' +
                 'employees, personnel of ' +

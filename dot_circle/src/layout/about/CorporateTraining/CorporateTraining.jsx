@@ -1,7 +1,11 @@
 import style from './CorporateTraining.module.css';
+import {withNamespaces} from "react-i18next";
+import i18next from 'i18next';
 
 
-let CorporateTraining = (props) => {
+const CorporateTraining = (props) => {
+    // Minify i18next construction
+    let t = (key) => i18next.t(key);
 
     return (
         <div className={style.CorporateTraining}>
@@ -13,7 +17,7 @@ let CorporateTraining = (props) => {
                 </div>
 
                 <div className={style.rightContent}>
-                    <h1>{props.boxName}</h1>
+                    <h1>{t(`${props.boxName}`, {returnObjects: true})}</h1>
                     <span> {props.content}</span>
                 </div>
             </div>
@@ -41,4 +45,4 @@ let CorporateTraining = (props) => {
 };
 //<svg xmlns={"http://www.w3.org/2000/svg"}>
 //                 </svg>
-export default CorporateTraining;
+export default withNamespaces()(CorporateTraining);

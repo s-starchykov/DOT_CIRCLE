@@ -8,7 +8,6 @@ let VideoBox = (props) => {
                 <iframe src={props.link}>
                     video is not available
                 </iframe>
-                {props.link}
             </div>
 
             <div className={style.rightContent}>
