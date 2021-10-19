@@ -3,6 +3,8 @@ import CorporateTraining from "./CorporateTraining/CorporateTraining";
 import VideoBox from "./VideoBox/VideoBox";
 import TextBox from "./TextBox/TextBox";
 import AboutMeBox from "./AboutMeBox/AboutMeBox";
+import Slider from "./HeaderSlider/HeaderSlider";
+
 
 
 const Content = () => {
@@ -79,7 +81,7 @@ const Content = () => {
 
     return (
         <div className={style.Content}>
-            {/*<Slider />*/}
+         <Slider/>
             <div className={style.trainingBox}>
                 {corporateTraining}
             </div>
