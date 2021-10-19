@@ -1,8 +1,8 @@
 import style from './App.module.css'
-import Content from './Components/Content/Content.jsx'
-import Header from './Components/Header/Header';
-import Footer from './Components/Footer/Footer';
-import {BrowserRouter, Route} from "react-router-dom";
+import Content from './layout/content/content'
+import Header from './layout/header/header';
+import Footer from './layout/footer/footer';
+import {BrowserRouter} from "react-router-dom";
 
 
 const App = () => {
