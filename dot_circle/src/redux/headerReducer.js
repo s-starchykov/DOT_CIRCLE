@@ -17,7 +17,6 @@ const initialState = {
             {title: 'MANAGEMENT CONSULTING', path: 'management_consulting'}
         ]
     }
-
 }
 
 const headerReducer = (state = initialState, action) => {

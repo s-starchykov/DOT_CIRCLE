@@ -1,17 +1,20 @@
-import style from './App.module.css'
-import Content from './layout/content/content'
+import {Route, BrowserRouter, withRouter} from "react-router-dom";
+import s from './App.module.css'
+import About from './layout/about/about'
 import Header from './layout/header/header';
 import Footer from './layout/footer/footer';
-import {BrowserRouter} from "react-router-dom";
 
 
 const App = () => {
     return (
         <BrowserRouter>
-            <div className={style.app}>
+            <div className={s.app}>
                 <Header/>
-                <Content/>
-                <Footer/>
+                <div className={s.appContent}>
+                    <Route path={'/about'} render={() =>  <About/>}/>
+
+                    {/*<Footer/>*/}
+                </div>
             </div>
         </BrowserRouter>
     )

@@ -1,11 +1,11 @@
-import style from "./header.module.css";
-import Dropdown from "./DropdownMenu/DropdownMenu";
+import s from "./header.module.css";
 import {useLocation, NavLink} from "react-router-dom";
 import i18n from "i18next";
 import {withNamespaces} from 'react-i18next';
+import {useState} from "react";
+import Logo from '../../assets/title.png';
 
 const Header = ({t}) => {
-
     // Change language
     const changeLanguage = (lng) => {
         // Set language code
@@ -15,39 +15,84 @@ const Header = ({t}) => {
         i18n.changeLanguage(lng);
     }
 
+    // Define menu state wia hook
+    const [isActive, setActive] = useState(false);
+    // Set menu className to state
+    const toggleClass = () => setActive(!isActive);
+
     // Get current path for props
     const location = useLocation();
 
     return (
-        <div className={style.Header}>
-
-            <div className={style.logo}>
-                <NavLink to={'/dream_team'} activeClassName={style.activeLink}>
-                    <img src="http://dot-circle.com/img/Logo.png" alt="#"/>
-                </NavLink>
-            </div>
-
-            <div className={style.nav}>
-                <div className={style.topLine}>
-                    <NavLink to={'/about'} activeClassName={style.activeLink}>{t('about')}</NavLink>
-                    <Dropdown path={location} title="BUSINESS TRAININGS"/>
-                    <Dropdown path={location} title="OPEN PROGRAMS"/>
+        <div className={s.Header}>
+            <div className={`${s.sidebar} ${isActive && s.open} `} onMouseEnter={() => toggleClass()} onMouseLeave={() => toggleClass()}>
+                <div className={s.logo_details}>
+                    <div className={s.logo_name}><img src={Logo} alt="Logo"/> DOT&CIRCLE</div>
+                    <i className={`bx btn ${isActive ? 'bx-menu-alt-right' : 'bx-menu'} ${s.btn}`} id="btn"/>
                 </div>
-
-                <hr/>
-
-                <div className={style.botLine}>
-                    <Dropdown path={location} title="CONSULTING"/>
-                    <NavLink to={'/VEBINARS'} activeClassName={style.activeLink}>VEBINARS</NavLink>
-                    <NavLink to={'/USEFUL'} activeClassName={style.activeLink}>USEFUL</NavLink>
-                    <NavLink to={'/GALLERY'} activeClassName={style.activeLink}>GALLERY</NavLink>
-                </div>
-            </div>
-
-            <div className={style.langPanel}>
-                <button onClick={() => changeLanguage('en')}>ENG</button>
-                <button onClick={() => changeLanguage('ru')}>RU</button>
-                <button onClick={() => changeLanguage('az')}>AZ</button>
+                <ul className={s.item_list}>
+                    <li>
+                        <NavLink to={'/about'} activeClassName={s.activeLink}>
+                            <i className='bx bx-grid-alt'/>
+                            <span className={s.links_name}>{t('About')}</span>
+                        </NavLink>
+                        <span className={s.tooltip}>About</span>
+                    </li>
+                    <li>
+                        <NavLink to={'/trainings'} activeClassName={s.activeLink}>
+                            <i className='bx bx-user'/>
+                            <span className={s.links_name}>{t('Business trainings')}</span>
+                        </NavLink>
+                        <span className={s.tooltip}>Business trainings</span>
+                    </li>
+                    <li>
+                        <NavLink to={'/open_programs'} activeClassName={s.activeLink}>
+                            <i className='bx bx-chat'/>
+                            <span className={s.links_name}>Open programs</span>
+                        </NavLink>
+                        <span className={s.tooltip}>Open programs</span>
+                    </li>
+                    <li>
+                        <NavLink to={'/team'} activeClassName={s.activeLink}>
+                            <i className='bx bx-folder'/>
+                            <span className={s.links_name}>Dream team</span>
+                        </NavLink>
+                        <span className={s.tooltip}>Dream team</span>
+                    </li>
+                    <li>
+                        <NavLink to={'/consulting'} activeClassName={s.activeLink}>
+                            <i className='bx bx-cart-alt'/>
+                            <span className={s.links_name}>Consulting</span>
+                        </NavLink>
+                        <span className={s.tooltip}>Consulting</span>
+                    </li>
+                    <li>
+                        <NavLink to={'/webinars'} activeClassName={s.activeLink}>
+                            <i className='bx bx-heart'/>
+                            <span className={s.links_name}>Webinars</span>
+                        </NavLink>
+                        <span className={s.tooltip}>Webinars</span>
+                    </li>
+                    <li>
+                        <NavLink to={'/useful'} activeClassName={s.activeLink}>
+                            <i className='bx bx-cog'/>
+                            <span className={s.links_name}>Useful</span>
+                        </NavLink>
+                        <span className={s.tooltip}>Useful</span>
+                    </li>
+                    <li>
+                        <NavLink to={'/gallery'} activeClassName={s.activeLink}>
+                            <i className='bx bx-cog'/>
+                            <span className={s.links_name}>Gallery</span>
+                        </NavLink>
+                        <span className={s.tooltip}>Gallery</span>
+                    </li>
+                    <div className={s.langPanel}>
+                        <button onClick={() => changeLanguage('en')}>ENG</button>
+                        <button onClick={() => changeLanguage('ru')}>RU</button>
+                        <button onClick={() => changeLanguage('az')}>AZ</button>
+                    </div>
+                </ul>
             </div>
         </div>
     )

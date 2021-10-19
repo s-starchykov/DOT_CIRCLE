@@ -1,0 +1,32 @@
+.CorporateTraining {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 30px;
+}
+.CorporateTraining .topline {
+  width: 100%;
+  display: flex;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.CorporateTraining .topline .leftContent {
+  width: 30%;
+}
+.CorporateTraining .topline .leftContent img {
+  width: 100%;
+}
+.CorporateTraining .topline .rightContent {
+  width: 70%;
+}
+.CorporateTraining svg {
+  height: 40%;
+  color: red;
+  background: black;
+}
+.CorporateTraining .item {
+  width: 30%;
+}
+
+/*# sourceMappingURL=CorporateTraining.module.css.map */

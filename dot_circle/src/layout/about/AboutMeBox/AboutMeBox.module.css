@@ -1,0 +1,15 @@
+.AboutMeBox {
+  display: flex;
+  width: 100%;
+}
+.AboutMeBox .leftContent {
+  width: 60%;
+}
+.AboutMeBox .rightContent {
+  width: 30%;
+}
+.AboutMeBox .rightContent img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=AboutMeBox.module.css.map */

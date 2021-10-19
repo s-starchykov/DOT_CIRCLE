@@ -1,13 +1,11 @@
-import style from "./Content.module.css";
+import style from "./about.module.css";
 import CorporateTraining from "./CorporateTraining/CorporateTraining";
 import VideoBox from "./VideoBox/VideoBox";
 import TextBox from "./TextBox/TextBox";
 import AboutMeBox from "./AboutMeBox/AboutMeBox";
-import Slider from "./HeaderSlider/HeaderSlider";
 
 
-
-const Content = () => {
+const About = () => {
     let boxContent = [
         {
             boxName: 'Corporate Training ',
@@ -69,35 +67,22 @@ const Content = () => {
                                                    name={v.name}
                                                    text={v.text}/>);
 
-    let corporateTraining = boxContent.map(c =>
-        <CorporateTraining
-            boxName={c.boxName} content={c.content}
-            itemOneName={c.itemOneName}
-            itemOneContent={c.itemOneContent}
-            itemTwoName={c.itemTwoName}
-            itemTwoContent={c.itemTwoContent}
-            itemThreeName={c.itemThreeName}
-            itemThreeContent={c.itemThreeContent}/>);
+    let corporateTraining = boxContent.map(c => <CorporateTraining boxName={c.boxName} content={c.content}
+                                                                   itemOneName={c.itemOneName}
+                                                                   itemOneContent={c.itemOneContent}
+                                                                   itemTwoName={c.itemTwoName}
+                                                                   itemTwoContent={c.itemTwoContent}
+                                                                   itemThreeName={c.itemThreeName}
+                                                                   itemThreeContent={c.itemThreeContent}/>);
 
     return (
-        <div className={style.Content}>
-         <Slider/>
-            <div className={style.trainingBox}>
-                {corporateTraining}
-            </div>
-            <div className={style.textBox}>
-                <TextBox/>
-            </div>
-
-            <div className={style.videoBox}>
-                {videoBox}
-            </div>
-            <div className={style.aboutMeBox}>
-                <AboutMeBox/>
-            </div>
-
+        <div className={style.about}>
+            {corporateTraining}
+            <TextBox/>
+            {videoBox}
+            <AboutMeBox/>
         </div>
     )
 };
 
-export default Content;
+export default About;

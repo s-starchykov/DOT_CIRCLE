@@ -11,13 +11,17 @@ import translationAZ from '../locales/az.json';
 const resources = {
     en: {translation: translationEN},
     ru: {translation: translationRU},
-    az: {translation: translationAZ},
+    az: {translation: translationAZ}
 };
 
-i18n
-    .use(detector)
-    .use(reactI18nextModule) // passes i18n down to react-i18next
-    .init({
+// Use auto language detecting in cookie, localStorage, path, navigator etc.
+i18n.use(detector);
+
+// Passes i18n down to react-i18next
+i18n.use(reactI18nextModule);
+
+// Init i18n library with next params
+i18n.init({
         resources,
         fallbackLng: "en", // use en if detected lng is not available
         keySeparator: false, // we do not use keys in form messages.welcome
