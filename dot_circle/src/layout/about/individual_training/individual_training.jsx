@@ -1,9 +1,9 @@
-import style from './individual_training.module.css';
+import style from '../CorporateTraining/CorporateTraining.module.css';
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
 
 
-const IndividualTraining = (props) => {
+const IndividualTraining = () => {
     // Minify i18next construction
     let t = (key) => i18next.t(key);
 
@@ -18,10 +18,11 @@ const IndividualTraining = (props) => {
 
                 <div className={style.rightContent}>
                     <h1>
+                        {t('OPEN TRAINING')}
 
-                        OPEN TRAINING
                     </h1>
-                    <span> 'An open training format involves a combined composition of groups consisting of employees of various companies and individuals who want to make a qualitative change in their lives. Training is conducted in the form of a seminar, business training according to the program announced in the announcement.</span>
+                    <span>
+                         {t('An open training format involves a combined composition')}</span>
                 </div>
             </div>
             <div className={style.item}>
@@ -30,9 +31,9 @@ const IndividualTraining = (props) => {
                     <div className={style.circle}>
                         <span className={style.number}>1</span>
                     </div>
-                    INITIATION PROCESS
+                    {t('INVITATION PROCESS')}
                 </h3>
-                Carry out an in-depth study of the issue, change your attitude to what is happening in life, increase the level of awareness and responsibility
+                {t(' Carry out an in-depth study of the issue')}
 
             </div>
             <div className={style.item}>
@@ -41,11 +42,9 @@ const IndividualTraining = (props) => {
                     <div className={style.circle}>
                         <span className={style.number}>2</span>
                     </div>
-                    SKILL PROCESSES
+                    {t('SKILL PROCESSES')}
                 </h3>
-
-                Get specific tools, knowledge, skill practices
-
+                {t('  Get specific tools, knowledge, skill practices')}
             </div>
             <div className={style.item}>
 
@@ -53,14 +52,12 @@ const IndividualTraining = (props) => {
                     <div className={style.circle}>
                         <span className={style.number}>3</span>
                     </div>
-                    CONTINUOUS GROWTH
+                    {t('CONTINUOUS GROWTH')}
                 </h3>
-                Bring Purity of Mind to your life. Tune-in to new goals and achievements. Get help and help others. Make new friends with like-minded people. Use new skills and tools to achieve your goals
+                {t(' Bring Purity of Mind to your life')}
             </div>
 
         </div>
     )
 };
-//<svg xmlns={"http://www.w3.org/2000/svg"}>
-//                 </svg>
 export default withNamespaces()(IndividualTraining);

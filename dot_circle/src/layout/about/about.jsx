@@ -11,31 +11,31 @@ import IndividualTraining from "./individual_training/individual_training";
 
 
 const About = () => {
-    let boxContent = [
-        {
-            boxName: 'Corporate Training',
-            content: 'Corporate training programs ' +
-                'can effectively improve the effectiveness of teamwork. In the process of implementation, issues of simultaneous training of several ' +
-                'employees, personnel of ' +
-                'a department or a division of a company are solved.',
-            itemOneName: "INITIATION PROCESS",
-            itemOneContent: "Make a breakthrough in the business environment, change your attitude to work, increase awareness and responsibility",
-            itemTwoName: 'SKILL PROCESSES',
-            itemTwoContent: 'Get specific tools, diagrams and formulas. Improve professional performance',
-            itemThreeName: 'CONTINUOUS GROWTH',
-            itemThreeContent: 'Tune-in to new changes and achievements. Use new skills and tools to achieve your goals'
-        },
-        {
-            boxName: 'OPEN TRAINING',
-            content: 'An open training format involves a combined composition of groups consisting of employees of various companies and individuals who want to make a qualitative change in their lives. Training is conducted in the form of a seminar, business training according to the program announced in the announcement.',
-            itemOneName: "INITIATION PROCESS",
-            itemOneContent: "Carry out an in-depth study of the issue, change your attitude to what is happening in life, increase the level of awareness and responsibility",
-            itemTwoName: 'SKILL PROCESSES',
-            itemTwoContent: 'Get specific tools, knowledge, skill practices',
-            itemThreeName: 'CONTINUOUS GROWTH',
-            itemThreeContent: 'Bring Purity of Mind to your life. Tune-in to new goals and achievements. Get help and help others. Make new friends with like-minded people. Use new skills and tools to achieve your goals'
-        }
-    ];
+//     let boxContent = [
+//         {
+//             boxName: 'Corporate Training',
+//             content: 'Corporate training programs ' +
+//                 'can effectively improve the effectiveness of teamwork. In the process of implementation, issues of simultaneous training of several ' +
+//                 'employees, personnel of ' +
+//                 'a department or a division of a company are solved.',
+//             itemOneName: "INITIATION PROCESS",
+//             itemOneContent: "Make a breakthrough in the business environment, change your attitude to work, increase awareness and responsibility",
+//             itemTwoName: 'SKILL PROCESSES',
+//             itemTwoContent: 'Get specific tools, diagrams and formulas. Improve professional performance',
+//             itemThreeName: 'CONTINUOUS GROWTH',
+//             itemThreeContent: 'Tune-in to new changes and achievements. Use new skills and tools to achieve your goals'
+//         },
+//         {
+//             boxName: 'OPEN TRAINING',
+//             content: 'An open training format involves a combined composition of groups consisting of employees of various companies and individuals who want to make a qualitative change in their lives. Training is conducted in the form of a seminar, business training according to the program announced in the announcement.',
+//             itemOneName: "INITIATION PROCESS",
+//             itemOneContent: "Carry out an in-depth study of the issue, change your attitude to what is happening in life, increase the level of awareness and responsibility",
+//             itemTwoName: 'SKILL PROCESSES',
+//             itemTwoContent: 'Get specific tools, knowledge, skill practices',
+//             itemThreeName: 'CONTINUOUS GROWTH',
+//             itemThreeContent: 'Bring Purity of Mind to your life. Tune-in to new goals and achievements. Get help and help others. Make new friends with like-minded people. Use new skills and tools to achieve your goals'
+//         }
+//     ];
 
 
     let videoBoxData = [
@@ -72,17 +72,17 @@ const About = () => {
                                                    name={v.name}
                                                    text={v.text}/>);
 
-    let corporateTraining = boxContent.map(c => <CorporateTraining boxName={c.boxName} content={c.content}
-                                                                   itemOneName={c.itemOneName}
-                                                                   itemOneContent={c.itemOneContent}
-                                                                   itemTwoName={c.itemTwoName}
-                                                                   itemTwoContent={c.itemTwoContent}
-                                                                   itemThreeName={c.itemThreeName}
-                                                                   itemThreeContent={c.itemThreeContent}/>);
+    // let corporateTraining = boxContent.map(c => <CorporateTraining boxName={c.boxName} content={c.content}
+    //                                                                itemOneName={c.itemOneName}
+    //                                                                itemOneContent={c.itemOneContent}
+    //                                                                itemTwoName={c.itemTwoName}
+    //                                                                itemTwoContent={c.itemTwoContent}
+    //                                                                itemThreeName={c.itemThreeName}
+    //                                                                itemThreeContent={c.itemThreeContent}/>);
 
     return (
         <div className={style.about}>
-            {corporateTraining}
+            <CorporateTraining />
            <IndividualTraining />
             <TextBox/>
             {videoBox}
