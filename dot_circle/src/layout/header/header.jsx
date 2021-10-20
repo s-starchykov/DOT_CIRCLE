@@ -7,12 +7,12 @@ import Logo from '../../assets/title.png';
 
 const Header = ({t}) => {
     // Change language
-    const changeLanguage = (lng) => {
+    const switchLang = (lng) => {
         // Set language code
         localStorage.setItem('i18nextLng', lng);
 
         // Change language wia i18n
-        i18n.changeLanguage(lng);
+        i18n.changeLanguage(lng).then(() => console.log(lng));
     }
 
     // Define menu state wia hook
@@ -23,9 +23,14 @@ const Header = ({t}) => {
     // Get current path for props
     const location = useLocation();
 
+    // Language switcher buttons
+    const langButtons = () => ['en', 'ru', 'az'].map((l) => isActive
+        ? <button className={`${s.open} ${i18n.language === l && s.current}`} onClick={() => switchLang(l)}>{l}</button>
+        : <button className={`${i18n.language === l && s.current}`} onClick={() => switchLang(l)}>{l}</button>
+    )
+
     return (
-        <div className={s.Header}>
-            <div className={`${s.sidebar} ${isActive && s.open} `} onMouseEnter={() => toggleClass()} onMouseLeave={() => toggleClass()}>
+        <div className={`${s.sidebar} ${isActive && s.open} `} onMouseEnter={() => toggleClass()} onMouseLeave={() => toggleClass()}>
                 <div className={s.logo_details}>
                     <div className={s.logo_name}><img src={Logo} alt="Logo"/> DOT&CIRCLE</div>
                     <i className={`bx btn ${isActive ? 'bx-menu-alt-right' : 'bx-menu'} ${s.btn}`} id="btn"/>
@@ -87,16 +92,9 @@ const Header = ({t}) => {
                         </NavLink>
                         <span className={s.tooltip}>Gallery</span>
                     </li>
-                    <div className={s.langPanel}>
-                        {['en', 'ru', 'az'].map(lang => {
-                            return isActive
-                                ? <button className={`${s.open} ${i18n.language === lang && s.current}`} onClick={() => changeLanguage(lang)}>{lang}</button>
-                                : <button className={`${i18n.language === lang && s.current}`} onClick={() => changeLanguage(lang)}>{lang}</button>
-                        })}
-                    </div>
+                    <div className={s.langPanel}>{langButtons()}</div>
                 </ul>
             </div>
-        </div>
     )
 };
 

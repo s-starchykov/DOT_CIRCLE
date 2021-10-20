@@ -1,22 +1,20 @@
-import {Route, BrowserRouter, withRouter} from "react-router-dom";
+import {Route} from "react-router-dom";
 import s from './App.module.css'
 import About from './layout/about/about'
 import Header from './layout/header/header';
-import Footer from './layout/footer/footer';
+import WelcomePage from "./layout/welcome_page/welcome_page";
 
 
 const App = () => {
     return (
-        <BrowserRouter>
-            <div className={s.app}>
-                <Header/>
-                <div className={s.appContent}>
-                    <Route path={'/about'} render={() =>  <About/>}/>
-
-                    {/*<Footer/>*/}
-                </div>
+        <div className={s.app}>
+            <Header/>
+            <div className={s.appContent}>
+                <Route path={'/about'} render={() => <About/>}/>
+                {/*<Footer/>*/}
             </div>
-        </BrowserRouter>
+            <Route path={'/welcome'} render={() => <WelcomePage/>}/>
+        </div>
     )
 };
 

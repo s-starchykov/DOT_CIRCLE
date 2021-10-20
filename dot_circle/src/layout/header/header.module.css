@@ -193,6 +193,7 @@
   padding: 5px;
   background: #ef7f1a;
   border-radius: 8px;
+  color: white;
 }
 .sidebar .item_list .langPanel .open {
   display: block;

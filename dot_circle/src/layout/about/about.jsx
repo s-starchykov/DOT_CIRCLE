@@ -3,6 +3,9 @@ import CorporateTraining from "./CorporateTraining/CorporateTraining";
 import VideoBox from "./VideoBox/VideoBox";
 import TextBox from "./TextBox/TextBox";
 import AboutMeBox from "./AboutMeBox/AboutMeBox";
+import {compose} from "redux";
+import {withFirstRedirect} from "../../services/withFirstRedirect";
+import {withRouter} from "react-router-dom";
 
 
 const About = () => {
@@ -85,4 +88,4 @@ const About = () => {
     )
 };
 
-export default About;
+export default compose(withFirstRedirect, withRouter)(About);
