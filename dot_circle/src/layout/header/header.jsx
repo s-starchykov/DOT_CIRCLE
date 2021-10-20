@@ -13,7 +13,7 @@ const Header = ({t}) => {
 
         // Change language wia i18n
         i18n.changeLanguage(lng).then(() => console.log(lng));
-    }
+    };
 
     // Define menu state wia hook
     const [isActive, setActive] = useState(false);
@@ -27,7 +27,7 @@ const Header = ({t}) => {
     const langButtons = () => ['en', 'ru', 'az'].map((l) => isActive
         ? <button className={`${s.open} ${i18n.language === l && s.current}`} onClick={() => switchLang(l)}>{l}</button>
         : <button className={`${i18n.language === l && s.current}`} onClick={() => switchLang(l)}>{l}</button>
-    )
+    );
 
     return (
         <div className={`${s.sidebar} ${isActive && s.open} `} onMouseEnter={() => toggleClass()} onMouseLeave={() => toggleClass()}>

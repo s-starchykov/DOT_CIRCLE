@@ -1,4 +1,4 @@
-.CorporateTraining {
+.IndividualTraining {
   box-shadow: 10px 20px 20px lightslategrey;
   width: 100%;
   display: flex;
@@ -8,7 +8,7 @@
   padding-bottom: 2%;
   padding-left: 2%;
 }
-.CorporateTraining .topline {
+.IndividualTraining .topline {
   width: 100%;
   display: flex;
   -webkit-box-sizing: border-box;
@@ -16,28 +16,28 @@
   box-sizing: border-box;
   padding-bottom: 2%;
 }
-.CorporateTraining .topline .leftContent {
+.IndividualTraining .topline .leftContent {
   width: 30%;
   margin-right: 2%;
 }
-.CorporateTraining .topline .leftContent img {
+.IndividualTraining .topline .leftContent img {
   width: 100%;
   border-radius: 2%;
 }
-.CorporateTraining .topline .rightContent {
+.IndividualTraining .topline .rightContent {
   width: 70%;
   padding-right: 5%;
 }
-.CorporateTraining .topline .rightContent h1 {
+.IndividualTraining .topline .rightContent h1 {
   text-transform: uppercase;
   color: #ff8C21;
   padding-top: 2%;
 }
-.CorporateTraining .item {
+.IndividualTraining .item {
   margin-right: 20px;
   width: 30%;
 }
-.CorporateTraining .item h3 {
+.IndividualTraining .item h3 {
   color: #878787;
   text-transform: uppercase;
   display: flex;
@@ -45,7 +45,7 @@
   height: auto;
   margin-bottom: 3%;
 }
-.CorporateTraining .item h3 .circle {
+.IndividualTraining .item h3 .circle {
   margin-right: 20px;
   display: flex;
   align-items: center;
@@ -55,9 +55,9 @@
   border-radius: 50%;
   border: 2px solid #878787;
 }
-.CorporateTraining .item h3 .circle .number {
+.IndividualTraining .item h3 .circle .number {
   color: #ff8C21;
   font-size: 100%;
 }
 
-/*# sourceMappingURL=CorporateTraining.module.css.map */
+/*# sourceMappingURL=individual_training.module.css.map */

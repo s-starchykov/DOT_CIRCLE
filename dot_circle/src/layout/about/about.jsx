@@ -6,6 +6,8 @@ import AboutMeBox from "./AboutMeBox/AboutMeBox";
 import {compose} from "redux";
 import {withFirstRedirect} from "../../services/withFirstRedirect";
 import {withRouter} from "react-router-dom";
+import IndividualTraining from "./individual_training/individual_training";
+
 
 
 const About = () => {
@@ -81,6 +83,7 @@ const About = () => {
     return (
         <div className={style.about}>
             {corporateTraining}
+           <IndividualTraining />
             <TextBox/>
             {videoBox}
             <AboutMeBox/>

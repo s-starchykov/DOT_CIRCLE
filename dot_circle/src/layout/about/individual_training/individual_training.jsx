@@ -1,9 +1,9 @@
-import style from './CorporateTraining.module.css';
+import style from './individual_training.module.css';
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
 
 
-const CorporateTraining = (props) => {
+const IndividualTraining = (props) => {
     // Minify i18next construction
     let t = (key) => i18next.t(key);
 
@@ -19,12 +19,9 @@ const CorporateTraining = (props) => {
                 <div className={style.rightContent}>
                     <h1>
 
-                        Corporate Training
+                        OPEN TRAINING
                     </h1>
-                    <span> Corporate training programs
-                can effectively improve the effectiveness of teamwork. In the process of implementation, issues of simultaneous training of several
-                employees, personnel
-                a department or a division of a company are solved.</span>
+                    <span> 'An open training format involves a combined composition of groups consisting of employees of various companies and individuals who want to make a qualitative change in their lives. Training is conducted in the form of a seminar, business training according to the program announced in the announcement.</span>
                 </div>
             </div>
             <div className={style.item}>
@@ -35,8 +32,7 @@ const CorporateTraining = (props) => {
                     </div>
                     INITIATION PROCESS
                 </h3>
-                Make a breakthrough in the business environment, change your attitude to work, increase awareness and
-                responsibility
+                Carry out an in-depth study of the issue, change your attitude to what is happening in life, increase the level of awareness and responsibility
 
             </div>
             <div className={style.item}>
@@ -48,7 +44,7 @@ const CorporateTraining = (props) => {
                     SKILL PROCESSES
                 </h3>
 
-                Get specific tools, diagrams and formulas. Improve professional performance
+                Get specific tools, knowledge, skill practices
 
             </div>
             <div className={style.item}>
@@ -59,7 +55,7 @@ const CorporateTraining = (props) => {
                     </div>
                     CONTINUOUS GROWTH
                 </h3>
-                Tune-in to new changes and achievements. Use new skills and tools to achieve your goals
+                Bring Purity of Mind to your life. Tune-in to new goals and achievements. Get help and help others. Make new friends with like-minded people. Use new skills and tools to achieve your goals
             </div>
 
         </div>
@@ -67,4 +63,4 @@ const CorporateTraining = (props) => {
 };
 //<svg xmlns={"http://www.w3.org/2000/svg"}>
 //                 </svg>
-export default withNamespaces()(CorporateTraining);
+export default withNamespaces()(IndividualTraining);
