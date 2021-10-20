@@ -34,7 +34,7 @@
   display: flex;
   color: black;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: bolder;
   opacity: 0;
   transition: all 0.3s ease;
 }
@@ -176,14 +176,26 @@
 }
 .sidebar .item_list .langPanel {
   position: absolute;
+  display: flex;
   bottom: calc(100vh - 90%);
   z-index: 100;
 }
 .sidebar .item_list .langPanel button {
+  display: none;
+  width: 30px;
   margin: 5px;
   background: 0;
   border: none;
   color: black;
+}
+.sidebar .item_list .langPanel .current {
+  display: block;
+  padding: 5px;
+  background: #ef7f1a;
+  border-radius: 8px;
+}
+.sidebar .item_list .langPanel .open {
+  display: block;
 }
 .sidebar.open li .tooltip {
   display: none;

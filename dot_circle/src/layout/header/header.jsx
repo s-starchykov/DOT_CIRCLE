@@ -88,9 +88,11 @@ const Header = ({t}) => {
                         <span className={s.tooltip}>Gallery</span>
                     </li>
                     <div className={s.langPanel}>
-                        <button onClick={() => changeLanguage('en')}>ENG</button>
-                        <button onClick={() => changeLanguage('ru')}>RU</button>
-                        <button onClick={() => changeLanguage('az')}>AZ</button>
+                        {['en', 'ru', 'az'].map(lang => {
+                            return isActive
+                                ? <button className={`${s.open} ${i18n.language === lang && s.current}`} onClick={() => changeLanguage(lang)}>{lang}</button>
+                                : <button className={`${i18n.language === lang && s.current}`} onClick={() => changeLanguage(lang)}>{lang}</button>
+                        })}
                     </div>
                 </ul>
             </div>
