@@ -1,4 +1,4 @@
-import style from '../CorporateTraining/CorporateTraining.module.css';
+import style from '../CorporateTraining.module.css';
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
 
