@@ -13,17 +13,31 @@
 .AboutMeBox .rightContent {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   width: 40%;
+  position: relative;
 }
 .AboutMeBox .rightContent img {
   width: 95%;
+  position: relative;
 }
 .AboutMeBox .rightContent .social {
+  display: flex;
+  justify-content: space-around;
   position: absolute;
-  top: 100%;
-  background: #000;
+  top: 85%;
+  right: 0;
   width: 95%;
-  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  height: 5rem;
+}
+.AboutMeBox .rightContent .social .socialLink {
+  display: flex;
+  align-items: center;
+  width: 10%;
+}
+.AboutMeBox .rightContent .social .socialLink .socialLogo {
+  width: 100%;
 }
 .AboutMeBox h1 {
   color: #ff8c21;
