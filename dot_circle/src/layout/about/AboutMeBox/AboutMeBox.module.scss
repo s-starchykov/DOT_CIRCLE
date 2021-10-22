@@ -1,15 +1,33 @@
 .AboutMeBox {
   display: flex;
   width: 100%;
-  .leftContent {
-    width: 60%;
+  height: 30rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 
+  .leftContent {
+    overflow: auto;
+    width: 60%;
+    height: 30rem;
   }
   .rightContent {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
     img {
-      width: 100%;
+      width: 95%;
     }
-    width: 30%;
+    .social {
+      position: absolute;
+      top: 100%;
+      background: #000;
+      width: 95%;
+      height: 50px;
+    }
 
+
+  }
+  h1 {
+    color: #ff8c21;
   }
 }

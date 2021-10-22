@@ -13,7 +13,7 @@ const IndividualTraining = () => {
 
             <div className={style.topline}>
                 <div className={style.leftContent}>
-                    <img src="http://dot-circle.com/img/IMG_8513.jpg" alt=""/>
+                    <img src="http://dot-circle.com/img/gallery/thumbs/open/gallery30.jpg" alt=""/>
                 </div>
 
                 <div className={style.rightContent}>
@@ -33,7 +33,7 @@ const IndividualTraining = () => {
                     </div>
                     {t('INVITATION PROCESS')}
                 </h3>
-                {t(' Carry out an in-depth study of the issue')}
+                {t('Carry out an in-depth study of the issue')}
 
             </div>
             <div className={style.item}>
@@ -44,7 +44,7 @@ const IndividualTraining = () => {
                     </div>
                     {t('SKILL PROCESSES')}
                 </h3>
-                {t('  Get specific tools, knowledge, skill practices')}
+                {t('Get specific tools, knowledge, skill practices')}
             </div>
             <div className={style.item}>
 
@@ -54,7 +54,7 @@ const IndividualTraining = () => {
                     </div>
                     {t('CONTINUOUS GROWTH')}
                 </h3>
-                {t(' Bring Purity of Mind to your life')}
+                {t('Bring Purity of Mind to your life')}
             </div>
 
         </div>

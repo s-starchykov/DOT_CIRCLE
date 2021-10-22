@@ -53,42 +53,42 @@ const Header = ({t}) => {
                     <li>
                         <NavLink to={'/open_programs'} activeClassName={s.activeLink}>
                             <i className='bx bx-chat'/>
-                            <span className={s.links_name}>Open programs</span>
+                            <span className={s.links_name}>{t('Open programs')}</span>
                         </NavLink>
                         <span className={s.tooltip}>Open programs</span>
                     </li>
                     <li>
                         <NavLink to={'/team'} activeClassName={s.activeLink}>
                             <i className='bx bx-folder'/>
-                            <span className={s.links_name}>Dream team</span>
+                            <span className={s.links_name}>{t('Dream team')}</span>
                         </NavLink>
                         <span className={s.tooltip}>Dream team</span>
                     </li>
                     <li>
                         <NavLink to={'/consulting'} activeClassName={s.activeLink}>
                             <i className='bx bx-cart-alt'/>
-                            <span className={s.links_name}>Consulting</span>
+                            <span className={s.links_name}>{t('Consulting')}</span>
                         </NavLink>
                         <span className={s.tooltip}>Consulting</span>
                     </li>
                     <li>
                         <NavLink to={'/webinars'} activeClassName={s.activeLink}>
                             <i className='bx bx-heart'/>
-                            <span className={s.links_name}>Webinars</span>
+                            <span className={s.links_name}>{t('Webinars')}</span>
                         </NavLink>
                         <span className={s.tooltip}>Webinars</span>
                     </li>
                     <li>
                         <NavLink to={'/useful'} activeClassName={s.activeLink}>
                             <i className='bx bx-cog'/>
-                            <span className={s.links_name}>Useful</span>
+                            <span className={s.links_name}>{t('Useful')}</span>
                         </NavLink>
                         <span className={s.tooltip}>Useful</span>
                     </li>
                     <li>
                         <NavLink to={'/gallery'} activeClassName={s.activeLink}>
                             <i className='bx bx-cog'/>
-                            <span className={s.links_name}>Gallery</span>
+                            <span className={s.links_name}>{t('Gallery')}</span>
                         </NavLink>
                         <span className={s.tooltip}>Gallery</span>
                     </li>

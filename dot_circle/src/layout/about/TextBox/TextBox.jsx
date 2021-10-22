@@ -1,42 +1,46 @@
 import style from './TextBox.module.css'
+import {withNamespaces} from "react-i18next";
+import i18next from 'i18next';
 
 let TextBox = () => {
+    let t = (key) => i18next.t(key);
     return (
         <div className={style.TextBox}>
-            <div className="head">
+            <div className={style.head}>
                 <h1>
-                    WHAT DO YOU GET FROM OUR OPEN PROGRAMS?
+                    {t('WHAT DO YOU GET FROM OUR OPEN PROGRAMS?')}
                 </h1>
             </div>
-            <br/>
-            <div className="content">
+            <div className={style.content}>
                 <h3>
-                    RESULTS
+                    {t('RESULTS')}
                 </h3>
-                br
+
                 <p>
-                    A lot of practice and little theory. You work in pairs, in triples and groups, participate in games. You get out of a vicious circle, which went on for years. You get rid of the burden of the past. You find a solution for your task or change the situation.
+                    {t('A lot of practice and little theory')}
                 </p>
                 <br/>
                 <h3>
-                    LEARNING PROCESS 
+                    {t('LEARNING PROCESS')}
                 </h3>
                 <p>
-                    Activities are held in an atmosphere of trust and understanding. Constant practice, discussions and analysis of the complex cases. You can be yourself and not be afraid of a negative or judgmental assessment. People with an unstable state of mind are not allowed to participate in the training programs.
+                    {t('Activities are held in an atmosphere of trust and understanding')}
+
                 </p>
                 <br/>
                 <h3>
-                    STRONG PERSONALITY SKILLS
+                    {t('STRONG PERSONALITY SKILLS')}
+
                 </h3>
                 <p>
-                    You learn to effectively manage your resources and time. You learn how to live differently - master the skills and techniques of an effective person. You begin to explore new heights in your personal and professional life.
+                    {t('You learn to effectively manage your resources and time')}
                 </p>
                 <br/>
                 <h3>
-                    NEW CIRCLE OF COMMUNICATION
+                    {t('NEW CIRCLE OF COMMUNICATION')}
                 </h3>
                 <p>
-                    You meet new people, gain new connections and get a lot of useful information.
+                    {t('You meet new people, gain new connections and get a lot of useful information')}
                 </p>
             </div>
         </div>
@@ -44,4 +48,4 @@ let TextBox = () => {
     )
 };
 
-export default TextBox;
+export default withNamespaces()(TextBox);

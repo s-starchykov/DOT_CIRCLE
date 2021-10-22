@@ -1,12 +1,19 @@
 import style from "./about.module.css";
 import CorporateTraining from "./CorporateTraining/CorporateTraining";
-import VideoBox from "./VideoBox/VideoBox";
+import Video_card_1 from "./video_card/video_card_1";
 import TextBox from "./TextBox/TextBox";
 import AboutMeBox from "./AboutMeBox/AboutMeBox";
 import {compose} from "redux";
 import {withFirstRedirect} from "../../services/withFirstRedirect";
 import {withRouter} from "react-router-dom";
 import IndividualTraining from "./individual_training/individual_training";
+import Video_card_2 from "./video_card/video_card_2";
+import Video_card_3 from "./video_card/video_card_3";
+import Video_card_4 from "./video_card/video_card_4";
+import Learning_process_card from "./learning_process_card/learning_process_card";
+import Сreterias_card from "./creterias_card/creterias_card";
+import Cooperation_process_card from "./coopereation_process_card/cooperation_process_card";
+import Link_card from "./link_card/link_card";
 
 
 
@@ -38,39 +45,8 @@ const About = () => {
 //     ];
 
 
-    let videoBoxData = [
-        {
-            link: "https://www.youtube.com/embed/yPN81XlZ1oo",
-            name: 'TRANSFORMATION PROGRAM',
-            text: 'This program was created in the basis of a profound and rethought experience shaped by the study of Eastern philosophies for more than 25 years. It took many years to understand and select the most practical from our ancestors’ heritage.'
-        },
-        {
-            link: 'https://www.youtube.com/embed/9h84XtWV3Lg',
-            name: "SELF-DEVELOPMENT",
-            text: 'Self-development is a continuous improvement of personal and professional qualities. This process allows you to improve your own life as well as to develop your intelligence. This self-improvement opens new opportunities for the harmonization of your life, its qualitative improvement, develops self-confidence and harmony.'
-        },
-
-        {
-            link: "https://www.youtube.com/embed/2hp6b_k8ezY",
-            name: '"STRESS-MANAGEMENT"',
-            text: 'We should cultivate our own abilities in order to protect ourselves from excessive stress. “Stress management” training will help you to take a qualitative step forward.'
-        },
-
-        {
-            link: "https://www.youtube.com/embed/wtI4mQ4My1M",
-            name: 'TIME MANAGEMENT',
-            text: 'What is time and how is it valuable to us?\n' +
-                'Time management training teaches how to manage such resource as time.\n' +
-                'What is the reason for the constant lack of time for the most important things?'
-        },
 
 
-    ];
-
-
-    let videoBox = videoBoxData.map(v => <VideoBox link={v.link}
-                                                   name={v.name}
-                                                   text={v.text}/>);
 
     // let corporateTraining = boxContent.map(c => <CorporateTraining boxName={c.boxName} content={c.content}
     //                                                                itemOneName={c.itemOneName}
@@ -84,9 +60,15 @@ const About = () => {
         <div className={style.about}>
             <CorporateTraining />
            <IndividualTraining />
-            <TextBox/>
-            {videoBox}
+            <TextBox />
+            <Video_card_1 />
+            <Video_card_2 />
+            <Video_card_3 />
+            <Video_card_4 />
             <AboutMeBox/>
+            <Learning_process_card/>
+            <Сreterias_card />
+            <Link_card/>
         </div>
     )
 };
