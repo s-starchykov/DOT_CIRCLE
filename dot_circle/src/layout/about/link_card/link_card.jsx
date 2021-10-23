@@ -1,13 +1,13 @@
 import style from './link_card.module.css'
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
-import img1 from './img/1.png'
-import img2 from './img/2.png'
-import img3 from './img/3.png'
-import img4 from './img/4.png'
+import img1 from '../../../assets/item1_link_card.png'
+import img2 from '../../../assets/iitem2_link_card.png'
+import img3 from '../../../assets/iitem3_link_card.png'
+import img4 from '../../../assets/item4_link_card.png'
 import {NavLink} from "react-router-dom";
 
-const Link_card = (props) => {
+const LinkCard = (props) => {
     let t = (key) => i18next.t(key);
     return (
 
@@ -54,4 +54,4 @@ const Link_card = (props) => {
     )
 };
 
-export default withNamespaces()(Link_card);
+export default withNamespaces()(LinkCard);

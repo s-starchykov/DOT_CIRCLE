@@ -8,12 +8,12 @@ let TextBox = () => {
         <div className={style.TextBox}>
             <div className={style.head}>
                 <h1>
-                    {t('WHAT DO YOU GET FROM OUR OPEN PROGRAMS?')}
+                    {t('What do you get from our open programs?')}
                 </h1>
             </div>
             <div className={style.content}>
                 <h3>
-                    {t('RESULTS')}
+                    {t('Results')}
                 </h3>
 
                 <p>
@@ -21,7 +21,7 @@ let TextBox = () => {
                 </p>
                 <br/>
                 <h3>
-                    {t('LEARNING PROCESS')}
+                    {t('Learning process')}
                 </h3>
                 <p>
                     {t('Activities are held in an atmosphere of trust and understanding')}
@@ -29,7 +29,7 @@ let TextBox = () => {
                 </p>
                 <br/>
                 <h3>
-                    {t('STRONG PERSONALITY SKILLS')}
+                    {t('Strong personality skills')}
 
                 </h3>
                 <p>
@@ -37,7 +37,7 @@ let TextBox = () => {
                 </p>
                 <br/>
                 <h3>
-                    {t('NEW CIRCLE OF COMMUNICATION')}
+                    {t('New circle of communication')}
                 </h3>
                 <p>
                     {t('You meet new people, gain new connections and get a lot of useful information')}

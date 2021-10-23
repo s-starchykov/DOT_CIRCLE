@@ -8,7 +8,7 @@ const Steps_card = () => {
     return (
         <div className={style.container}>
             <div className={style.topLine}>
-                <h1>{t('WHY WE')}</h1>
+                <h1>{t('Why we')}</h1>
                 <p>
                     {t('Each training is a well-thought-out open')}
                 </p>

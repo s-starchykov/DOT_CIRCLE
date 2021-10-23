@@ -18,7 +18,7 @@ const IndividualTraining = () => {
 
                 <div className={style.rightContent}>
                     <h1>
-                        {t('OPEN TRAINING')}
+                        {t('Open training')}
 
                     </h1>
                     <span>
@@ -31,7 +31,7 @@ const IndividualTraining = () => {
                     <div className={style.circle}>
                         <span className={style.number}>1</span>
                     </div>
-                    {t('INVITATION PROCESS')}
+                    {t('Invitation process')}
                 </h3>
                 {t('Carry out an in-depth study of the issue')}
 
@@ -42,7 +42,7 @@ const IndividualTraining = () => {
                     <div className={style.circle}>
                         <span className={style.number}>2</span>
                     </div>
-                    {t('SKILL PROCESSES')}
+                    {t('Skill processes')}
                 </h3>
                 {t('Get specific tools, knowledge, skill practices')}
             </div>
@@ -52,7 +52,7 @@ const IndividualTraining = () => {
                     <div className={style.circle}>
                         <span className={style.number}>3</span>
                     </div>
-                    {t('CONTINUOUS GROWTH')}
+                    {t('Continuous growth')}
                 </h3>
                 {t('Bring Purity of Mind to your life')}
             </div>

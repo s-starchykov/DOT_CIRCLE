@@ -1,0 +1,166 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-height: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container .logoHead {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.container .logoHead h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.container .logoHead h1 img {
+  width: 10%;
+  font-size: larger;
+}
+.container .middleParagraph {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-weight: bold;
+  font-size: 300%;
+  width: 70%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+.container .products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .products .card {
+  width: 20%;
+  margin: 30px;
+  max-width: 300px;
+  border: solid 1px #bfbfbf;
+  border-top: none;
+  border-radius: 10px;
+  transition: 1s;
+}
+.container .products .card:hover {
+  transform: scale(1.1);
+  /* Увеличиваем масштаб */
+}
+.container .products .cardImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  min-width: 200px;
+  background-color: #ff962e;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  max-font-size: 100px;
+}
+.container .products .cardText {
+  padding: 20px;
+  color: #413f45;
+}
+.container .products .cardFooter {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  color: #413f45;
+}
+
+.slideRight {
+  box-shadow: -10px -10px 30px 10px lightgrey;
+  animation-name: slideRight;
+  -webkit-animation-name: slideRight;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  visibility: visible !important;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-150%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+.slideLeft {
+  box-shadow: 10px -10px 30px 10px lightgrey;
+  animation-name: slideLeft;
+  -webkit-animation-name: slideLeft;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  visibility: visible !important;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(150%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+.slideUp {
+  box-shadow: 0px -10px 30px 10px lightgrey;
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+
+/*# sourceMappingURL=welcome_page.module.css.map */

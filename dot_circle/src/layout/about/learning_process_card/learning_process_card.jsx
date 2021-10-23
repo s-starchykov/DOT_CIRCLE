@@ -1,18 +1,18 @@
 import style from './learning_process_card.module.css'
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
-import obj1 from "./img/obg1.png"
-import obj2 from "./img/obg2.png"
-import obj3 from "./img/obg3.png"
-import obj4 from "./img/obg4.png"
+import obj1 from "../../../assets/obg1_learning_process.png"
+import obj2 from "../../../assets/obg2_learning_process.png"
+import obj3 from "../../../assets/obg3_learning_process.png"
+import obj4 from "../../../assets/obg4_learning_process.png"
 
 
-const Learning_process_card = (props) => {
+const LearningProcessCard = (props) => {
     let t = (key) => i18next.t(key);
     return (
 
         <div className={style.container}>
-            <h1>{t('LEARNING PROCESS')}</h1>
+            <h1>{t('Learning process')}</h1>
             <div className={style.leftContent}>
                 <div className={style.lineOne}>
 
@@ -55,7 +55,7 @@ const Learning_process_card = (props) => {
                 <div className={style.empty}>
                 </div>
                 <div className={style.persents}>
-                    <h2>{t('PRACTICE' + " " + '70%')}
+                    <h2>{t('Practice 70%')}
                         </h2>
                 </div>
 
@@ -66,4 +66,4 @@ const Learning_process_card = (props) => {
     )
 };
 
-export default withNamespaces()(Learning_process_card);
+export default withNamespaces()(LearningProcessCard);

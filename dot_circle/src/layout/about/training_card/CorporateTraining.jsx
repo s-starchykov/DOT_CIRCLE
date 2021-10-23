@@ -28,7 +28,7 @@ const CorporateTraining = () => {
                     <div className={style.circle}>
                         <span className={style.number}>1</span>
                     </div>
-                    {t('INVITATION PROCESS')}
+                    {t('Invitation process')}
 
                 </h3>
                 {t('Make a breakthrough')}
@@ -41,7 +41,7 @@ const CorporateTraining = () => {
                     <div className={style.circle}>
                         <span className={style.number}>2</span>
                     </div>
-                    {t('SKILL PROCESSES')}
+                    {t('Skill processes')}
                 </h3>
                 {t('Get specific tools')}
             </div>
@@ -51,7 +51,7 @@ const CorporateTraining = () => {
                     <div className={style.circle}>
                         <span className={style.number}>3</span>
                     </div>
-                    {t('CONTINUOUS GROWTH')}
+                    {t('Continuous growth')}
 
                 </h3>
                 {t('Tune-in to new changes and achievements')}

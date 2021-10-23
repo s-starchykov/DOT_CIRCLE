@@ -1,14 +1,14 @@
 import style from './cooperation_process_card.module.css'
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
-import arrow from './img/New Text Document.svg'
+import arrow from '../../../assets/arrow_cooperation_process.svg'
 
-const Cooperation_process_card = (props) => {
+const CooperationProcessCard = (props) => {
     let t = (key) => i18next.t(key);
     return (
 
         <div className={style.container}>
-            <h2>{t('HOW IS THE PROCESS OF COOPERATION')}</h2>
+            <h2>{t('How is the process of cooperation')}</h2>
             <div className={style.verticalBlock}>
                 <h1 className={style.cooperationH1}>1</h1>
                 <p>{t('Training Information')}</p>
@@ -60,4 +60,4 @@ const Cooperation_process_card = (props) => {
     )
 };
 
-export default withNamespaces()(Cooperation_process_card);
+export default withNamespaces()(CooperationProcessCard);

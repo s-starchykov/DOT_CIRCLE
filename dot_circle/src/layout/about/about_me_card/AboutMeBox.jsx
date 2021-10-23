@@ -1,9 +1,9 @@
  import style from "./AboutMeBox.module.css"
  import {withNamespaces} from "react-i18next";
  import i18next from 'i18next';
- import inst from './img/instagram.png'
- import facebook from './img/facebook.png'
- import linkedIn from './img/linkedIin.png'
+ import inst from '../../../assets/instagram.png'
+ import facebook from '../../../assets/facebook.png'
+ import linkedIn from '../../../assets/linkedIin.png'
  import {NavLink} from "react-router-dom";
 
 
@@ -14,7 +14,7 @@
         <div className={style.AboutMeBox}>
             <div className={style.leftContent}>
                 <h1>
-                    {t('ДАВАЙТЕ ПОЗНАКОМИМСЯ ?')}
+                    {t('Давайте познакомимся?')}
                 </h1>
                 <p>
                     {t('Hello everyone, my name is Anar')}
@@ -24,15 +24,15 @@
             <div className={style.rightContent}>
                 <img src="http://dot-circle.com/img/Anar3.jpg" alt=""/>
                 <div className={style.social}>
-                    <NavLink to={'/'} className={style.socialLink}>
+                    <a href={'/'} className={style.socialLink}>
                         <img src={facebook} alt="logo" className={style.socialLogo}/>
-                    </NavLink>
+                    </a>
                     <NavLink to={'/'} className={style.socialLink}>
                         <img src={inst} alt="logo" className={style.sociallLogo}/>
                     </NavLink>
-                    <NavLink to={'/'} className={style.socialLink} >
+                    <a href={'https:"//www.linkedin.com/in/anar-mammadov-a3a66727/"'} className={style.socialLink} >
                     <img src={linkedIn} alt="logo" className={style.socialLogo}/>
-                </NavLink>
+                </a>
 
 
 

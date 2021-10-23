@@ -2,7 +2,7 @@ import style from './video_card.module.css'
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
 
-const Video_card_3 = (props) => {
+const VideoCard3 = (props) => {
     let t = (key) => i18next.t(key);
     return (
 
@@ -14,7 +14,7 @@ const Video_card_3 = (props) => {
             </div>
 
             <div className={style.rightContent}>
-                <h1>{t('STRESS MANAGEMENT')}
+                <h1>{t('Stress management')}
                 </h1>
                 <span>{t('We should cultivate our own abilities in order to protect')}</span>
             </div>
@@ -23,4 +23,4 @@ const Video_card_3 = (props) => {
     )
 };
 
-export default withNamespaces()(Video_card_3);
+export default withNamespaces()(VideoCard3);
