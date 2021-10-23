@@ -3,25 +3,25 @@
   padding: 0;
 }
 
-.welcomePage {
+.container {
   width: 100%;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
 }
-.welcomePage .box {
+.container .box {
   width: 50%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.welcomePage .box img {
+.container .box img {
   width: 100%;
   border: 2rem solid white;
   border-radius: 7%;
 }
-.welcomePage .box p {
+.container .box p {
   width: 100%;
   position: absolute;
   top: 40%;
@@ -32,7 +32,7 @@
   font-weight: bold;
   text-transform: uppercase;
 }
-.welcomePage .box hr {
+.container .box hr {
   width: 50%;
   position: absolute;
   top: 50%;
@@ -41,7 +41,7 @@
   color: #ff8c21;
   background: #ff8c21;
 }
-.welcomePage .box span {
+.container .box span {
   width: 100%;
   position: absolute;
   top: 60%;

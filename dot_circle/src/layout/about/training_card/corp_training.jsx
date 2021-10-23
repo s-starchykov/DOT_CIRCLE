@@ -1,27 +1,25 @@
-import style from './CorporateTraining.module.css';
+import style from './corp_training.module.css';
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
+import cardImage from '../../../assets/corp_training.png'
 
 
-const CorporateTraining = () => {
+const Corp_training = () => {
     // Minify i18next construction
     let t = (key) => i18next.t(key);
 
     return (
-        <div className={style.CorporateTraining}>
+        <div className={style.corporateTraining}>
 
-
-            <div className={style.topline}>
-                <div className={style.leftContent}>
-                    <img src="http://dot-circle.com/img/IMG_8513.jpg" alt=""/>
-                </div>
+            <div className={style.topLine}>
+                <div className={style.leftContent}><img src={cardImage} alt=""/></div>
 
                 <div className={style.rightContent}>
-                    <h1>{t('Corporate Training')}
-                    </h1>
+                    <h1>{t('Corporate Training')}</h1>
                     <span>{t('Corporate training programs can effectively')}</span>
                 </div>
             </div>
+
             <div className={style.item}>
 
                 <h3>
@@ -60,4 +58,4 @@ const CorporateTraining = () => {
     )
 };
 
-export default withNamespaces()(CorporateTraining);
+export default withNamespaces()(Corp_training);

@@ -1,4 +1,4 @@
-.welcomePage {
+.container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -9,7 +9,7 @@
   box-sizing: border-box;
   justify-content: space-between;
 }
-.welcomePage .leftContent {
+.container .leftContent {
   width: 50%;
   display: flex;
   -moz-box-sizing: border-box;
@@ -17,23 +17,23 @@
   flex-wrap: wrap;
   padding-right: 2rem;
 }
-.welcomePage .leftContent img {
+.container .leftContent img {
   width: 100%;
 }
-.welcomePage .rightContent {
+.container .rightContent {
   width: 50%;
 }
-.welcomePage h1 {
+.container h1 {
   color: #ff8c21;
   padding-top: 1rem;
   font-weight: bold;
   width: 100%;
 }
-.welcomePage .blackColor {
+.container .blackColor {
   color: black;
   width: 100%;
 }
-.welcomePage p {
+.container p {
   width: 100%;
   color: #7A7A7A;
 }

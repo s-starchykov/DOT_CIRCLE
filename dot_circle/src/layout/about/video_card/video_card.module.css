@@ -1,23 +1,29 @@
-.VideoBox {
-  margin-top: 50px;
-  width: 100%;
+.videoBox {
   display: flex;
   flex-wrap: wrap;
-  box-shadow: 10px 20px 20px lightslategrey;
+  margin: 50px 0 0 0;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
   height: 20rem;
+  overflow: hidden;
 }
-.VideoBox .leftContent {
+.videoBox .leftContent {
   width: 40%;
   display: flex;
   align-items: center;
   margin-right: 50px;
 }
-.VideoBox .leftContent iframe {
-  border-radius: 10px;
+.videoBox .leftContent iframe {
+  border: none;
   width: 100%;
   height: 100%;
 }
-.VideoBox .rightContent {
+.videoBox .leftContent iframe .ytp-impression-link {
+  display: none;
+  visibility: hidden;
+}
+.videoBox .rightContent {
   display: flex;
   justify-content: center;
   width: 50%;
@@ -28,11 +34,11 @@
   margin-bottom: 50px;
   margin-top: 50px;
 }
-.VideoBox .rightContent h1 {
+.videoBox .rightContent h1 {
   width: 100%;
   color: #ff8c21;
 }
-.VideoBox .rightContent span {
+.videoBox .rightContent span {
   width: 100%;
 }
 

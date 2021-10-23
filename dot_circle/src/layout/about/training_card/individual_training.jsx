@@ -1,4 +1,4 @@
-import style from '../CorporateTraining.module.css';
+import style from './corp_training.module.css';
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
 
@@ -8,23 +8,19 @@ const IndividualTraining = () => {
     let t = (key) => i18next.t(key);
 
     return (
-        <div className={style.CorporateTraining}>
+        <div className={style.corporateTraining}>
 
-
-            <div className={style.topline}>
+            <div className={style.topLine}>
                 <div className={style.leftContent}>
                     <img src="http://dot-circle.com/img/gallery/thumbs/open/gallery30.jpg" alt=""/>
                 </div>
 
                 <div className={style.rightContent}>
-                    <h1>
-                        {t('Open training')}
-
-                    </h1>
-                    <span>
-                         {t('An open training format involves a combined composition')}</span>
+                    <h1>{t('Open training')}</h1>
+                    <span>{t('An open training format involves a combined composition')}</span>
                 </div>
             </div>
+
             <div className={style.item}>
 
                 <h3>
@@ -33,9 +29,11 @@ const IndividualTraining = () => {
                     </div>
                     {t('Invitation process')}
                 </h3>
+
                 {t('Carry out an in-depth study of the issue')}
 
             </div>
+
             <div className={style.item}>
 
                 <h3>
@@ -44,8 +42,10 @@ const IndividualTraining = () => {
                     </div>
                     {t('Skill processes')}
                 </h3>
+
                 {t('Get specific tools, knowledge, skill practices')}
             </div>
+
             <div className={style.item}>
 
                 <h3>

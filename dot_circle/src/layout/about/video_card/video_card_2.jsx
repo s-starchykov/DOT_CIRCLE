@@ -6,16 +6,13 @@ const VideoCard2 = (props) => {
     let t = (key) => i18next.t(key);
     return (
 
-        <div className={style.VideoBox}>
+        <div className={style.videoBox}>
             <div className={style.leftContent}>
-                <iframe src={"https://www.youtube.com/embed/9h84XtWV3Lg"}>
-                    video is not available
-                </iframe>
+                <iframe src={"https://www.youtube.com/embed/9h84XtWV3Lg"}/>
             </div>
 
             <div className={style.rightContent}>
-                <h1>{t('Self-development')}
-                </h1>
+                <h1>{t('Self-development')}</h1>
                 <span>{t('Self-development is a continuous improvement')}</span>
             </div>
 
