@@ -1,83 +1,68 @@
 import {withNamespaces} from "react-i18next";
-import style from "./welcome_page.module.css"
-import mainLogo from "./img/main-Logo.png"
-// import {withNamespaces} from "react-i18next";
-import i18next from 'i18next';
+import s from "./welcome_page.module.css"
+import mainLogo from "../../assets/logo.png"
+import dtTitleImage from "./../../assets/dt_title_image.png"
+import dtBgImage from "./../../assets/dt_bg_image.png"
+
 import {NavLink} from "react-router-dom";
 
 const WelcomePage = () => {
-    let t = (key) => i18next.t(key);
     return (
-        <div className={style.container}>
+        <div className={s.welcomePage}>
+            <img src={dtBgImage} alt="" className={s.bgImage}/>
 
-            <div className={style.logoHead}>
-
-                <NavLink to={'/about'} className={style.socialLink}>
-                    <img src={mainLogo} alt="logo" className={style.sociallLogo}/>
+            <div className={s.logoHead}>
+                <NavLink to={'/'} className={s.socialLink}>
+                    <img src={mainLogo} alt="logo" className={s.sociallLogo}/>
                 </NavLink>
             </div>
 
+            <div className={s.products}>
 
-            <p className={style.middleParagraph}>
-                Please select the product
-            </p>
+                <p className={s.productsHeader}>
+                    Welcome to Dot&Circle <br/>
+                    Select the product you are interested in
+                </p>
 
-
-            <div className={style.products}>
-
-
-                <div className={`${style.card} ${style.slideRight}`}>
-                    <div className={style.cardContent}>
-                        <div className={style.cardImg}>
-                            D&S
-
+                <div className={`${s.card} ${s.slideRight}`}>
+                    <NavLink to={'/'} className={s.cardContent}>
+                        <div className={s.cardImg}><img src={dtTitleImage} alt=""/></div>
+                        <div className={s.cardText}>
+                            <h3>DOT&CIRCLE</h3>
+                            <span>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                                parturient montes, nascetur ridiculus mus.
+                            </span>
                         </div>
-                        <div className={style.cardText}> <h3>
-                            some bold text
-
-                        </h3>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                            commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                            parturient montes, nascetur ridiculus mus.
-                        </div>
-                    </div>
-
+                    </NavLink>
                 </div>
-                <div className={`${style.card} ${style.slideUp}`}>
-                    <div className={style.cardContent}>
-                        <div className={style.cardImg}>
-                            WMW
 
-                        </div>
-                        <div className={style.cardText}> <h3>
-                            some bold text
-
-                        </h3>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                            commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                            parturient montes, nascetur ridiculus mus.
-                        </div>
-                    </div>
-
-                </div>
-                <div className={`${style.card} ${style.slideLeft}`}>
-                    <div className={style.cardContent}>
-                        <div className={style.cardImg}>
-                            SS
-
-                        </div>
-                        <div className={style.cardText}> <h3>
-                            some bold text
-
-                        </h3>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                            commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                            parturient montes, nascetur ridiculus mus.
+                <div className={`${s.card} ${s.slideUp}`}>
+                    <div className={s.cardContent}>
+                        <div className={s.cardImg}><img src={dtTitleImage} alt=""/></div>
+                        <div className={s.cardText}><h3>Just love yourself</h3>
+                            <span>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                                parturient montes, nascetur ridiculus mus.
+                            </span>
                         </div>
                     </div>
                 </div>
 
-
+                <div className={`${s.card} ${s.slideLeft}`}>
+                    <div className={s.cardContent}>
+                        <div className={s.cardImg}><img src={dtTitleImage} alt=""/></div>
+                        <div className={s.cardText}>
+                            <h3>Meditate with me</h3>
+                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                                parturient montes, nascetur ridiculus mus.
+                            </span>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -85,4 +70,4 @@ const WelcomePage = () => {
     )
 };
 
-export default  withNamespaces()(WelcomePage);
+export default withNamespaces()(WelcomePage);

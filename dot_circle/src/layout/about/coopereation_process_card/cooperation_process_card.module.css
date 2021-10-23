@@ -1,11 +1,11 @@
-.container {
+.welcomePage {
   display: flex;
   flex-wrap: wrap;
 }
-.container h2 {
+.welcomePage h2 {
   width: 100%;
 }
-.container .verticalBlock {
+.welcomePage .verticalBlock {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,13 +13,13 @@
   width: 10%;
   flex-wrap: wrap;
 }
-.container .verticalBlock h1 {
+.welcomePage .verticalBlock h1 {
   width: 50%;
 }
-.container .verticalBlock p {
+.welcomePage .verticalBlock p {
   width: 100%;
 }
-.container .arrow {
+.welcomePage .arrow {
   position: absolute;
   bottom: 50%;
 }

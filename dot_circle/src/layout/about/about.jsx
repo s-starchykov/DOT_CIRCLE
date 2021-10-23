@@ -12,27 +12,22 @@ import VideoCard3 from "./video_card/video_card_3";
 import VideoCard4 from "./video_card/video_card_4";
 import LearningProcessCard from "./learning_process_card/learning_process_card";
 import CriterionCard from "./creterias_card/creterias_card";
-import CooperationProcessCard from "./coopereation_process_card/cooperation_process_card";
 import LinkCard from "./link_card/link_card";
-
-
-
-
 
 const About = () => {
 
     return (
         <div className={style.about}>
-            <CorporateTraining />
-           <IndividualTraining />
-            <TextBox />
-            <VideoCard1 />
-            <VideoCard2 />
-            <VideoCard3 />
-            <VideoCard4 />
+            <CorporateTraining/>
+            <IndividualTraining/>
+            <TextBox/>
+            <VideoCard1/>
+            <VideoCard2/>
+            <VideoCard3/>
+            <VideoCard4/>
             <AboutMeBox/>
             <LearningProcessCard/>
-            <CriterionCard />
+            <CriterionCard/>
             <LinkCard/>
         </div>
     )

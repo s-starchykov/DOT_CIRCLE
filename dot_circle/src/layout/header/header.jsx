@@ -3,7 +3,7 @@ import {useLocation, NavLink} from "react-router-dom";
 import i18n from "i18next";
 import {withNamespaces} from 'react-i18next';
 import {useState} from "react";
-import Logo from '../../assets/title.png';
+import Logo from '../../assets/logo_title.png';
 
 const Header = ({t}) => {
     // Change language
@@ -37,7 +37,7 @@ const Header = ({t}) => {
                 </div>
                 <ul className={s.item_list}>
                     <li>
-                        <NavLink to={'/about'} activeClassName={s.activeLink}>
+                        <NavLink to={'/'} activeClassName={s.activeLink}>
                             <i className='bx bx-grid-alt'/>
                             <span className={s.links_name}>{t('About')}</span>
                         </NavLink>

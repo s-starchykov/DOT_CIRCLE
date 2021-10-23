@@ -1,98 +1,90 @@
 * {
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
-.container {
-  max-height: 10rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.welcomePage {
+  position: absolute;
+  z-index: 5;
 
+  height: 100%;
+  width: 100%;
+
+  background: white;
+
+  .bgImage {
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+  }
 
   .logoHead {
+    position: relative;
+    margin: 50px;
+    z-index: 5;
+
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-
-
-    h1 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-transform: uppercase;
-
-      img {
-        width: 10%;
-        font-size: larger;
-      }
-
-    }
-  }
-
-  .middleParagraph {
-    margin: 0;
-    padding: 0;
-    border: none;
-    font-weight: bold;
-    font-size: 300%;
-    width: 70%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    text-align: center;
-
-
   }
 
   .products {
-    width: 100%;
+    position: relative;
+    z-index: 5;
+    width: 60%;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
+    margin: 50px auto;
+
+    .productsHeader {
+      margin: 0 30px;
+      padding: 0;
+      border: none;
+      font-weight: 500;
+      font-size: 40px;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      text-align: left;
+    }
+
     .card {
+      width: calc(33% - 60px);
+      max-height: 500px;
 
-      width: 20%;
       margin: 30px;
-      max-width: 300px;
-      border: solid 1px #bfbfbf;
-      border-top: none;
-      border-radius: 10px;
+      border-radius: 20px;
+      background: white;
 
-      transition: 1s;
+      transition: all 0.5s;
 
-    }
-    .card:hover {
-      transform: scale(1.1); /* Увеличиваем масштаб */
-    }
-
-
-    .cardContent {
-
+      &:hover {
+        transform: scale(1.1); /* Увеличиваем масштаб */
+      }
     }
 
     .cardImg {
-
       display: flex;
-      align-items: center;
-      justify-content: center;
       min-height: 200px;
       min-width: 200px;
-      background-color: #ff962e;
-      border-radius: 10px;
-      color: white;
-      font-weight: bold;
-      font-size: 50px;
-      max-font-size: 100px;
+      border-radius: 20px;
 
+      img {
+        width: 100%;
+        margin: auto;
+      }
     }
 
     .cardText {
       padding: 20px;
       color: #413f45;
+      font-size: 1rem;
     }
 
     .cardFooter {
@@ -103,8 +95,8 @@
   }
 }
 
-.slideRight{
-  box-shadow: -10px -10px 30px 10px  lightgrey;
+.slideRight {
+  box-shadow: -10px -10px 30px 10px lightgrey;
   animation-name: slideRight;
   -webkit-animation-name: slideRight;
 
@@ -136,8 +128,9 @@
     -webkit-transform: translateX(0%);
   }
 }
-.slideLeft{
-  box-shadow: 10px -10px 30px 10px  lightgrey;
+
+.slideLeft {
+  box-shadow: 10px -10px 30px 10px lightgrey;
   animation-name: slideLeft;
   -webkit-animation-name: slideLeft;
 
@@ -167,8 +160,9 @@
     -webkit-transform: translateX(0%);
   }
 }
-.slideUp{
-  box-shadow: 0px -10px 30px 10px  lightgrey;
+
+.slideUp {
+  box-shadow: 0px -10px 30px 10px lightgrey;
   animation-name: slideUp;
   -webkit-animation-name: slideUp;
 
@@ -179,8 +173,6 @@
   -webkit-animation-timing-function: ease;
 
   visibility: visible !important;
-
-
 }
 
 @keyframes slideUp {

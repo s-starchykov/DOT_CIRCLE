@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className={style.Header}>
             <div className={style.line_one}>
-                <NavLink to={'/about'} activeClassName={style.activeLink}>ABOUT</NavLink>
+                <NavLink to={'/'} activeClassName={style.activeLink}>ABOUT</NavLink>
                 <NavLink to={'/articles'} activeClassName={style.activeLink}>ARTICLES</NavLink>
             </div>
             <div className={style.line_two}>

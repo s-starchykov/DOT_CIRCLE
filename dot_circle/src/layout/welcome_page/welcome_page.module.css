@@ -4,78 +4,77 @@
   padding: 0;
 }
 
-.container {
-  max-height: 10rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.welcomePage {
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  background: white;
 }
-.container .logoHead {
+.welcomePage .bgImage {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+}
+.welcomePage .logoHead {
+  position: relative;
+  margin: 50px;
+  z-index: 5;
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
 }
-.container .logoHead h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-}
-.container .logoHead h1 img {
-  width: 10%;
-  font-size: larger;
-}
-.container .middleParagraph {
-  margin: 0;
-  padding: 0;
-  border: none;
-  font-weight: bold;
-  font-size: 300%;
-  width: 70%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  text-align: center;
-}
-.container .products {
-  width: 100%;
+.welcomePage .products {
+  position: relative;
+  z-index: 5;
+  width: 60%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 50px auto;
 }
-.container .products .card {
-  width: 20%;
+.welcomePage .products .productsHeader {
+  margin: 0 30px;
+  padding: 0;
+  border: none;
+  font-weight: 500;
+  font-size: 40px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: left;
+}
+.welcomePage .products .card {
+  width: calc(33% - 60px);
+  max-height: 500px;
   margin: 30px;
-  max-width: 300px;
-  border: solid 1px #bfbfbf;
-  border-top: none;
-  border-radius: 10px;
-  transition: 1s;
+  border-radius: 20px;
+  background: white;
+  transition: all 0.5s;
 }
-.container .products .card:hover {
+.welcomePage .products .card:hover {
   transform: scale(1.1);
   /* Увеличиваем масштаб */
 }
-.container .products .cardImg {
+.welcomePage .products .cardImg {
   display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 200px;
   min-width: 200px;
-  background-color: #ff962e;
-  border-radius: 10px;
-  color: white;
-  font-weight: bold;
-  font-size: 50px;
-  max-font-size: 100px;
+  border-radius: 20px;
 }
-.container .products .cardText {
+.welcomePage .products .cardImg img {
+  width: 100%;
+  margin: auto;
+}
+.welcomePage .products .cardText {
   padding: 20px;
   color: #413f45;
+  font-size: 1rem;
 }
-.container .products .cardFooter {
+.welcomePage .products .cardFooter {
   padding-left: 20px;
   padding-bottom: 10px;
   color: #413f45;
