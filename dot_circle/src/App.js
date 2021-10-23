@@ -10,7 +10,7 @@ const App = () => {
         <div className={s.app}>
             <Header/>
             <div className={s.appContent}>
-                <Route path={'/'} render={() => <About/>}/>
+                <Route exact path={'/'} render={() => <About/>}/>
                 {/*<Footer/>*/}
             </div>
             <Route path={'/welcome'} render={() => <WelcomePage/>}/>

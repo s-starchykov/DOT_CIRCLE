@@ -5,6 +5,7 @@ import {withNamespaces} from 'react-i18next';
 import {useState} from "react";
 import Logo from '../../assets/logo_title.png';
 
+
 const Header = ({t}) => {
     // Change language
     const switchLang = (lng) => {
@@ -21,7 +22,7 @@ const Header = ({t}) => {
     const toggleClass = () => setActive(!isActive);
 
     // Get current path for props
-    const location = useLocation();
+    const location = useLocation().pathname;
 
     // Language switcher buttons
     const langButtons = () => ['en', 'ru', 'az'].map((l) => isActive
@@ -37,7 +38,7 @@ const Header = ({t}) => {
                 </div>
                 <ul className={s.item_list}>
                     <li>
-                        <NavLink to={'/'} activeClassName={s.activeLink}>
+                        <NavLink to={'/'} activeClassName={location === '/' && s.activeLink}>
                             <i className='bx bx-grid-alt'/>
                             <span className={s.links_name}>{t('About')}</span>
                         </NavLink>
