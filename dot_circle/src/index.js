@@ -4,7 +4,8 @@ import {Provider} from "react-redux";
 import store from "./redux/store";
 import App from './App';
 import './services/i18n';
-import {HashRouter, BrowserRouter} from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
 
+const baseUrl = `${process.env.PUBLIC_URL}/DOT_CIRCLE`
 // Wrap App component with a Provider to provide store access
-render( <HashRouter basename={process.env.PUBLIC_URL}><Provider store={store}><App/></Provider></HashRouter>, document.getElementById('root'));
+render( <BrowserRouter basename={baseUrl}><Provider store={store}><App/></Provider></BrowserRouter>, document.getElementById('root'));
