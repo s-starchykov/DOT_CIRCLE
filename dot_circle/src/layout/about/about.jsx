@@ -13,13 +13,14 @@ import VideoCard4 from "./video_card/video_card_4";
 import LearningProcessCard from "./learning_process_card/learning_process_card";
 import CriterionCard from "./creterias_card/creterias_card";
 import LinkCard from "./link_card/link_card";
+import TopSlider from "./top_slider/top_slider";
 import Footer from "../footer/footer";
-import Profit from "./profit/profit";
 
 const About = () => {
 
     return (
         <div className={style.about}>
+            <TopSlider/>
             <CorporateTraining/>
             <IndividualTraining/>
             <TextBox/>
