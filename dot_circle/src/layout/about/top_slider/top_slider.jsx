@@ -1,16 +1,17 @@
+import {withNamespaces} from "react-i18next";
+import s from './top_slider.module.css'
+
 // Import Swiper React components
 import {Swiper, SwiperSlide} from "swiper/react";
-
 // Import Swiper core and required modules
-import SwiperCore, {Keyboard, Mousewheel, Navigation, Pagination} from 'swiper';
+import SwiperCore, {Autoplay, Keyboard, Mousewheel, Navigation, Pagination} from 'swiper';
 import 'swiper/swiper.min.css'
 import 'swiper/swiper-bundle.min.css'
+
 import bgImage from './../../../assets/top_slider_bg.png'
-import s from './top_slider.module.css'
-import {withNamespaces} from "react-i18next";
 
 // Install Swiper modules
-SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
+SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard, Autoplay]);
 
 
 const TopSlider = ({t}) => {
@@ -27,6 +28,7 @@ const TopSlider = ({t}) => {
         <Swiper navigation={true}
                 mousewheel={true}
                 keyboard={true}
+                autoplay={{"delay": 2500, "disableOnInteraction": false}}
                 pagination={{"dynamicBullets": true, "clickable": true}}
                 className={s.swiper}>
 

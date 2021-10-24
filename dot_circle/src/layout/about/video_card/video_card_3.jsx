@@ -13,7 +13,7 @@ const VideoCard3 = (props) => {
 
             <div className={style.rightContent}>
                 <h1>{t('Stress management')}</h1>
-                <span>{t('We should cultivate our own abilities in order to protect')}</span>
+                <span>{t('We should cultivate our own')}</span>
             </div>
 
         </div>
