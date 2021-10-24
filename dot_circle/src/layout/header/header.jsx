@@ -38,7 +38,7 @@ const Header = ({t}) => {
                 </div>
                 <ul className={s.item_list}>
                     <li>
-                        <NavLink to={'/'} activeClassName={location === '/' && s.activeLink}>
+                        <NavLink to={'/'} activeClassName={`${location === '/' && s.activeLink}`}>
                             <i className='bx bx-grid-alt'/>
                             <span className={s.links_name}>{t('About')}</span>
                         </NavLink>

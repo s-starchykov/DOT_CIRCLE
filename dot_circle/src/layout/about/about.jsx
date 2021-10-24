@@ -1,4 +1,3 @@
-import style from "./about.module.css";
 import CorporateTraining from "./training_card/corp_training";
 import Video from "./video_card/video_slider";
 import TextBox from "./profit/profit";
@@ -17,7 +16,7 @@ import WhyWe from "./why_we/why_we";
 const About = () => {
 
     return (
-        <div className={style.about}>
+        <>
             <TopSlider/>
             <CorporateTraining/>
             <IndividualTraining/>
@@ -29,7 +28,7 @@ const About = () => {
             <CriterionCard/>
             <LinkCard/>
             <Footer/>
-        </div>
+        </>
     )
 };
 

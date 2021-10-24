@@ -12,5 +12,11 @@
   overflow-x: hidden;
   overflow-y: scroll;
 }
+* .app .appContent {
+  position: absolute;
+  height: 100%;
+  right: 200px;
+  width: calc(100% - 250px*2);
+}
 
 /*# sourceMappingURL=App.module.css.map */
