@@ -12,8 +12,10 @@
   background: white;
 }
 .welcomePage .bgImage {
+  margin: auto;
   width: 100%;
   position: fixed;
+  filter: blur(2px);
   z-index: 3;
 }
 .welcomePage .logoHead {
@@ -53,6 +55,7 @@
   margin: 30px;
   border-radius: 20px;
   background: white;
+  box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
   transition: all 0.5s;
 }
 .welcomePage .products .card:hover {
@@ -61,13 +64,16 @@
 }
 .welcomePage .products .cardImg {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
   min-height: 200px;
   min-width: 200px;
   border-radius: 20px;
+  overflow: hidden;
 }
 .welcomePage .products .cardImg img {
-  width: 100%;
-  margin: auto;
+  height: 100%;
 }
 .welcomePage .products .cardText {
   padding: 20px;
@@ -81,7 +87,6 @@
 }
 
 .slideRight {
-  box-shadow: -10px -10px 30px 10px lightgrey;
   animation-name: slideRight;
   -webkit-animation-name: slideRight;
   animation-duration: 2s;
@@ -108,7 +113,6 @@
   }
 }
 .slideLeft {
-  box-shadow: 10px -10px 30px 10px lightgrey;
   animation-name: slideLeft;
   -webkit-animation-name: slideLeft;
   animation-duration: 2s;
@@ -135,7 +139,6 @@
   }
 }
 .slideUp {
-  box-shadow: 0px -10px 30px 10px lightgrey;
   animation-name: slideUp;
   -webkit-animation-name: slideUp;
   animation-duration: 1s;
