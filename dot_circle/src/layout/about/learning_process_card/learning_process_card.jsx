@@ -1,4 +1,4 @@
-import style from './learning_process_card.module.css'
+import s from './learning_process_card.module.css'
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
 import obj1 from "../../../assets/obg1_learning_process.png"
@@ -11,56 +11,53 @@ const LearningProcessCard = (props) => {
     let t = (key) => i18next.t(key);
     return (
 
-        <div className={style.container}>
+        <div className={s.container}>
             <h1>{t('Learning process')}</h1>
-            <div className={style.leftContent}>
-                <div className={style.lineOne}>
+            <div className={s.leftContent}>
+                <div className={s.items}>
+                    <div className={s.lineOne}>
+                        <img src={obj1} alt={"#"}/>
+                        <h3>{t('Work in groups')}</h3>
+                        <p>{t('Each participant voices his/her goals in the presence')}</p>
+                    </div>
 
-                    <img src={obj1} alt={"#"}/>
-                    <h3>{t('Work in groups')}</h3>
-                    <p>{t('Each participant voices his/her goals in the presence')}</p>
+                    <div className={s.lineOne}>
+                        <img src={obj2} alt={"#"}/>
+                        <h3>{t('Business Game')}</h3>
+                        <p>{t('Identifying the strengths and weaknesses of habitual')}</p>
+                    </div>
+
+                    <div className={s.lineOne}>
+                        <img src={obj3} alt={"#"}/>
+                        <h3>{t('Work with a trainer')}</h3>
+                        <p>{t('Familiarization with personal cases of participants')}</p>
+                    </div>
+
+                    <div className={s.lineOne}>
+                        <img src={obj4} alt={"#"}/>
+                        <h3>{t('Work in pairs')}</h3>
+                        <p>{t('Each participant practices and consolidates the')}</p>
+                    </div>
                 </div>
 
-                <div className={style.lineOne}>
-                    <img src={obj2} alt={"#"}/>
-                    <h3>{t('Business Game')}</h3>
-                    <p>{t('Identifying the strengths and weaknesses of habitual')}</p>
+                <div className={s.rightContent}>
+                    <div className={s.persents}><h2>{t('Practice')}</h2></div>
                 </div>
-
-                <div className={style.lineOne}>
-                    <img src={obj3} alt={"#"}/>
-                    <h3>{t('Work with a trainer')}</h3>
-                    <p>{t('Familiarization with personal cases of participants')}</p>
-                </div>
-
-                <div className={style.lineOne}>
-                    <img src={obj4} alt={"#"}/>
-                    <h3>{t('Work in pairs')}</h3>
-                    <p>{t('Each participant practices and consolidates the')}</p>
-                </div>
-
-                <div className={style.lineOne}>
-                    <div className={style.emptyLine}></div>
-                    <img src={obj1} alt={"#"}/>
-                    <h3>{t('Lecture material')}</h3>
-                    <p>{t('Outline of basic principles, concepts and stereotypes')}</p>
-
-                </div>
-
-
-
             </div>
 
-            <div className={style.rightContent}>
-                <div className={style.empty}>
+            <div className={s.leftContent}>
+                <div className={s.items}>
+                    <div className={s.lineOne}>
+                        <img src={obj1} alt={"#"}/>
+                        <h3>{t('Lecture material')}</h3>
+                        <p>{t('Outline of basic principles, concepts and stereotypes')}</p>
+                    </div>
                 </div>
-                <div className={style.persents}>
-                    <h2>{t('Practice 70%')}
-                        </h2>
+                <div className={s.rightContent}>
+                    <div className={s.persents}><h2>{t('Theory')}</h2></div>
                 </div>
-
-
             </div>
+
 
         </div>
     )

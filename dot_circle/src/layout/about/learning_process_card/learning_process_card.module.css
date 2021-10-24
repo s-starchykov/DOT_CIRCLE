@@ -4,59 +4,65 @@
 }
 
 .container {
-  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
+  margin: 50px 0;
+  padding: 15px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
-  box-shadow: 10px 20px 20px lightslategrey;
+  border-radius: 20px;
+  box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
 }
 .container h1 {
   width: 100%;
 }
 .container .leftContent {
-  background: linear-gradient(to right, white, #ff8c21);
-  width: 70%;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.container .leftContent .lineOne {
+.container .leftContent .items {
+  width: 70%;
+  margin: 15px 0;
+  background: linear-gradient(to right, white, #ff8c21);
+}
+.container .leftContent .items .lineOne {
   flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin: 15px 0;
 }
-.container .leftContent .lineOne img {
+.container .leftContent .items .lineOne img {
   width: 10%;
 }
-.container .leftContent .lineOne h3 {
+.container .leftContent .items .lineOne h3 {
   flex-wrap: wrap;
   text-align: center;
   width: 30%;
 }
-.container .leftContent .lineOne P {
+.container .leftContent .items .lineOne P {
   width: 60%;
   color: white;
 }
-.container .leftContent .lineOne .emptyLine {
+.container .leftContent .items .lineOne .emptyLine {
   background: white;
   width: 100%;
   height: 2rem;
 }
-.container .rightContent {
-  width: 30%;
+.container .leftContent .rightContent {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  width: 30%;
+  margin: 15px 0;
 }
-.container .rightContent .persents {
+.container .leftContent .rightContent .persents {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -65,7 +71,7 @@
   height: 100%;
   background: #ff8c21;
 }
-.container .rightContent h2 {
+.container .leftContent .rightContent h2 {
   font-size: 3rem;
   text-align: center;
   color: white;
