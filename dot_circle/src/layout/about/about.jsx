@@ -12,6 +12,7 @@ import CriterionCard from "./creterias_card/creterias_card";
 import LinkCard from "./link_card/link_card";
 import TopSlider from "./top_slider/top_slider";
 import Footer from "../footer/footer";
+import WhyWe from "./why_we/why_we";
 
 const About = () => {
 
@@ -23,6 +24,7 @@ const About = () => {
             <TextBox/>
             <Video/>
             <AboutMeBox/>
+            <WhyWe/>
             <LearningProcessCard/>
             <CriterionCard/>
             <LinkCard/>

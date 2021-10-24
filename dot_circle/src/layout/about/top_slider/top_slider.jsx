@@ -28,6 +28,7 @@ const TopSlider = ({t}) => {
         <Swiper navigation={true}
                 mousewheel={true}
                 keyboard={true}
+                loop={true}
                 autoplay={{"delay": 2500, "disableOnInteraction": false}}
                 pagination={{"dynamicBullets": true, "clickable": true}}
                 className={s.swiper}>

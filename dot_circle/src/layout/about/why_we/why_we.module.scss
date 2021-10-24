@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  width: 100%;
+  height: 400px;
+
+  margin: 50px 0;
+
+  border-radius: 20px;
+  box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
+  color: dimgray;
+
+  .topLine {
+    border-radius: 20px;
+    display: flex;
+    width: 100%;
+    background: linear-gradient(to right, white, #ff8c21);
+    padding: 0 15px 0 15px;
+
+    .leftContent {
+      width: 70%;
+      h1 {
+        color: #ff962e;
+        text-transform: uppercase;
+      }
+    }
+
+    .rightContent {
+      width: 20%;
+      display: flex;
+      align-items: flex-end;
+
+      img {
+        height: 90%;
+      }
+
+    }
+  }
+
+  .whyWeSlider {
+    height: 100%;
+    width: 30%;
+  }
+}
