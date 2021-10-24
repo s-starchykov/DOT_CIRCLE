@@ -7,4 +7,4 @@ import './services/i18n';
 import {BrowserRouter} from "react-router-dom";
 
 // Wrap App component with a Provider to provide store access
-render( <BrowserRouter><Provider store={store}><App/></Provider></BrowserRouter>, document.getElementById('root'));
+render( <BrowserRouter basename={process.env.PUBLIC_URL}><Provider store={store}><App/></Provider></BrowserRouter>, document.getElementById('root'));
