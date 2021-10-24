@@ -39,6 +39,7 @@ const VideoCard = (props) => {
                 spaceBetween={30}
                 mousewheel={true}
                 keyboard={true}
+                loop={true}
                 autoplay={{"delay": 2500}}
                 pagination={{"dynamicBullets": true, "clickable": true}}
                 className={s.swiper}>
