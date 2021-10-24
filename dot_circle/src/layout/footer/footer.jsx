@@ -3,7 +3,8 @@ import {NavLink} from "react-router-dom";
 
 const Footer = () => {
     return (
-        <div className={style.Header}>
+        <div className={style.Footer}>
+            <div className={style.topLine}>
             <div className={style.line_one}>
                 <NavLink to={'/'} activeClassName={style.activeLink}>ABOUT</NavLink>
                 <NavLink to={'/articles'} activeClassName={style.activeLink}>ARTICLES</NavLink>
@@ -16,7 +17,11 @@ const Footer = () => {
                 <NavLink to={'/programs'} activeClassName={style.activeLink}>PROGRAMS</NavLink>
                 <NavLink to={'/events'} activeClassName={style.activeLink}>EVENTS</NavLink>
             </div>
-
+            </div>
+            <hr/>
+            <div className={style.botLine}>
+                © 2019 Copyright: DOT-CIRCLE.COM
+            </div>
 
 
 

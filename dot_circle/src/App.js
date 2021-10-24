@@ -3,6 +3,7 @@ import s from './App.module.css'
 import About from './layout/about/about'
 import Header from './layout/header/header';
 import WelcomePage from "./layout/welcome_page/welcome_page";
+import Carousel from "./layout/about/steps_card/carousel/carousel";
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
                 {/*<Footer/>*/}
             </div>
             <Route path={'/welcome'} render={() => <WelcomePage/>}/>
+            <Route path={'/slider'} render={() => <Carousel/>}/>
         </div>
     )
 };

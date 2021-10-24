@@ -13,6 +13,8 @@ import VideoCard4 from "./video_card/video_card_4";
 import LearningProcessCard from "./learning_process_card/learning_process_card";
 import CriterionCard from "./creterias_card/creterias_card";
 import LinkCard from "./link_card/link_card";
+import Footer from "../footer/footer";
+import Profit from "./profit/profit";
 
 const About = () => {
 
@@ -29,6 +31,7 @@ const About = () => {
             <LearningProcessCard/>
             <CriterionCard/>
             <LinkCard/>
+            <Footer/>
         </div>
     )
 };

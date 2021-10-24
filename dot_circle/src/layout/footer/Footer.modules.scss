@@ -1,4 +1,16 @@
 .Footer {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  .topLine {
+    display: flex;
+    flex-direction: column;
+    .activeLink {
+
+    }
+  }
+  .botLine  {
+
+  }
 }
