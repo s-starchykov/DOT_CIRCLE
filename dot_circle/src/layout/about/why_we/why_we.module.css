@@ -8,14 +8,14 @@
   color: dimgray;
 }
 .container .topLine {
-  border-radius: 20px;
+  border-radius: 20px 0 0 20px;
   display: flex;
-  width: 100%;
+  width: 65%;
   background: linear-gradient(to right, white, #ff8c21);
-  padding: 0 15px 0 15px;
+  padding: 0 0 0 15px;
 }
 .container .topLine .leftContent {
-  width: 70%;
+  width: 67%;
 }
 .container .topLine .leftContent h1 {
   color: #ff962e;
@@ -31,7 +31,7 @@
 }
 .container .whyWeSlider {
   height: 100%;
-  width: 30%;
+  width: 35%;
 }
 
 /*# sourceMappingURL=why_we.module.css.map */

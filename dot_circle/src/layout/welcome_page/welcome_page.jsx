@@ -2,7 +2,7 @@ import {withNamespaces} from "react-i18next";
 import s from "./welcome_page.module.css"
 import mainLogo from "../../assets/logo.png"
 import dtTitleImage from "./../../assets/dt_title_image.png"
-import dtBgImage from "./../../assets/dt1_bg_image.png"
+import dtBgImage from "./../../assets/dt_bg_image.png"
 
 import jlyTitle from "./../../assets/jly_title_image.png"
 import jlyBg from "./../../assets/jly_bg_image.png"
@@ -44,8 +44,7 @@ const WelcomePage = () => {
                             <h3>DOT&CIRCLE</h3>
                             <span>
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                                parturient montes, nascetur ridiculus mus.
+                                commodo ligula eget dolor. Aenean massa.
                             </span>
                         </div>
                     </NavLink>
@@ -57,8 +56,7 @@ const WelcomePage = () => {
                         <div className={s.cardText}><h3>Just love yourself</h3>
                             <span>
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                                parturient montes, nascetur ridiculus mus.
+                                commodo ligula eget dolor. Aenean massa.
                             </span>
                         </div>
                     </div>
@@ -70,8 +68,7 @@ const WelcomePage = () => {
                         <div className={s.cardText}>
                             <h3>Meditate with me</h3>
                             <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                                parturient montes, nascetur ridiculus mus.
+                                commodo ligula eget dolor. Aenean massa.
                             </span>
                         </div>
                     </div>

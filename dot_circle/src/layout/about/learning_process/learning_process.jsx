@@ -1,4 +1,4 @@
-import s from './learning_process_card.module.css'
+import s from './learning_process.module.css'
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
 import obj1 from "../../../assets/obg1_learning_process.png"

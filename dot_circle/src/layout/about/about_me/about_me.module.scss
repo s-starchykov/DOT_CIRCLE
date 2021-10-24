@@ -1,4 +1,4 @@
-.AboutMeBox {
+.aboutMe {
   display: flex;
   width: 100%;
   height: 30rem;
@@ -10,40 +10,46 @@
     width: 60%;
     height: 30rem;
   }
+
   .rightContent {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 40%;
     position: relative;
-    img {
-      width: 95%;
+    overflow: hidden;
+
+    .aboutMeBg {
+      height: 100%;
       position: relative;
     }
+
     .social {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+
       display: flex;
       justify-content: space-around;
 
-      position: absolute;
-      top: 85%;
-      right: 0;
-      width: 95%;
-      background: rgba(255,255,255, 0.5);
+
+      background: rgba(255, 255, 255, 0.5);
       height: 5rem;
+
       .socialLink {
         display: flex;
         align-items: center;
-        width: 10%;
-
 
         .socialLogo {
-          width: 100%;
-      }
+          width: 35px;
+        }
       }
     }
 
 
   }
+
   h1 {
     color: #ff8c21;
   }

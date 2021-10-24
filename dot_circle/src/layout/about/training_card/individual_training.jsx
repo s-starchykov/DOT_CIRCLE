@@ -1,6 +1,7 @@
 import style from './corp_training.module.css';
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
+import openTrainingBg from '../../../assets/open_training.png'
 
 
 const IndividualTraining = () => {
@@ -12,7 +13,7 @@ const IndividualTraining = () => {
 
             <div className={style.topLine}>
                 <div className={style.leftContent}>
-                    <img src="http://dot-circle.com/img/gallery/thumbs/open/gallery30.jpg" alt=""/>
+                    <img src={openTrainingBg} alt=""/>
                 </div>
 
                 <div className={style.rightContent}>
@@ -22,7 +23,6 @@ const IndividualTraining = () => {
             </div>
 
             <div className={style.item}>
-
                 <h3>
                     <div className={style.circle}>
                         <span className={style.number}>1</span>

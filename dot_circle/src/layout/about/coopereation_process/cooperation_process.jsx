@@ -1,4 +1,4 @@
-import style from './cooperation_process_card.module.css'
+import style from './cooperation_process.module.css'
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
 import arrow from '../../../assets/arrow_cooperation_process.svg'
@@ -24,7 +24,6 @@ const CooperationProcessCard = (props) => {
             <div className={style.arrow}>
                 <img src={arrow} alt=""/>
             </div>
-
 
             <div className={style.verticalBlock}>
                 <h1>3</h1>
