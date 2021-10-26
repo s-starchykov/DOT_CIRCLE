@@ -26,7 +26,7 @@ const Header = ({t}) => {
 
     // Language switcher buttons
     const langButtons = () => ['en', 'ru', 'az'].map((l) => isActive
-        ? <button className={`${s.open} ${i18n.language === l && s.current}`} onClick={() => switchLang(l)}>{l}</button>
+        ? <button className={`${s.open} ${i18n.language.includes(l) && s.current}`} onClick={() => switchLang(l)}>{l}</button>
         : <button className={`${i18n.language === l && s.current}`} onClick={() => switchLang(l)}>{l}</button>
     );
 
