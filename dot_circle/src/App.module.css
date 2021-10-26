@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -5,18 +6,50 @@
   text-decoration: none;
   text-underline: none;
 }
-* .app {
+
+.app {
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
 }
-* .app .appContent {
+.app .appContent {
   position: absolute;
   height: 100%;
   right: 200px;
   width: calc(100% - 250px*2);
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  background-color: lightgray;
+  position: absolute;
+  right: 0;
+}
+
+::-webkit-scrollbar-track {
+  /* 3 - трек */
+  background: transparent;
+  display: none;
+}
+
+::-webkit-scrollbar-track-piece {
+  /* 4 - видимая часть трека */
+}
+
+::-webkit-scrollbar-thumb {
+  /* 5 - ползунок */
+  border-radius: 12px;
+  background-color: #aaa;
+}
+
+::-webkit-scrollbar-corner {
+  /* 6 - уголок */
+}
+
+::-webkit-resizer {
+  /* 7 - изменение размеров */
 }
 
 /*# sourceMappingURL=App.module.css.map */

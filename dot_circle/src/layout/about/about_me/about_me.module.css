@@ -6,15 +6,16 @@
   margin-bottom: 3rem;
 }
 .aboutMe .leftContent {
-  overflow: auto;
   width: 60%;
   height: 30rem;
+  overflow: auto;
+  padding: 0 10px 0 0;
+  white-space: pre-line;
 }
 .aboutMe .rightContent {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 40%;
   position: relative;
   overflow: hidden;
 }
