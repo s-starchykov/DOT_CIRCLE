@@ -12,8 +12,13 @@ import LinkCard from "./link_card/link_card";
 import TopSlider from "./top_slider/top_slider";
 import Footer from "../footer/footer";
 import WhyWe from "./why_we/why_we";
+import {useEffect} from "react";
+import {withNamespaces} from "react-i18next";
 
-const About = () => {
+const About = ({t}) => {
+
+    // Set document title wia hook effect
+    useEffect(() => document.title = t('About'));
 
     return (
         <>
@@ -32,4 +37,4 @@ const About = () => {
     )
 };
 
-export default compose(withFirstRedirect, withRouter)(About);
+export default compose(withFirstRedirect, withRouter, withNamespaces())(About);

@@ -11,9 +11,12 @@ import mwmTitle from "./../../assets/mwm_title_image.png"
 import mwmBg from "./../../assets/mwm_bg_image.png"
 
 import {NavLink} from "react-router-dom";
-import {useState} from "react";
+import React, {useEffect, useState} from "react";
 
-const WelcomePage = () => {
+const WelcomePage = ({t}) => {
+
+    // Set document title wia hook effect
+    useEffect(() => document.title = t('Welcome'));
 
     // Define menu state wia hook
     const [currentBackground, setActive] = useState(dtBgImage);
