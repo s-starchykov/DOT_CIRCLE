@@ -1,0 +1,168 @@
+.footer {
+  margin: 50px 0;
+  background: #dfe6e9;
+}
+.footer .title {
+  color: dimgrey;
+}
+.footer .title.underlined {
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer .title.underlined::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer .footerSection {
+  background: #151414;
+  position: relative;
+}
+.footer .footerCta {
+  border-bottom: 1px solid #373636;
+}
+.footer .row {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+}
+.footer .row .col {
+  flex: 1;
+  padding: 0 20px 0 20px;
+  align-items: center;
+}
+.footer .row .col .singleCta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 20px;
+}
+.footer .row .col .singleCta .faLogo {
+  color: #ff5e14;
+  margin: 0 15px 0 0;
+}
+.footer .row .col .singleCta span {
+  width: 100%;
+  color: #757575;
+  font-size: 15px;
+}
+.footer .row .col .footerWidget {
+  width: 80%;
+}
+.footer .row .col .footerWidget .footerLogo {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+}
+.footer .row .col .footerWidget ul {
+  width: 100%;
+}
+.footer .row .col .footerWidget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer .row .col .footerWidget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.footer .row .col .footerWidget ul li a:hover {
+  color: #ff5e14;
+}
+.footer .row .col .footerWidget .footerSocialIcon {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer .row .col .footerWidget .footerSocialIcon .title {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.footer .row .col .footerWidget .footerSocialIcon a {
+  color: cornflowerblue;
+}
+.footer .row .col .footerWidget .footerSocialIcon a .faLogo {
+  font-size: 30px;
+  text-align: center;
+}
+.footer .row .col .footerWidget .footerSocialIcon img {
+  width: 20%;
+  text-align: center;
+  border-radius: 50%;
+}
+.footer .footerContent {
+  position: relative;
+  z-index: 2;
+}
+.footer .footerPattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer .footerTextTwo {
+  width: 100%;
+}
+.footer .footerTextTwo p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+.footer .footerText {
+  width: 100%;
+}
+.footer .footerText p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+.footer .subscribeForm {
+  position: relative;
+  overflow: hidden;
+}
+.footer .subscribeForm input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.footer .subscribeForm button {
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
+}
+.footer .subscribeForm button .faLogo {
+  color: #fff;
+  font-size: 18px;
+  transform: rotate(-6deg);
+}
+.footer .copyrightArea {
+  background: #202020;
+  padding: 15px 0;
+}
+.footer .copyrightText p {
+  margin: 0;
+  font-size: 12px;
+  color: #878787;
+  width: 100%;
+}
+.footer .copyrightText p a {
+  color: #ff5e14;
+}
+
+/*# sourceMappingURL=footer.module.css.map */

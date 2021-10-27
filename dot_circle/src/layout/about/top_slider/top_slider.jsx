@@ -24,7 +24,7 @@ const TopSlider = ({t}) => {
         {'title': 'Goals', 'message': 'We look for tools to achieve the desired changes in our lives'},
         {'title': 'Goals', 'message': 'To study effective technologies'},
         {'title': 'Goals', 'message': 'We create the best conditions'},
-        {'title': 'Values', 'message': 'Individual approach Continuous development  70% Practice - 30% Theory'},
+        {'title': 'Values', 'message': 'Individual approach Continuous development'},
     ]
 
     const slides = () => slideData.map((i, idx) => {
