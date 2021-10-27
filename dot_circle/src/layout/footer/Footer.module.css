@@ -1,0 +1,203 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footerSection {
+  background: #151414;
+  position: relative;
+}
+
+.footerCta {
+  border-bottom: 1px solid #373636;
+}
+
+.colFooter {
+  padding: 0 20px 0 20px;
+  align-items: center;
+  margin-top: 8px;
+  width: 40%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  padding: 0 20px 0 20px;
+}
+.row .col {
+  width: 80%;
+  padding: 0 20px 0 20px;
+  align-items: center;
+  margin-top: 8px;
+}
+.row .col .singleCta {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.row .col .singleCta .faLogo {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  text-align: center;
+}
+
+.ctaText {
+  padding-left: 15px;
+  display: inline-block;
+}
+.ctaText h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.ctaText span {
+  color: #757575;
+  font-size: 15px;
+}
+
+.footerContent {
+  position: relative;
+  z-index: 2;
+}
+
+.footerPattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.footerLogo {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.footerLogo img {
+  max-width: 200px;
+}
+
+.footerTextTwo {
+  width: 100%;
+}
+.footerTextTwo p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+
+.footerText {
+  width: 100%;
+}
+.footerText p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+
+.footerSocialIcon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+.footerSocialIcon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footerSocialIcon img {
+  width: 20%;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.footerWidget {
+  width: 80%;
+}
+
+.footerWidgetHeading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footerWidgetHeading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+
+.footerWidget {
+  width: 80%;
+}
+.footerWidget ul {
+  width: 100%;
+}
+.footerWidget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footerWidget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.footerWidget ul li a:hover {
+  color: #ff5e14;
+}
+
+.subscribeForm {
+  position: relative;
+  overflow: hidden;
+}
+.subscribeForm input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribeForm button {
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
+}
+.subscribeForm button .faLogo {
+  color: #fff;
+  font-size: 18px;
+  transform: rotate(-6deg);
+}
+
+.copyrightArea {
+  background: #202020;
+  padding: 15px 0;
+}
+
+.copyrightText p {
+  margin: 0;
+  font-size: 12px;
+  color: #878787;
+  width: 100%;
+}
+.copyrightText p a {
+  color: #ff5e14;
+}
+
+/*# sourceMappingURL=Footer.module.css.map */
