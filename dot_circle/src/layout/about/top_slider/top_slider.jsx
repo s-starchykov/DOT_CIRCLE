@@ -9,12 +9,17 @@ import 'swiper/swiper.min.css'
 import 'swiper/swiper-bundle.min.css'
 
 import bgImage from './../../../assets/top_slider_bg.png'
+import {useCallback} from "react";
 
 // Install Swiper modules
 SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard, Autoplay]);
 
 
 const TopSlider = ({t}) => {
+
+    // Generate UUID key
+    const uuid = useCallback((idx) => encodeURI(`${idx}`), [])
+
     let slideData = [
         {'title': 'Goals', 'message': 'We look for tools to achieve the desired changes in our lives'},
         {'title': 'Goals', 'message': 'To study effective technologies'},
@@ -22,7 +27,9 @@ const TopSlider = ({t}) => {
         {'title': 'Values', 'message': 'Individual approach Continuous development  70% Practice - 30% Theory'},
     ]
 
-    const slides = () => slideData.map(i => <SwiperSlide className={s.slide}><h1>{t(i.title)}</h1><p>{t(i.message)}</p></SwiperSlide>)
+    const slides = () => slideData.map((i, idx) => {
+        return <SwiperSlide key={uuid(idx)} className={s.slide}><h1>{t(i.title)}</h1><p>{t(i.message)}</p></SwiperSlide>
+    });
 
     return (
         <Swiper navigation={true}
@@ -36,6 +43,7 @@ const TopSlider = ({t}) => {
             <img src={bgImage} alt="" className={s.bgImage}/>
 
             {slides()}
+
         </Swiper>
     )
 }

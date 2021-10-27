@@ -9,12 +9,13 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import SwiperCore, {Autoplay, Keyboard, Mousewheel, Navigation, Pagination} from 'swiper';
 import 'swiper/swiper.min.css'
 import 'swiper/swiper-bundle.min.css'
+import {useCallback} from "react";
 
 
 // Install Swiper modules
 SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard, Autoplay]);
 
-const VideoCard = (props) => {
+const VideoCard = () => {
     let t = (key) => i18next.t(key);
 
     let slideData = [
@@ -24,15 +25,17 @@ const VideoCard = (props) => {
         {'title': 'Time management', 'message': 'What is time and how is it valuable to us', 'src': 'https://www.youtube.com/embed/wtI4mQ4My1M'},
     ]
 
-    const videos = () => slideData.map(i =>  <SwiperSlide className={style.videoBox}>
-        <div className={style.leftContent}>
-            <iframe src={i.src}/>
-        </div>
-        <div className={style.rightContent}>
-            <h1>{t(i.title)}</h1>
-            <span>{t(i.message)}</span>
-        </div>
-    </SwiperSlide>)
+    // Generate UUID key
+    const uuid = useCallback((idx) => encodeURI(`${idx}`), [])
+
+    const videos = () => slideData.map((i, idx) => {
+        return (
+            <SwiperSlide key={uuid(idx)} className={style.videoBox}>
+                <div className={style.leftContent}><iframe src={i.src}/></div>
+                <div className={style.rightContent}><h1>{t(i.title)}</h1><span>{t(i.message)}</span></div>
+            </SwiperSlide>
+        )
+    })
 
     return (
         <Swiper direction={'vertical'}
@@ -47,8 +50,6 @@ const VideoCard = (props) => {
             {videos()}
 
         </Swiper>
-
-
     )
 };
 

@@ -7,8 +7,7 @@ export const withFirstRedirect = (Component) => {
 
     class RedirectComponent extends React.Component {
         render() {
-            if (!isVisited() || isVisited === 'false') {
-                console.log('url ' + process.env.PUBLIC_URL);
+            if (!isVisited() || isVisited() === 'false') {
                 localStorage.setItem('visitedD&C', 'true');
                 return <Redirect to={'/welcome'}/>
             }

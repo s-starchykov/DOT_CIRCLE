@@ -13,7 +13,7 @@ const Header = ({t}) => {
         localStorage.setItem('i18nextLng', lng);
 
         // Change language wia i18n
-        i18n.changeLanguage(lng).then(() => console.log(lng));
+        i18n.changeLanguage(lng).then(() => console.log(`Current language: ${lng}`));
     };
 
     // Define menu state wia hook
@@ -26,8 +26,8 @@ const Header = ({t}) => {
 
     // Language switcher buttons
     const langButtons = () => ['en', 'ru', 'az'].map((l) => isActive
-        ? <button className={`${s.open} ${i18n.language.includes(l) && s.current}`} onClick={() => switchLang(l)}>{l}</button>
-        : <button className={`${i18n.language === l && s.current}`} onClick={() => switchLang(l)}>{l}</button>
+        ? <button key={l} className={`${s.open} ${i18n.language.includes(l) && s.current}`} onClick={() => switchLang(l)}>{l}</button>
+        : <button key={l} className={`${i18n.language === l && s.current}`} onClick={() => switchLang(l)}>{l}</button>
     );
 
     return (
