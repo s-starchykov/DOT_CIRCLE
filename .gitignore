@@ -1,7 +1,7 @@
 /.idea
 
-*.module.css
-*.module.css.map
+/dot_circle/src/*.module.css
+/dot_circle/src/*.module.css.map
 
-*.css
-*.css.map
+/dot_circle/src/*.css
+/dot_circle/src/*.css.map
