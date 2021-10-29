@@ -1,7 +1,7 @@
 /.idea
 
-.module.css
-.module.css.map
+*.module.css
+*.module.css.map
 
-.css
-.css.map
+*.css
+*.css.map
