@@ -87,6 +87,7 @@
 
         width: 70%;
         height: 100%;
+        min-height: 150px;
 
         border-radius: 20px;
         background: #ff8c21;
@@ -97,6 +98,15 @@
         font-size: 3rem;
         text-align: center;
         color: white;
+
+        @media (max-width: 1800px) {
+          font-size: 2rem;
+        }
+
+        @media (max-width: 1024px) {
+          font-size: 2rem;
+          transform: rotate(90deg);
+        }
       }
     }
   }

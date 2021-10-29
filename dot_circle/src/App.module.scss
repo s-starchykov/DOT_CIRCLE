@@ -21,6 +21,13 @@
     height: 100%;
     right: 200px;
     width: calc(100% - 250px*2);
+
+    @media (max-width: 1400px) {
+      position: relative;
+      width: calc(100% - 76px);
+      left: 76px;
+      padding: 0 15px;
+    }
   }
 }
 

@@ -3,7 +3,6 @@ import s from './App.module.scss'
 import About from './layout/about/about'
 import Header from './layout/header/header';
 import WelcomePage from "./layout/welcome_page/welcome_page";
-import Carousel from "./layout/about/steps_card/carousel/carousel";
 import NoPage from "./layout/common/no_page/no_page";
 
 
@@ -20,10 +19,8 @@ const App = () => {
                 <Route exact path={'/webinars'} render={() => <NoPage name={'Webinars'}/>}/>
                 <Route exact path={'/useful'} render={() => <NoPage name={'Useful'}/>}/>
                 <Route exact path={'/gallery'} render={() => <NoPage name={'Gallery'}/>}/>
-                {/*<Footer/>*/}
             </div>
             <Route path={'/welcome'} render={() => <WelcomePage/>}/>
-            <Route path={'/slider'} render={() => <Carousel/>}/>
         </div>
     )
 };

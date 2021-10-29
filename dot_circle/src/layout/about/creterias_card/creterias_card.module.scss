@@ -14,36 +14,56 @@
 
   background: #dfe6e9;
 
+  @media (max-width: 900px) {
+    display: block;
+  }
+
   .leftContent {
     width: 50%;
+
+    @media (max-width: 900px) {
+      width: 100%;
+    }
   }
 
   .rightContent {
+    display: flex;
+    flex-wrap: wrap;
+
     width: 50%;
     padding: 15px;
+
+    @media (max-width: 900px) {
+      width: 100%;
+    }
   }
 
   h1 {
     color: #ff8c21;
-    padding-top: 1rem;
     font-weight: bold;
     width: 100%;
+
+    @media (max-width: 1400px) {
+      font-size: 1.2rem;
+    }
 
 
     &.title {
       position: relative;
-      margin-bottom: 10px;
       width: 100%;
       color: dimgrey;
+      margin: 0 0 20px 0;
 
 
       &::before {
-        content: "";
         position: absolute;
         left: 0;
         bottom: -15px;
+
         height: 4px;
         width: 60px;
+
+        content: "";
         background: #ff8C21;
       }
     }
