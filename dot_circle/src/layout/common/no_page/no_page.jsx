@@ -1,4 +1,4 @@
-import s from './empty_page.module.css'
+import s from './empty_page.module.scss'
 import {withNamespaces} from "react-i18next";
 import {useEffect} from "react";
 

@@ -1,8 +1,8 @@
-import style from './why_we.module.css';
+import s from './why_we.module.scss';
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
 import img from '../../../assets/anar_why_we.png'
-import WhyWeSlider from "./swiper/why_we_slider";
+import WhyWeSlider from "./why_we_slider/why_we_slider";
 
 
 const WhyWe = () => {
@@ -10,16 +10,16 @@ const WhyWe = () => {
     let t = (key) => i18next.t(key);
 
     return (
-        <div className={style.container}>
+        <div className={s.container}>
 
-            <div className={style.topLine}>
-                <div className={style.leftContent}>
+            <div className={s.topLine}>
+                <div className={s.leftContent}>
                     <h1>{t('Why we?')}</h1>
                     <p>{t('Each training is a')}</p>
                 </div>
-                <div className={style.rightContent}><img src={img} alt=""/></div>
+                <div className={s.rightContent}><img src={img} alt=""/></div>
             </div>
-            <div className={style.whyWeSlider}><WhyWeSlider/></div>
+            <div className={s.whyWeSlider}><WhyWeSlider/></div>
         </div>
     );
 };

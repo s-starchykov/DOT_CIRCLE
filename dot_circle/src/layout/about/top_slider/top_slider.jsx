@@ -1,5 +1,5 @@
 import {withNamespaces} from "react-i18next";
-import s from './top_slider.module.css'
+import s from './top_slider.module.scss'
 
 // Import Swiper React components
 import {Swiper, SwiperSlide} from "swiper/react";

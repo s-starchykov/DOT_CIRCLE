@@ -1,5 +1,5 @@
 import {withNamespaces} from "react-i18next";
-import s from "./welcome_page.module.css"
+import s from "./welcome_page.module.scss"
 import mainLogo from "../../assets/logo.png"
 import dtTitleImage from "./../../assets/dt_title_image.png"
 import dtBgImage from "./../../assets/dt_bg_image.png"

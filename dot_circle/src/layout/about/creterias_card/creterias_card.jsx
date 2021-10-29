@@ -1,4 +1,4 @@
-import style from './creterias_card.module.css'
+import style from './creterias_card.module.scss'
 import {withNamespaces} from "react-i18next";
 import image from '../../../assets/t&d_creterias.png'
 

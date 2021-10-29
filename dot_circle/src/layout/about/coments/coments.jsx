@@ -1,18 +1,21 @@
-const Coments = () => {
+import s from './comensts.module.scss'
+
+const Comments = () => {
     return (
-
-        <div className={style.container}>
-
-            return (
+        <div className={s.container}>
             <>
-                <Swiper slidesPerView={3} spaceBetween={30} slidesPerGroup={3} loop={true}
-                        loopFillGroupWithBlank={true} pagination={{
-                    "clickable": true
-                }} navigation={true} className="mySwiper">
+                <Swiper slidesPerView={3}
+                        spaceBetween={30}
+                        slidesPerGroup={3}
+                        loop={true}
+                        loopFillGroupWithBlank={true}
+                        pagination={{"clickable": true}}
+                        navigation={true}
+                        className="mySwiper">
                     <SwiperSlide>
-                        <div className={style.item}>
+                        <div className={s.item}>
                             <img src="" alt=""/>
-                            <div className={style.name}>
+                            <div className={s.name}>
                                 Эсмира Гюль
                             </div>
                         </div>
@@ -20,9 +23,9 @@ const Coments = () => {
 
 
                     <SwiperSlide>
-                        <div className={style.item}>
+                        <div className={s.item}>
                             <img src="" alt=""/>
-                            <div className={style.name}>
+                            <div className={s.name}>
                                 Parviz
                             </div>
                         </div>
@@ -30,9 +33,9 @@ const Coments = () => {
 
 
                     <SwiperSlide>
-                        <div className={style.item}>
+                        <div className={s.item}>
                             <img src="" alt=""/>
-                            <div className={style.name}>
+                            <div className={s.name}>
 
                             </div>
                         </div>
@@ -40,37 +43,18 @@ const Coments = () => {
 
 
                     <SwiperSlide>
-                        <div className={style.item}>
+                        <div className={s.item}>
                             <img src="" alt=""/>
-                            <div className={style.name}>
+                            <div className={s.name}>
                             </div>
                         </div>
                     </SwiperSlide>
 
 
                     <SwiperSlide>
-                        <div className={style.item}>
-                        <img src="" alt=""/>
-                        <div className={style.name}>
-
-                        </div>
-                    </div>
-                    </SwiperSlide>
-
-
-                    <SwiperSlide>
-                        <div className={style.item}>
-                        <img src="" alt=""/>
-                        <div className={style.name}>
-                        </div>
-                    </div>
-                    </SwiperSlide>
-
-
-                    <SwiperSlide>
-                        <div className={style.item}>
+                        <div className={s.item}>
                             <img src="" alt=""/>
-                            <div className={style.name}>
+                            <div className={s.name}>
 
                             </div>
                         </div>
@@ -78,27 +62,45 @@ const Coments = () => {
 
 
                     <SwiperSlide>
-                        <div className={style.item}>
+                        <div className={s.item}>
                             <img src="" alt=""/>
-                            <div className={style.name}>
+                            <div className={s.name}>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+
+
+                    <SwiperSlide>
+                        <div className={s.item}>
+                            <img src="" alt=""/>
+                            <div className={s.name}>
+
+                            </div>
+                        </div>
+                    </SwiperSlide>
+
+
+                    <SwiperSlide>
+                        <div className={s.item}>
+                            <img src="" alt=""/>
+                            <div className={s.name}>
 
                             </div>
                         </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className={style.item}>
+                        <div className={s.item}>
                             <img src="" alt=""/>
-                            <div className={style.name}>
+                            <div className={s.name}>
 
                             </div>
                         </div>
                     </SwiperSlide>
                 </Swiper>
             </>
-            )
-            }
         </div>
-        < /div>
     )
 };
+
+export default Comments;

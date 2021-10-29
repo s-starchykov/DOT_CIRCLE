@@ -1,4 +1,4 @@
-import style from "./about_me.module.css"
+import s from "./about_me.module.scss"
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
 import inst from '../../../assets/instagram.png'
@@ -11,24 +11,24 @@ import aboutMeBg from '../../../assets/about_me.png'
 let AboutMe = () => {
     let t = (key) => i18next.t(key);
     return (
-        <div className={style.aboutMe}>
+        <div className={s.aboutMe}>
 
-            <div className={style.leftContent}>
+            <div className={s.leftContent}>
                 <h1>{t('Давайте познакомимся?')}</h1>
                 <p>{t('Hello everyone, my name is Anar')}</p>
             </div>
 
-            <div className={style.rightContent}>
-                <img src={aboutMeBg} alt="" className={style.aboutMeBg}/>
-                <div className={style.social}>
-                    <Link to={'/'} className={style.socialLink}>
-                        <img src={facebook} alt="logo" className={style.socialLogo}/>
+            <div className={s.rightContent}>
+                <img src={aboutMeBg} alt="" className={s.aboutMeBg}/>
+                <div className={s.social}>
+                    <Link to={'/'} className={s.socialLink}>
+                        <img src={facebook} alt="logo" className={s.socialLogo}/>
                     </Link>
-                    <Link to={'/'} className={style.socialLink}>
-                        <img src={inst} alt="logo" className={style.socialLogo}/>
+                    <Link to={'/'} className={s.socialLink}>
+                        <img src={inst} alt="logo" className={s.socialLogo}/>
                     </Link>
-                    <Link to={'https://linkedin.com/in/anar-mammadov-a3a66727/'} className={style.socialLink}>
-                        <img src={linkedIn} alt="logo" className={style.socialLogo}/>
+                    <Link to={'https://linkedin.com/in/anar-mammadov-a3a66727/'} className={s.socialLink}>
+                        <img src={linkedIn} alt="logo" className={s.socialLogo}/>
                     </Link>
                 </div>
             </div>

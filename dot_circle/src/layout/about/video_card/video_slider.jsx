@@ -1,7 +1,6 @@
-import style from './video_card.module.css'
+import s from './video_card.module.scss'
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
-import s from "./video_card.module.css";
 
 // Import Swiper React components
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -30,9 +29,9 @@ const VideoCard = () => {
 
     const videos = () => slideData.map((i, idx) => {
         return (
-            <SwiperSlide key={uuid(idx)} className={style.videoBox}>
-                <div className={style.leftContent}><iframe src={i.src}/></div>
-                <div className={style.rightContent}><h1>{t(i.title)}</h1><span>{t(i.message)}</span></div>
+            <SwiperSlide key={uuid(idx)} className={s.videoBox}>
+                <div className={s.leftContent}><iframe src={i.src}/></div>
+                <div className={s.rightContent}><h1>{t(i.title)}</h1><span>{t(i.message)}</span></div>
             </SwiperSlide>
         )
     })
@@ -46,9 +45,7 @@ const VideoCard = () => {
                 autoplay={{"delay": 2500}}
                 pagination={{"dynamicBullets": true, "clickable": true}}
                 className={s.swiper}>
-
             {videos()}
-
         </Swiper>
     )
 };

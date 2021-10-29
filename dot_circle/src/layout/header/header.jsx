@@ -1,4 +1,4 @@
-import s from "./header.module.css";
+import s from "./header.module.scss";
 import {useLocation, NavLink} from "react-router-dom";
 import i18n from "i18next";
 import {withNamespaces} from 'react-i18next';

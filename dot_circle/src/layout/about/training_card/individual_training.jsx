@@ -1,4 +1,4 @@
-import style from './corp_training.module.css';
+import style from './corp_training.module.scss';
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
 import openTrainingBg from '../../../assets/open_training.png'

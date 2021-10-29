@@ -1,4 +1,4 @@
-import style from './link_card.module.css'
+import style from './link_card.module.scss'
 import {withNamespaces} from "react-i18next";
 import img1 from '../../../assets/item1_link_card.png'
 import img2 from '../../../assets/iitem2_link_card.png'

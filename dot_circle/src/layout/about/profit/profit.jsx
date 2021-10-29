@@ -1,4 +1,4 @@
-import style from './profit.module.css'
+import style from './profit.module.scss'
 import {withNamespaces} from "react-i18next";
 
 let Profit = ({t}) => {

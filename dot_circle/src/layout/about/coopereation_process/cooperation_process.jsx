@@ -1,4 +1,4 @@
-import style from './cooperation_process.module.css'
+import style from './cooperation_process.module.scss'
 import {withNamespaces} from "react-i18next";
 import arrow from '../../../assets/arrow_cooperation_process.svg'
 
