@@ -9,7 +9,7 @@ import {NavLink} from "react-router-dom";
 const LinkCard = ({t}) => {
     return (
 
-        <div className={style.container}>
+        <div className={style.goTo}>
 
             <div className={style.box}>
                 <img src={img1} alt=""/>
