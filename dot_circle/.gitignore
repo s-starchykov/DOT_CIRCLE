@@ -6,6 +6,9 @@
 .pnp.js
 /.idea
 
+.module.css
+.module.css.map
+
 .css
 .css.map
 
