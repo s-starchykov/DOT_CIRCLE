@@ -14,7 +14,7 @@ import Footer from "../footer/footer";
 import WhyWe from "./why_we/why_we";
 import {useEffect} from "react";
 import {withNamespaces} from "react-i18next";
-import CooperationProcessCard from "./coopereation_process/cooperation_process";
+import CooperationProcess from "./coopereation_process/cooperation_process";
 
 const About = ({t}) => {
 
@@ -31,9 +31,9 @@ const About = ({t}) => {
             <AboutMeBox/>
             <WhyWe/>
             <LearningProcessCard/>
+            <CooperationProcess/>
             <CriterionCard/>
             <LinkCard/>
-            <CooperationProcessCard/>
             <Footer/>
         </>
     )

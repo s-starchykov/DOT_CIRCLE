@@ -1,10 +1,9 @@
 import style from './cooperation_process.module.css'
 import {withNamespaces} from "react-i18next";
-import i18next from 'i18next';
 import arrow from '../../../assets/arrow_cooperation_process.svg'
 
-const CooperationProcessCard = (props) => {
-    let t = (key) => i18next.t(key);
+const CooperationProcess = ({t}) => {
+
     return (
 
         <div className={style.container}>
@@ -12,79 +11,65 @@ const CooperationProcessCard = (props) => {
 
             <div className={style.topLine}>
                 <div className={style.item}>
-                    <p>1</p>
+                    <h1>1</h1>
                     <img src={arrow} alt=""/>
                 </div>
 
                 <div className={style.item}>
-                    <p>2</p>
+                    <h1>2</h1>
                     <img src={arrow} alt=""/>
                 </div>
 
                 <div className={style.item}>
-                    <p>3</p>
+                    <h1>3</h1>
                     <img src={arrow} alt=""/>
                 </div>
 
                 <div className={style.item}>
-                    <p>4</p>
+                    <h1>4</h1>
                     <img src={arrow} alt=""/>
                 </div>
 
                 <div className={style.item}>
-                    <p>5</p>
+                    <h1>5</h1>
                     <img src={arrow} alt=""/>
                 </div>
 
                 <div className={style.item}>
-                    <p>6</p>
+                    <h1>6</h1>
                 </div>
 
             </div>
 
             <div className={style.botLine}>
                 <div className={style.item}>
-                    <p>
-                        {t('Training Information')}
-                    </p>
+                    <p>{t('Training Information')}</p>
                 </div>
 
                 <div className={style.item}>
-                    <p>
-                        {t('Personal meeting')}
-                    </p>
+                    <p>{t('Personal meeting')}</p>
                 </div>
 
                 <div className={style.item}>
-                    <p>
-                        {t('Timing')}
-                    </p>
+                    <p>{t('Timing')}</p>
                 </div>
 
                 <div className={style.item}>
-                    <p>
-                        {t('Contract')}
-                    </p>
+                    <p>{t('Contract')}</p>
                 </div>
 
                 <div className={style.item}>
-                    <p>
-                        {t('Training')}
-                    </p>
+                    <p>{t('Training')}</p>
                 </div>
 
                 <div className={style.item}>
-                    <p>
-                        {t('Summary')}
-                    </p>
+                    <p>{t('Summary')}</p>
                 </div>
-
 
             </div>
-
 
         </div>
     )
 };
 
-export default withNamespaces()(CooperationProcessCard);
+export default withNamespaces()(CooperationProcess);

@@ -10,8 +10,7 @@
 .container .topLine {
   display: flex;
   width: 100%;
-  padding-right: 40px;
-  padding-left: 40px;
+  justify-content: space-between;
 }
 .container .topLine .item {
   width: 20%;
@@ -19,10 +18,10 @@
   align-items: center;
 }
 .container .topLine .item img {
-  width: 60%;
+  width: 50%;
 }
-.container .topLine .item p {
-  width: 40%;
+.container .topLine .item h1 {
+  width: 50%;
   font-size: 60px;
   font-weight: bold;
   text-align: center;
@@ -31,16 +30,15 @@
 .container .botLine {
   width: 100%;
   display: flex;
-  padding-right: 40px;
-  padding-left: 40px;
+  justify-content: space-between;
 }
 .container .botLine .item {
-  width: 20%;
+  width: 100%;
   display: flex;
 }
 .container .botLine .item p {
-  width: 40%;
-  font-size: 20px;
+  width: 50%;
+  font-size: 18px;
   text-align: center;
   display: flex;
   justify-content: center;
