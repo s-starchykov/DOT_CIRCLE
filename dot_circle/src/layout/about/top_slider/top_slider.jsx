@@ -25,7 +25,7 @@ const TopSlider = ({t}) => {
         {'title': 'Goals', 'message': 'To study effective technologies'},
         {'title': 'Goals', 'message': 'We create the best conditions'},
         {'title': 'Values', 'message': 'Individual approach Continuous development'},
-    ]
+    ];
 
     const slides = () => slideData.map((i, idx) => {
         return <SwiperSlide key={uuid(idx)} className={s.slide}><h1>{t(i.title)}</h1><p>{t(i.message)}</p></SwiperSlide>
@@ -46,6 +46,6 @@ const TopSlider = ({t}) => {
 
         </Swiper>
     )
-}
+};
 
 export default withNamespaces()(TopSlider);

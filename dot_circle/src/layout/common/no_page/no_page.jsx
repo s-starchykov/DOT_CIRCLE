@@ -15,6 +15,6 @@ const NoPage = ({t, name}) => {
         </div>
     )
 
-}
+};
 
 export default withNamespaces()(NoPage);

@@ -8,50 +8,78 @@ const CooperationProcessCard = (props) => {
     return (
 
         <div className={style.container}>
-            <h2>{t('How is the process of cooperation')}</h2>
-            <div className={style.verticalBlock}>
-                <h1 className={style.cooperationH1}>1</h1>
-                <p>{t('Training Information')}</p>
-            </div>
-            <div className={style.arrow}>
-                <img src={arrow} alt=""/>
+            <h1>{t('How is the process of cooperation')}</h1>
+
+            <div className={style.topLine}>
+                <div className={style.item}>
+                    <p>1</p>
+                    <img src={arrow} alt=""/>
+                </div>
+
+                <div className={style.item}>
+                    <p>2</p>
+                    <img src={arrow} alt=""/>
+                </div>
+
+                <div className={style.item}>
+                    <p>3</p>
+                    <img src={arrow} alt=""/>
+                </div>
+
+                <div className={style.item}>
+                    <p>4</p>
+                    <img src={arrow} alt=""/>
+                </div>
+
+                <div className={style.item}>
+                    <p>5</p>
+                    <img src={arrow} alt=""/>
+                </div>
+
+                <div className={style.item}>
+                    <p>6</p>
+                </div>
+
             </div>
 
-            <div className={style.verticalBlock}>
-                <h1>2</h1>
-                <p>{t('Personal meeting with the Coach')}</p>
-            </div>
-            <div className={style.arrow}>
-                <img src={arrow} alt=""/>
-            </div>
+            <div className={style.botLine}>
+                <div className={style.item}>
+                    <p>
+                        {t('Training Information')}
+                    </p>
+                </div>
 
-            <div className={style.verticalBlock}>
-                <h1>3</h1>
-                <p>{t('Timing')}</p>
-            </div>
-            <div className={style.arrow}>
-                <img src={arrow} alt=""/>
-            </div>
+                <div className={style.item}>
+                    <p>
+                        {t('Personal meeting')}
+                    </p>
+                </div>
 
-            <div className={style.verticalBlock}>
-                <h1>4</h1>
-                <p>{t('Contract')}</p>
-            </div>
-            <div className={style.arrow}>
-                <img src={arrow} alt=""/>
-            </div>
+                <div className={style.item}>
+                    <p>
+                        {t('Timing')}
+                    </p>
+                </div>
 
-            <div className={style.verticalBlock}>
-                <h1>5</h1>
-                <p>{t('Training')}</p>
-            </div>
-            <div className={style.arrow}>
-                <img src={arrow} alt=""/>
-            </div>
+                <div className={style.item}>
+                    <p>
+                        {t('Contract')}
+                    </p>
+                </div>
 
-            <div className={style.verticalBlock}>
-                <h1>6</h1>
-                <p>{t('Summary')}</p>
+                <div className={style.item}>
+                    <p>
+                        {t('Training')}
+                    </p>
+                </div>
+
+                <div className={style.item}>
+                    <p>
+                        {t('Summary')}
+                    </p>
+                </div>
+
+
             </div>
 
 

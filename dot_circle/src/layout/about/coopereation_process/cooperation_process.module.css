@@ -1,27 +1,50 @@
 .container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-.container h2 {
-  width: 100%;
+.container h1 {
+  text-transform: uppercase;
+  color: #ff962e;
 }
-.container .verticalBlock {
+.container .topLine {
+  display: flex;
+  width: 100%;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.container .topLine .item {
+  width: 20%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 10%;
-  flex-wrap: wrap;
 }
-.container .verticalBlock h1 {
-  width: 50%;
+.container .topLine .item img {
+  width: 60%;
 }
-.container .verticalBlock p {
+.container .topLine .item p {
+  width: 40%;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: #ff962e;
+}
+.container .botLine {
   width: 100%;
+  display: flex;
+  padding-right: 40px;
+  padding-left: 40px;
 }
-.container .arrow {
-  position: absolute;
-  bottom: 50%;
+.container .botLine .item {
+  width: 20%;
+  display: flex;
+}
+.container .botLine .item p {
+  width: 40%;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #878787;
 }
 
 /*# sourceMappingURL=cooperation_process.module.css.map */
