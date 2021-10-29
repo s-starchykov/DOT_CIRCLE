@@ -1,8 +1,6 @@
 import s from "./footer.module.css"
 import {NavLink} from "react-router-dom";
 import logo from "../../assets/logo.png"
-import facebook from "../../assets/facebook.png";
-import inst from "../../assets/instagram.png";
 import {Link} from "react-router-dom";
 import {
     FaEnvelope,
@@ -18,7 +16,7 @@ export default function Footer() {
     return (
         <footer className={s.footer}>
 
-            <div className={s.container}>
+            <div className={s.infoArea}>
 
                 <div className={s.footerCta}>
                     <div className={s.row}>

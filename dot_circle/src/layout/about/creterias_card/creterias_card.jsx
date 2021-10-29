@@ -1,20 +1,17 @@
 import style from './creterias_card.module.css'
 import {withNamespaces} from "react-i18next";
-import i18next from 'i18next';
 import image from '../../../assets/t&d_creterias.png'
 
-const СriterionCard = (props) => {
-    let t = (key) => i18next.t(key);
+const CriterionCard = ({t}) => {
+
     return (
 
         <div className={style.container}>
-            <div className={style.leftContent}>
-                <img src={image} alt=""/>
-            </div>
+            <img src={image} alt="" className={style.leftContent}/>
+
 
             <div className={style.rightContent}>
-               <h1 className={style.blackColor}>{t('Our trainings are for you,\n' +
-                   'if ...')}</h1>
+                <h1 className={style.title}>{t('Our trainings are for you, \nif ...')}</h1>
                 <h1>{t('1 You are development oriented')}</h1>
                 <span>{t('And your goals are far beyond an average company goals')}</span>
                 <h1>{t('2 You increase sales')}</h1>
@@ -30,4 +27,4 @@ const СriterionCard = (props) => {
     )
 };
 
-export default withNamespaces()(СriterionCard);
+export default withNamespaces()(CriterionCard);

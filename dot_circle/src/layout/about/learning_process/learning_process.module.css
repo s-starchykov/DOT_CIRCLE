@@ -4,12 +4,9 @@
   flex-wrap: wrap;
   width: 100%;
   margin: 50px 0;
-  padding: 15px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border-radius: 20px;
-  box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
 }
 .container h1 {
   width: 100%;
@@ -21,9 +18,11 @@
 }
 .container .leftContent .items {
   width: 70%;
+  padding: 15px;
   margin: 15px 0;
   border-radius: 20px;
   background: linear-gradient(to right, white, #ff8c21);
+  box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
 }
 .container .leftContent .items .lineOne {
   flex-wrap: wrap;
@@ -32,13 +31,15 @@
   justify-content: center;
   width: 100%;
   margin: 15px 0;
+  box-shadow: #ff932e5e 9px 9px 16px, #ff8c21a3 0 0 0;
+  border-radius: 50px;
+  font-weight: 600;
 }
 .container .leftContent .items .lineOne img {
   width: 10%;
 }
 .container .leftContent .items .lineOne h3 {
-  flex-wrap: wrap;
-  text-align: center;
+  padding: 0 0 0 3%;
   width: 30%;
 }
 .container .leftContent .items .lineOne P {
@@ -52,21 +53,21 @@
 }
 .container .leftContent .rightContent {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: center;
+  flex-wrap: wrap;
   width: 30%;
   margin: 15px 0;
 }
 .container .leftContent .rightContent .percents {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
+  padding: 15px;
   width: 70%;
   height: 100%;
   border-radius: 20px;
   background: #ff8c21;
+  box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
 }
 .container .leftContent .rightContent h2 {
   font-size: 3rem;
