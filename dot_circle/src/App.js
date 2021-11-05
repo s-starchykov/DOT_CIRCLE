@@ -4,6 +4,7 @@ import About from './layout/about/about'
 import Header from './layout/header/header';
 import WelcomePage from "./layout/welcome_page/welcome_page";
 import NoPage from "./layout/common/no_page/no_page";
+import Useful from "./layout/useful/useful";
 
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
                 <Route exact path={'/team'} render={() => <NoPage name={'Team'}/>}/>
                 <Route exact path={'/consulting'} render={() => <NoPage name={'Consulting'}/>}/>
                 <Route exact path={'/webinars'} render={() => <NoPage name={'Webinars'}/>}/>
-                <Route exact path={'/useful'} render={() => <NoPage name={'Useful'}/>}/>
+                <Route exact path={'/useful'} render={() => <Useful name={'Useful'}/>}/>
                 <Route exact path={'/gallery'} render={() => <NoPage name={'Gallery'}/>}/>
             </div>
             <Route path={'/welcome'} render={() => <WelcomePage/>}/>
