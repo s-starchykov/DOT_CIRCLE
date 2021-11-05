@@ -11,8 +11,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 
-
-
   h1 {
     width: 100%;
     color: dimgrey;
@@ -23,8 +21,11 @@
     display: flex;
     justify-content: space-between;
 
-
     .items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+
       width: 70%;
       padding: 15px;
       margin: 15px 0;
@@ -34,24 +35,37 @@
       box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
 
       .lineOne {
-        flex-wrap: wrap;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
+        height: max-content;
 
-        margin: 15px 0;
+        background: rgba(232, 232, 232, 0.2);
+        box-shadow: 0 8px 32px 0 rgb(62 62 62 / 37%);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
 
-        box-shadow: #ff932e5e 9px 9px 16px, #ff8c21a3 0 0 0;
-        border-radius: 50px;
-        font-weight: 600;
+        border-radius: 12px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+
+        @media (max-width: 1024px) {
+          justify-content: space-between;
+          border-radius: 12px;
+          padding: 15px;
+        }
 
         img {
           width: 10%;
+
+          @media (max-width: 1024px) {
+            display: none;
+          }
         }
 
         h3 {
-          padding: 0 0 0 3%;
+          margin: 0 0 0 15px;
           width: 30%;
         }
 
@@ -69,33 +83,21 @@
       }
     }
 
-
-    .rightContent {
+    .percents {
       display: flex;
-      justify-content: flex-end;
       align-items: center;
-      flex-wrap: wrap;
+      padding: 15px;
+      margin: 15px;
 
-      width: 30%;
-      margin: 15px 0;
+      width: 25%;
 
-
-      .percents {
-        display: flex;
-        align-items: center;
-        padding: 15px;
-
-        width: 70%;
-        height: 100%;
-        min-height: 150px;
-
-        border-radius: 20px;
-        background: #ff8c21;
-        box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
-      }
+      border-radius: 20px;
+      background: #ff8c21;
+      box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
 
       h2 {
-        font-size: 3rem;
+        width: 100%;
+        font-size: 2.5rem;
         text-align: center;
         color: white;
 
@@ -103,7 +105,7 @@
           font-size: 2rem;
         }
 
-        @media (max-width: 1024px) {
+        @media (max-width: 800px) {
           font-size: 2rem;
           transform: rotate(90deg);
         }

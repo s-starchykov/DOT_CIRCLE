@@ -37,10 +37,7 @@ const LearningProcess = ({t}) => {
                         <p>{t('Each participant practices and consolidates the')}</p>
                     </div>
                 </div>
-
-                <div className={s.rightContent}>
-                    <div className={s.percents}><h2>{t('Practice')}</h2></div>
-                </div>
+                <div className={s.percents}><h2>{t('Practice')}</h2></div>
             </div>
 
             <div className={s.leftContent}>
@@ -51,9 +48,7 @@ const LearningProcess = ({t}) => {
                         <p>{t('Outline of basic principles, concepts and stereotypes')}</p>
                     </div>
                 </div>
-                <div className={s.rightContent}>
-                    <div className={s.percents}><h2>{t('Theory')}</h2></div>
-                </div>
+                <div className={s.percents}><h2>{t('Theory')}</h2></div>
             </div>
         </div>
     )
