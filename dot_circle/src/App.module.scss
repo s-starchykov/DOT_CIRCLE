@@ -33,10 +33,13 @@
 
 // Scrollbar custom styles
 ::-webkit-scrollbar {
+  position: fixed;
+  right: 0;
+
+  z-index: 100;
+
   width: 9px;
   background-color: lightgray;
-  position: absolute;
-  right: 0;
 }
 
 
