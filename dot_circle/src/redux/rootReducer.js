@@ -1,9 +1,9 @@
 import {combineReducers} from "redux";
-import headerReducer from "./headerReducer";
+import menuReducer from "./menuReducer";
 
 // Concat all application reducers and set them to Store
 const rootReducer = combineReducers({
-    headerReducer
+    menuReducer: menuReducer
 })
 
 export default rootReducer;
