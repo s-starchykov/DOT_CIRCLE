@@ -30,7 +30,6 @@
     text-shadow: 0 2px 4px rgb(71 97 206 / 36%);
   }
 
-
   .dropdownBox {
     position: relative;
     z-index: 2;
@@ -49,7 +48,7 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
 
 
-    &[open] > .dropdown::after {
+    &[open] > .dropdownTitle::after {
       content: "-";
     }
 
