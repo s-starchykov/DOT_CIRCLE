@@ -34,17 +34,20 @@ const Menu = ({t, menu}) => {
     );
 
     // Render menu item
-    let menuItems = () => menu.headerItems.map(i =>
-        <li>
-            <NavLink to={i.path} activeClassName={`${location === i.path && s.activeLink}`}>
-                <i className={i.icon}/>
-                <span className={s.links_name}>{t(i.title)}</span>
-            </NavLink>
-            <span className={s.tooltip}>{i.title}</span>
-        </li>);
+    let menuItems = () => menu.headerItems.map(i => {
+        return (
+            <li>
+                <NavLink to={i.path} activeClassName={`${location === i.path && s.activeLink}`}>
+                    <i className={i.icon}/>
+                    <span className={s.links_name}>{t(i.title)}</span>
+                </NavLink>
+                <span className={s.tooltip}>{i.title}</span>
+            </li>
+        )
+    });
 
     return (
-        <div className={`${s.sidebar} ${isActive && s.open} `} onMouseEnter={() => toggleClass()}
+        <div className={`${s.sidebar} ${isActive && s.open}`} onMouseEnter={() => toggleClass()}
              onMouseLeave={() => toggleClass()}>
             <div className={s.logo_details}>
                 <div className={s.logo_name}><img src={Logo} alt="Logo"/>DOT&CIRCLE</div>

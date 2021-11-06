@@ -1,5 +1,5 @@
 import s from './webinars.module.scss'
-import webinar_header from "../../../assets/webinar_header.png"
+import webinar_header from "../../../assets/webinar_bg.png"
 
 const WebinarsHeader = () => {
     return (
