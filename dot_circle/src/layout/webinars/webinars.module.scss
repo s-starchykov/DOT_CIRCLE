@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  white-space: pre-line;
+  color: #3c3b3a;
+
+  .topContent {
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    width: 40%;
+    box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
+    border-radius: 20px;
+
+    p {
+      width: 90%;
+
+    }
+
+    .bold {
+      font-weight: bold;
+      color: #878787;
+    }
+
+    .normal {
+      text-align: left;
+    }
+  }
+
+  .middleContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    h1 {
+      width: 100%;
+      color: #878787;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .appear {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-wrap: wrap;
+      border-radius: 50%;
+      border: #ef7f1a 2px solid;
+      box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
+      box-sizing: border-box;
+      height: 250px;
+      width: 250px;
+    }
+
+  }
+
+  .bottomContent {
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    width: 40%;
+    box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
+    border-radius: 20px;
+
+    p {
+      width: 90%;
+    }
+
+    .bold {
+      font-weight: bold;
+      color: #878787;
+    }
+
+    .normal {
+      text-align: left;
+    }
+  }
+
+
+}
