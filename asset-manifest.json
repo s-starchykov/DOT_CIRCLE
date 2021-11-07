@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/DOT_CIRCLE/static/css/main.6df57e76.chunk.css",
-    "main.js": "/DOT_CIRCLE/static/js/main.19cd39a6.chunk.js",
-    "main.js.map": "/DOT_CIRCLE/static/js/main.19cd39a6.chunk.js.map",
+    "main.css": "/DOT_CIRCLE/static/css/main.7361f2d3.chunk.css",
+    "main.js": "/DOT_CIRCLE/static/js/main.80c362a7.chunk.js",
+    "main.js.map": "/DOT_CIRCLE/static/js/main.80c362a7.chunk.js.map",
     "runtime-main.js": "/DOT_CIRCLE/static/js/runtime-main.b17396a3.js",
     "runtime-main.js.map": "/DOT_CIRCLE/static/js/runtime-main.b17396a3.js.map",
     "static/css/2.acb3237e.chunk.css": "/DOT_CIRCLE/static/css/2.acb3237e.chunk.css",
-    "static/js/2.2f7941dc.chunk.js": "/DOT_CIRCLE/static/js/2.2f7941dc.chunk.js",
-    "static/js/2.2f7941dc.chunk.js.map": "/DOT_CIRCLE/static/js/2.2f7941dc.chunk.js.map",
+    "static/js/2.e1e96dd5.chunk.js": "/DOT_CIRCLE/static/js/2.e1e96dd5.chunk.js",
+    "static/js/2.e1e96dd5.chunk.js.map": "/DOT_CIRCLE/static/js/2.e1e96dd5.chunk.js.map",
     "index.html": "/DOT_CIRCLE/index.html",
     "static/css/2.acb3237e.chunk.css.map": "/DOT_CIRCLE/static/css/2.acb3237e.chunk.css.map",
-    "static/css/main.6df57e76.chunk.css.map": "/DOT_CIRCLE/static/css/main.6df57e76.chunk.css.map",
-    "static/js/2.2f7941dc.chunk.js.LICENSE.txt": "/DOT_CIRCLE/static/js/2.2f7941dc.chunk.js.LICENSE.txt",
+    "static/css/main.7361f2d3.chunk.css.map": "/DOT_CIRCLE/static/css/main.7361f2d3.chunk.css.map",
+    "static/js/2.e1e96dd5.chunk.js.LICENSE.txt": "/DOT_CIRCLE/static/js/2.e1e96dd5.chunk.js.LICENSE.txt",
     "static/media/FAQ.12070b21.png": "/DOT_CIRCLE/static/media/FAQ.12070b21.png",
     "static/media/about_me.babf2a44.png": "/DOT_CIRCLE/static/media/about_me.babf2a44.png",
     "static/media/anar_why_we.103d31f3.png": "/DOT_CIRCLE/static/media/anar_why_we.103d31f3.png",
@@ -32,13 +32,14 @@
     "static/media/mwm_title_image.46199113.png": "/DOT_CIRCLE/static/media/mwm_title_image.46199113.png",
     "static/media/open_training.1a70a0cd.png": "/DOT_CIRCLE/static/media/open_training.1a70a0cd.png",
     "static/media/t&d_creterias.1ee2a44d.png": "/DOT_CIRCLE/static/media/t&d_creterias.1ee2a44d.png",
-    "static/media/top_slider_bg.a1121640.png": "/DOT_CIRCLE/static/media/top_slider_bg.a1121640.png"
+    "static/media/top_slider_bg.a1121640.png": "/DOT_CIRCLE/static/media/top_slider_bg.a1121640.png",
+    "static/media/webinar_bg.b171ecc7.png": "/DOT_CIRCLE/static/media/webinar_bg.b171ecc7.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b17396a3.js",
     "static/css/2.acb3237e.chunk.css",
-    "static/js/2.2f7941dc.chunk.js",
-    "static/css/main.6df57e76.chunk.css",
-    "static/js/main.19cd39a6.chunk.js"
+    "static/js/2.e1e96dd5.chunk.js",
+    "static/css/main.7361f2d3.chunk.css",
+    "static/js/main.80c362a7.chunk.js"
   ]
 }
