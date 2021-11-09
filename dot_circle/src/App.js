@@ -7,6 +7,7 @@ import NoPage from "./layout/common/no_page/no_page";
 import Useful from "./layout/useful/useful";
 import Webinars from "./layout/webinars/webinars";
 import DreamTeam from "./layout/dream_team/dream_team";
+import Consulting from "./layout/consalting/consulting";
 
 
 
@@ -20,7 +21,7 @@ const App = () => {
                 <Route exact path={'/trainings'} render={() => <NoPage name={'Business trainings'}/>}/>
                 <Route exact path={'/open_programs'} render={() => <NoPage name={'Open programs'}/>}/>
                 <Route exact path={'/team'} render={() => <DreamTeam name={'Team'}/>}/>
-                <Route exact path={'/consulting'} render={() => <NoPage name={'Consulting'}/>}/>
+                <Route exact path={'/consulting'} render={() => <Consulting name={'Consulting'}/>}/>
                 <Route exact path={'/webinars'} render={() => <Webinars name={'Webinars'}/>}/>
                 <Route exact path={'/useful'} render={() => <Useful name={'Useful'}/>}/>
                 <Route exact path={'/gallery'} render={() => <NoPage name={'Gallery'}/>}/>

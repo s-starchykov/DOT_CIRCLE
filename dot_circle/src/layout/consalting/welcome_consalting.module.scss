@@ -1,0 +1,26 @@
+.consultingPage {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+
+  .consultingType {
+    width: 50%;
+
+
+    border: 2px white solid;
+
+    h1 {
+      width: 100%;
+      text-transform: uppercase;
+
+    }
+
+    p {
+      width: 100%;
+      border-top: 1px white solid;
+
+    }
+  }
+}
