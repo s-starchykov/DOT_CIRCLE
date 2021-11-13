@@ -226,6 +226,13 @@ const initialState = {
         },
 
         {
+            src: `open_1.jpg`,
+            thumbnail: `open_1.jpg`,
+            thumbnailWidth: 400,
+            tags: [{value: `Open programs`, title: "Open programs"}],
+            caption: ""
+        },
+        {
             src: `open_2.jpg`,
             thumbnail: `open_2.jpg`,
             thumbnailWidth: 200,
@@ -397,7 +404,14 @@ const initialState = {
             thumbnail: `open_28.jpg`,
             tags: [{value: `Open programs`, title: "Open programs"}],
             caption: ""
-        }
+        },
+        {
+            src: `open_29.jpg`,
+            thumbnail: `open_29.jpg`,
+            thumbnailWidth: 400,
+            tags: [{value: `Open programs`, title: "Open programs"}],
+            caption: ""
+        },
     ]
 }
 

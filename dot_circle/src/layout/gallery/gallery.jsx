@@ -23,11 +23,11 @@ const PhotoGallery = ({t, name, photos}) => {
 
     let data = photos.images.map((i) => ({
         src: `${process.env.PUBLIC_URL}/gallery/${i.src}`,
-        thumbnail: `${process.env.PUBLIC_URL}/gallery/${i.thumbnail}`,
+        thumbnail: `${process.env.PUBLIC_URL}/gallery/thumbs/${i.thumbnail}`,
         thumbnailWidth: i.thumbnailWidth ?? 350,
         thumbnailHeight: i.thumbnailHeight ?? 250,
         tags: [{value: `${t(i.tags[0].value)}`, title: "Open programs"}],
-        caption: i.caption ?? ''
+        caption: i.caption ?? 'Some text'
     }))
 
 
