@@ -9,8 +9,7 @@ import Webinars from "./layout/webinars/webinars";
 import DreamTeam from "./layout/dream_team/dream_team";
 import Consulting from "./layout/consalting/consulting";
 
-
-
+import PhotoGallery from "./layout/gallery/gallery";
 
 
 const App = () => {
@@ -25,7 +24,7 @@ const App = () => {
                 <Route exact path={'/consulting'} render={() => <Consulting name={'Consulting'}/>}/>
                 <Route exact path={'/webinars'} render={() => <Webinars name={'Webinars'}/>}/>
                 <Route exact path={'/useful'} render={() => <Useful name={'Useful'}/>}/>
-                <Route exact path={'/gallery'} render={() => <NoPage name={'Gallery'}/>}/>
+                <Route exact path={'/gallery'} render={() => <PhotoGallery name={'Gallery'}/>}/>
             </div>
             <Route path={'/welcome'} render={() => <WelcomePage/>}/>
         </div>

@@ -8,7 +8,7 @@ const initialState = {
         {title: 'Consulting', icon: 'bx bx-user-voice', path: '/consulting'},
         {title: 'Webinars', icon: 'bx bx-microphone', path: '/webinars'},
         {title: 'Useful', icon: 'bx bx-book-bookmark', path: '/useful'},
-        {title: 'Gallery', icon: 'bx bx-images', path: '/gallery'},
+        {title: 'Gallery', icon: 'bx bx-images', path: '/gallery/'},
     ]
 }
 
