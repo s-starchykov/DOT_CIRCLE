@@ -3,6 +3,7 @@ import Gallery from 'react-grid-gallery';
 import {withNamespaces} from "react-i18next";
 import {compose} from "redux";
 import {connect} from "react-redux";
+import Footer from "../footer/footer";
 
 const PhotoGallery = ({t, name, photos}) => {
 
@@ -13,7 +14,7 @@ const PhotoGallery = ({t, name, photos}) => {
         fontWeight: 600,
         lineHeight: 1,
         color: 'white',
-        background: 'rgba(0, 0, 0, 0.65)',
+        background: 'rgb(239 127 26 / 78%)',
         textAlign: 'center',
         whiteSpace: 'nowrap',
         verticalAlign: 'baseline',
@@ -31,10 +32,13 @@ const PhotoGallery = ({t, name, photos}) => {
 
 
     return (
-        <div className={s.gallery}>
-            <h1>{t(name)}</h1>
-            <Gallery enableImageSelection={false} images={data} tagStyle={tagStyle()}/>
-        </div>
+        <>
+            <div className={s.gallery}>
+                <h1>{t(name)}</h1>
+                <Gallery enableImageSelection={false} images={data} tagStyle={tagStyle()}/>
+            </div>
+            <Footer/>
+        </>
     )
 }
 

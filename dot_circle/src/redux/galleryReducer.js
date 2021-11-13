@@ -118,7 +118,7 @@ const initialState = {
         {
             src: `business_20.jpg`,
             thumbnail: `business_20.jpg`,
-            thumbnailWidth: 200,
+            thumbnailWidth: 210,
             tags: [{value: `Business trainings`, title: "Business trainings"}],
             caption: ""
         },

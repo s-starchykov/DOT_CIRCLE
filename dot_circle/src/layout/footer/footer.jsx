@@ -11,8 +11,11 @@ import {
     FaPaperPlane,
     FaPhone
 } from "react-icons/fa";
+import {compose} from "redux";
+import {withNamespaces} from "react-i18next";
+import {connect} from "react-redux";
 
-export default function Footer() {
+const Footer = ({t}) => {
     return (
         <footer className={s.footer}>
 
@@ -71,12 +74,12 @@ export default function Footer() {
                             <div className={s.footerWidget}>
                                 <h3 className={`${s.title} ${s.underlined}`}>Useful Links</h3>
                                 <ul>
-                                    <li><NavLink to={'/about'}>About</NavLink></li>
-                                    <li><NavLink to={'/articles'}>Articles</NavLink></li>
-                                    <li><NavLink to={'/programs'}>Programs</NavLink></li>
-                                    <li><NavLink to={'/blog'}>Blog</NavLink></li>
-                                    <li><NavLink to={'/dream-team'}>Dream team</NavLink></li>
-                                    <li><NavLink to={'/events'}>Events</NavLink></li>
+                                    <li><NavLink to={'/'}>{t('About')}</NavLink></li>
+                                    <li><NavLink to={'/trainings'}>{t('Business trainings')}</NavLink></li>
+                                    <li><NavLink to={'/consulting'}>{t('Consulting')}</NavLink></li>
+                                    <li><NavLink to={'/open_programs'}>{t('Open programs')}</NavLink></li>
+                                    <li><NavLink to={'/webinars'}>{t('Webinars')}</NavLink></li>
+                                    <li><NavLink to={'/useful'}>{t('Useful')}</NavLink></li>
                                 </ul>
                             </div>
                         </div>
@@ -113,3 +116,5 @@ export default function Footer() {
         </footer>
     );
 }
+
+export default compose(withNamespaces(), connect(null, null))(Footer);
