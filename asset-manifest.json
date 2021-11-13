@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/DOT_CIRCLE/static/css/main.637ad5b2.chunk.css",
-    "main.js": "/DOT_CIRCLE/static/js/main.28df4baa.chunk.js",
-    "main.js.map": "/DOT_CIRCLE/static/js/main.28df4baa.chunk.js.map",
+    "main.css": "/DOT_CIRCLE/static/css/main.1e9bab28.chunk.css",
+    "main.js": "/DOT_CIRCLE/static/js/main.6ac65502.chunk.js",
+    "main.js.map": "/DOT_CIRCLE/static/js/main.6ac65502.chunk.js.map",
     "runtime-main.js": "/DOT_CIRCLE/static/js/runtime-main.b17396a3.js",
     "runtime-main.js.map": "/DOT_CIRCLE/static/js/runtime-main.b17396a3.js.map",
     "static/css/2.fb305abb.chunk.css": "/DOT_CIRCLE/static/css/2.fb305abb.chunk.css",
-    "static/js/2.41553aed.chunk.js": "/DOT_CIRCLE/static/js/2.41553aed.chunk.js",
-    "static/js/2.41553aed.chunk.js.map": "/DOT_CIRCLE/static/js/2.41553aed.chunk.js.map",
+    "static/js/2.2d13545b.chunk.js": "/DOT_CIRCLE/static/js/2.2d13545b.chunk.js",
+    "static/js/2.2d13545b.chunk.js.map": "/DOT_CIRCLE/static/js/2.2d13545b.chunk.js.map",
     "index.html": "/DOT_CIRCLE/index.html",
     "static/css/2.fb305abb.chunk.css.map": "/DOT_CIRCLE/static/css/2.fb305abb.chunk.css.map",
-    "static/css/main.637ad5b2.chunk.css.map": "/DOT_CIRCLE/static/css/main.637ad5b2.chunk.css.map",
-    "static/js/2.41553aed.chunk.js.LICENSE.txt": "/DOT_CIRCLE/static/js/2.41553aed.chunk.js.LICENSE.txt",
+    "static/css/main.1e9bab28.chunk.css.map": "/DOT_CIRCLE/static/css/main.1e9bab28.chunk.css.map",
+    "static/js/2.2d13545b.chunk.js.LICENSE.txt": "/DOT_CIRCLE/static/js/2.2d13545b.chunk.js.LICENSE.txt",
     "static/media/Anar_dream_team.747b6e87.png": "/DOT_CIRCLE/static/media/Anar_dream_team.747b6e87.png",
     "static/media/FAQ.12070b21.png": "/DOT_CIRCLE/static/media/FAQ.12070b21.png",
     "static/media/Nurtac_dream_team.8fc70f12.png": "/DOT_CIRCLE/static/media/Nurtac_dream_team.8fc70f12.png",
@@ -19,6 +19,7 @@
     "static/media/about_me.babf2a44.png": "/DOT_CIRCLE/static/media/about_me.babf2a44.png",
     "static/media/anar_why_we.103d31f3.png": "/DOT_CIRCLE/static/media/anar_why_we.103d31f3.png",
     "static/media/arrow_cooperation_process.f1a92a90.svg": "/DOT_CIRCLE/static/media/arrow_cooperation_process.f1a92a90.svg",
+    "static/media/consalting.4c0b6c52.png": "/DOT_CIRCLE/static/media/consalting.4c0b6c52.png",
     "static/media/corp_training.67f7c283.png": "/DOT_CIRCLE/static/media/corp_training.67f7c283.png",
     "static/media/dream_team.16fcb70b.png": "/DOT_CIRCLE/static/media/dream_team.16fcb70b.png",
     "static/media/dt_bg_image.c30f6a37.png": "/DOT_CIRCLE/static/media/dt_bg_image.c30f6a37.png",
@@ -42,8 +43,8 @@
   "entrypoints": [
     "static/js/runtime-main.b17396a3.js",
     "static/css/2.fb305abb.chunk.css",
-    "static/js/2.41553aed.chunk.js",
-    "static/css/main.637ad5b2.chunk.css",
-    "static/js/main.28df4baa.chunk.js"
+    "static/js/2.2d13545b.chunk.js",
+    "static/css/main.1e9bab28.chunk.css",
+    "static/js/main.6ac65502.chunk.js"
   ]
 }
