@@ -1,5 +1,4 @@
 import s from "./dream_team.module.scss"
-import {useState} from "react";
 import {withNamespaces} from "react-i18next";
 import executiveDirector from '../../assets/Anar_dream_team.png'
 import trainingAssistant from '../../assets/Zulfia_dream_team.png'
@@ -45,7 +44,9 @@ const DreamTeam = ({t}) => {
         <div className={s.dreamTeam}>
             <img className={s.bgImage} src={dreamTeam} alt=""/>
             <h1> Dream team</h1>
-
+            <i className={'bx bx-down-arrow-alt'}/>
+            <i className={'bx bx-down-arrow-alt'}/>
+            <i className={'bx bx-down-arrow-alt'}/>
             {card}
 
         </div>
