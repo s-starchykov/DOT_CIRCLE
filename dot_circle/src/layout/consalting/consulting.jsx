@@ -12,7 +12,9 @@ const Consulting = ({t}) => {
     let objects = () => data.map(i =>
         <div className={s.consultingType}>
             <h1>{t(i.name)}</h1>
-            <p>{t(i.content)}</p>
+
+            <p>
+                {t(i.content)}</p>
         </div>
     );
 
