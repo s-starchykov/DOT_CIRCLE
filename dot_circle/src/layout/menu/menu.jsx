@@ -36,8 +36,8 @@ const Menu = ({t, menu}) => {
     // Render menu item
     let menuItems = () => menu.headerItems.map(i => {
         return (
-            <li>
-                <NavLink to={i.path} activeClassName={`${location === i.path && s.activeLink}`}>
+            <li key={i.path}>
+                <NavLink  to={i.path} activeClassName={`${location === i.path && s.activeLink}`}>
                     <i className={i.icon}/>
                     <span className={s.links_name}>{t(i.title)}</span>
                 </NavLink>

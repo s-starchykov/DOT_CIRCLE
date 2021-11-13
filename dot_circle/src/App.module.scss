@@ -10,7 +10,7 @@
 .app {
   position: relative;
 
-  width: 100%;
+  width: calc(100vw - 9px);
 
   .appContent {
     padding-right: 200px;
