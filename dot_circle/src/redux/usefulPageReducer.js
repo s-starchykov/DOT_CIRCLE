@@ -33,7 +33,7 @@ const initialState = {
             'message': 'Rule 1. Do not try to fill all your free time with work',
         },
         {
-            'title': 'Clouded mind: a parable about how to get along  with your mother-in-law.',
+            'title': 'Clouded mind: a parable about how',
             'message': 'A long time ago there was a girl named Lee-Lee who got married and began to live',
         }
     ]

@@ -6,14 +6,13 @@
   gap: 15px;
   flex-wrap: wrap;
 
+  min-height: 100vh;
   padding: 30px 0 0 0;
 
   i {
-    height: 60px;
     min-width: 50px;
-    font-size: 3rem;
+    font-size: xx-large;
     text-align: center;
-    line-height: 60px;
   }
 
   .title {
@@ -58,14 +57,16 @@
 
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
 
     .containerTitle {
       display: flex;
       align-items: center;
-      gap: 15px;
+      gap: 5px;
 
+      font-size: x-large;
       color: black;
+      text-transform: uppercase;
     }
 
     p {
@@ -74,18 +75,21 @@
       width: 100%;
 
       font-weight: 600;
-      font-size: larger;
+      font-size: medium;
       white-space: pre-line;
 
       &.listItem {
+        position: relative;
         align-items: center;
-        margin: 0 0 0 65px;
+        margin: 0 0 0 60px;
       }
 
       &.listItem:before {
         content: '';
+        position: absolute;
         height: 8px;
         width: 8px;
+        left: -20px;
         border-radius: 50%;
         background: black;
       }

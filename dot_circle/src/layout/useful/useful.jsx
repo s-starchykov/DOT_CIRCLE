@@ -1,7 +1,6 @@
 import s from "./useful.module.scss"
 import {withNamespaces} from "react-i18next";
-import faq from "../../assets/FAQ.png";
-import Footer from "../footer/footer";
+import usefulBg from "../../assets/useful_bg.png";
 import {compose} from "redux";
 import {connect} from "react-redux";
 
@@ -17,14 +16,12 @@ const Useful = ({t, name, useful}) => {
     );
 
     return (
-        <>
-            <div className={s.useful}>
-                <img className={s.bgImage} src={faq} alt=""/>
-                <h1>{t(name)}</h1>
-                {dropdown()}
-            </div>
-            <Footer/>
-        </>
+
+        <div className={s.useful}>
+            <img className={s.bgImage} src={usefulBg} alt=""/>
+            <h1>{t(name)}</h1>
+            {dropdown()}
+        </div>
     )
 };
 

@@ -10,6 +10,7 @@ import DreamTeam from "./layout/dream_team/dream_team";
 import Consulting from "./layout/consalting/consulting";
 
 import PhotoGallery from "./layout/gallery/gallery";
+import Footer from "./layout/footer/footer";
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
                 <Route exact path={'/webinars'} render={() => <Webinars name={'Webinars'}/>}/>
                 <Route exact path={'/useful'} render={() => <Useful name={'Useful'}/>}/>
                 <Route exact path={'/gallery'} render={() => <PhotoGallery name={'Gallery'}/>}/>
+                <Footer/>
             </div>
             <Route path={'/welcome'} render={() => <WelcomePage/>}/>
         </div>
