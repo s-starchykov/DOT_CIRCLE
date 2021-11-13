@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/DOT_CIRCLE/static/css/main.a4669bc1.chunk.css",
-    "main.js": "/DOT_CIRCLE/static/js/main.55f43503.chunk.js",
-    "main.js.map": "/DOT_CIRCLE/static/js/main.55f43503.chunk.js.map",
+    "main.css": "/DOT_CIRCLE/static/css/main.52ea988c.chunk.css",
+    "main.js": "/DOT_CIRCLE/static/js/main.788dd26c.chunk.js",
+    "main.js.map": "/DOT_CIRCLE/static/js/main.788dd26c.chunk.js.map",
     "runtime-main.js": "/DOT_CIRCLE/static/js/runtime-main.b17396a3.js",
     "runtime-main.js.map": "/DOT_CIRCLE/static/js/runtime-main.b17396a3.js.map",
     "static/css/2.fb305abb.chunk.css": "/DOT_CIRCLE/static/css/2.fb305abb.chunk.css",
-    "static/js/2.67f180a0.chunk.js": "/DOT_CIRCLE/static/js/2.67f180a0.chunk.js",
-    "static/js/2.67f180a0.chunk.js.map": "/DOT_CIRCLE/static/js/2.67f180a0.chunk.js.map",
+    "static/js/2.68582c57.chunk.js": "/DOT_CIRCLE/static/js/2.68582c57.chunk.js",
+    "static/js/2.68582c57.chunk.js.map": "/DOT_CIRCLE/static/js/2.68582c57.chunk.js.map",
     "index.html": "/DOT_CIRCLE/index.html",
     "static/css/2.fb305abb.chunk.css.map": "/DOT_CIRCLE/static/css/2.fb305abb.chunk.css.map",
-    "static/css/main.a4669bc1.chunk.css.map": "/DOT_CIRCLE/static/css/main.a4669bc1.chunk.css.map",
-    "static/js/2.67f180a0.chunk.js.LICENSE.txt": "/DOT_CIRCLE/static/js/2.67f180a0.chunk.js.LICENSE.txt",
+    "static/css/main.52ea988c.chunk.css.map": "/DOT_CIRCLE/static/css/main.52ea988c.chunk.css.map",
+    "static/js/2.68582c57.chunk.js.LICENSE.txt": "/DOT_CIRCLE/static/js/2.68582c57.chunk.js.LICENSE.txt",
     "static/media/Anar_dream_team.747b6e87.png": "/DOT_CIRCLE/static/media/Anar_dream_team.747b6e87.png",
-    "static/media/FAQ.12070b21.png": "/DOT_CIRCLE/static/media/FAQ.12070b21.png",
     "static/media/Nurtac_dream_team.8fc70f12.png": "/DOT_CIRCLE/static/media/Nurtac_dream_team.8fc70f12.png",
     "static/media/Zulfia_dream_team.dc2a4f89.png": "/DOT_CIRCLE/static/media/Zulfia_dream_team.dc2a4f89.png",
     "static/media/about_me.babf2a44.png": "/DOT_CIRCLE/static/media/about_me.babf2a44.png",
@@ -24,10 +23,8 @@
     "static/media/dream_team.16fcb70b.png": "/DOT_CIRCLE/static/media/dream_team.16fcb70b.png",
     "static/media/dt_bg_image.c30f6a37.png": "/DOT_CIRCLE/static/media/dt_bg_image.c30f6a37.png",
     "static/media/dt_title_image.d6ef0b1e.png": "/DOT_CIRCLE/static/media/dt_title_image.d6ef0b1e.png",
-    "static/media/facebook.eaf0a0ee.png": "/DOT_CIRCLE/static/media/facebook.eaf0a0ee.png",
     "static/media/iitem2_link_card.87c4a597.png": "/DOT_CIRCLE/static/media/iitem2_link_card.87c4a597.png",
     "static/media/iitem3_link_card.ee5238e5.png": "/DOT_CIRCLE/static/media/iitem3_link_card.ee5238e5.png",
-    "static/media/instagram.94a84092.png": "/DOT_CIRCLE/static/media/instagram.94a84092.png",
     "static/media/item1_link_card.fd30b1e0.png": "/DOT_CIRCLE/static/media/item1_link_card.fd30b1e0.png",
     "static/media/item4_link_card.4ac1ed2c.png": "/DOT_CIRCLE/static/media/item4_link_card.4ac1ed2c.png",
     "static/media/jly_bg_image.9ffa1369.png": "/DOT_CIRCLE/static/media/jly_bg_image.9ffa1369.png",
@@ -38,13 +35,14 @@
     "static/media/open_training.1a70a0cd.png": "/DOT_CIRCLE/static/media/open_training.1a70a0cd.png",
     "static/media/t&d_creterias.1ee2a44d.png": "/DOT_CIRCLE/static/media/t&d_creterias.1ee2a44d.png",
     "static/media/top_slider_bg.a1121640.png": "/DOT_CIRCLE/static/media/top_slider_bg.a1121640.png",
-    "static/media/webinar_bg.b171ecc7.png": "/DOT_CIRCLE/static/media/webinar_bg.b171ecc7.png"
+    "static/media/useful_bg.9da6f7ae.png": "/DOT_CIRCLE/static/media/useful_bg.9da6f7ae.png",
+    "static/media/webinar_bg.9a77a24d.png": "/DOT_CIRCLE/static/media/webinar_bg.9a77a24d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b17396a3.js",
     "static/css/2.fb305abb.chunk.css",
-    "static/js/2.67f180a0.chunk.js",
-    "static/css/main.a4669bc1.chunk.css",
-    "static/js/main.55f43503.chunk.js"
+    "static/js/2.68582c57.chunk.js",
+    "static/css/main.52ea988c.chunk.css",
+    "static/js/main.788dd26c.chunk.js"
   ]
 }
