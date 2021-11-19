@@ -10,11 +10,11 @@ const initialState = {
         {title: 'Useful', icon: 'bx bx-book-bookmark', path: '/useful'},
         {title: 'Gallery', icon: 'bx bx-images', path: '/gallery/'},
     ]
-}
+};
 
 const menuReducer = (state = initialState, action) => {
     console.log(action);
     return state;
-}
+};
 
 export default menuReducer;

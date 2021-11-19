@@ -64,10 +64,32 @@ const IndividualConsulting = ({t}) => {
 
 
             <div className={s.blockFour}>
-                <span>IN</span><span>PROCESS</span><span>OUT</span>
-                <span className={s.radial}>WHY?</span>
-                <span className={s.radial}>HOW?</span>
-                <span className={s.radial}>HOW?</span>
+                <div className={s.item1}>
+                    <p>In</p>
+                    <p>why</p>
+                <span>#RESULTS</span>
+                <span>#GOALS</span>
+                <span>#CHANGES</span>
+                <span>#STEPS</span>
+                </div>
+
+                <div className={s.item2}>
+                    <p>Process</p>
+                    <span>#MODELS</span>
+                    <span>#TOOLS</span>
+                    <span>#PROCESSES</span>
+                    <span>#SYSTEMS</span>
+                </div>
+
+                <div className={s.item3}>
+                    <p>Out</p>
+                    <span>#INFORMATION</span>
+                    <span>#PERCEPTION</span>
+                    <span>#UNDERSTANDING</span>
+                    <span>#STRATEGY</span>
+                    <span>#THEORY</span>
+                    <span>#EXPERIENCE</span>
+                </div>
             </div>
 
         </div>

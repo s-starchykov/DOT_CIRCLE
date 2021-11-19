@@ -3,6 +3,7 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
 
   .bgImage {
     position: fixed;
@@ -17,6 +18,14 @@
     transform: scale(1.1);
   }
 
+  i {
+    z-index: 2;
+    color: black;
+    font-size: 75px;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 50%;
+  }
 
   .consultingType {
     margin-top: 100px;
@@ -31,7 +40,8 @@
     border: 2px white solid;
 
     h1 {
-      width: 90%;
+      text-align: center;
+      width: 100%;
       text-transform: uppercase;
       position: relative;
 
@@ -41,6 +51,11 @@
     p {
       width: 90%;
       border-top: 1px white solid;
+      min-height: 100px;
+      display: flex;
+      text-align:center;
+      align-items: center;
+      text-decoration: none;
     }
     h1::after {
 
@@ -55,6 +70,10 @@
 
       content:"" ;
 
+    }
+    .link {
+      text-decoration: none;
+      color: black;
     }
   }
 }
