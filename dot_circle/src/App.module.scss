@@ -9,19 +9,28 @@
 
 .app {
   position: relative;
+  display: flex;
+  justify-content: space-between;
 
-  width: calc(100vw - 9px);
+  height: 100vh;
+  overflow: hidden;
+
+
+  .menuWrapper {
+    position: absolute;
+    z-index: 3;
+    width: 250px;
+    height: 100%;
+  }
 
   .appContent {
-    padding-right: 200px;
-    float: right;
-    width: 85%;
+    width: 100%;
+    overflow-y: scroll;
+
+    padding: 0 12% 0 calc(12% + 78px);
 
     @media (max-width: 1400px) {
-      position: relative;
-      width: calc(100% - 76px);
-      left: 76px;
-      padding: 0 15px;
+      width: 100%;
     }
   }
 }

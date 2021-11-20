@@ -1,5 +1,8 @@
+const IS_ACTIVE = 'IS-ACTIVE';
+
 // Define initial state data
 const initialState = {
+    isActive: false,
     headerItems: [
         {title: 'About', icon: 'bx bx-grid-alt', path: '/'},
         {title: 'Business trainings', icon: 'bx bx-task', path: '/trainings'},
@@ -13,8 +16,22 @@ const initialState = {
 };
 
 const menuReducer = (state = initialState, action) => {
-    console.log(action);
-    return state;
+    switch (action.type) {
+        case IS_ACTIVE:
+            return {
+                ...state,
+                isActive: action.isActive
+            };
+        default:
+            return state
+    }
+};
+
+export let setActiveAC = (isActive) => {
+    return {
+        type: IS_ACTIVE,
+        isActive
+    }
 };
 
 export default menuReducer;

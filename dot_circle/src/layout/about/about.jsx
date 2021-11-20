@@ -10,7 +10,6 @@ import LearningProcess from "./learning_process/learning_process";
 import CriterionCard from "./creterias_card/creterias_card";
 import LinkCard from "./link_card/link_card";
 import TopSlider from "./top_slider/top_slider";
-import Footer from "../footer/footer";
 import WhyWe from "./why_we/why_we";
 import {useEffect} from "react";
 import {withNamespaces} from "react-i18next";
@@ -34,7 +33,6 @@ const About = ({t}) => {
             <CooperationProcess/>
             <CriterionCard/>
             <LinkCard/>
-            <Footer/>
         </>
     )
 };

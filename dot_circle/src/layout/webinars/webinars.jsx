@@ -1,7 +1,6 @@
 import s from './webinars.module.scss'
 import {withNamespaces} from "react-i18next";
 import faq from "../../assets/webinar_bg.png";
-import Footer from "../footer/footer";
 
 const Webinars = ({t}) => {
     return (

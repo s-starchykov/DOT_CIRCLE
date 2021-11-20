@@ -6,9 +6,13 @@ import {useState} from "react";
 import Logo from '../../assets/logo_title.png';
 import {connect} from "react-redux";
 import {compose} from "redux";
+import {setActiveAC} from "../../redux/menuReducer";
 
 
-const Menu = ({t, menu}) => {
+const Menu = (props) => {
+
+    let t = (v) => props.t(v);
+    let menu = props.menu;
 
     // Change language
     const switchLang = (lng) => {
@@ -20,15 +24,16 @@ const Menu = ({t, menu}) => {
     };
 
     // Define menu state wia hook
-    const [isActive, setActive] = useState(false);
+    // const [isActive, setActive] = useState(false);
     // Set menu className to state
-    const toggleClass = () => setActive(!isActive);
+    // const toggleClass = () => setActive(!isActive);
+    const toggleClass = () => props.setActiveAC(!menu.isActive);
 
     // Get current path for props
     const location = useLocation().pathname;
 
     // Language switcher buttons
-    const langButtons = () => ['en', 'ru', 'az'].map((l) => isActive
+    const langButtons = () => ['en', 'ru', 'az'].map((l) => menu.isActive
         ? <button key={l} className={`${s.open} ${i18n.language.includes(l) && s.current}`} onClick={() => switchLang(l)}>{l}</button>
         : <button key={l} className={`${i18n.language === l && s.current}`} onClick={() => switchLang(l)}>{l}</button>
     );
@@ -47,11 +52,11 @@ const Menu = ({t, menu}) => {
     });
 
     return (
-        <div className={`${s.sidebar} ${isActive && s.open}`} onMouseEnter={() => toggleClass()}
+        <div className={`${s.sidebar} ${menu.isActive && s.open}`} onMouseEnter={() => toggleClass()}
              onMouseLeave={() => toggleClass()}>
             <div className={s.logo_details}>
                 <div className={s.logo_name}><img src={Logo} alt="Logo"/>DOT&CIRCLE</div>
-                <i className={`bx btn ${isActive ? 'bx-menu-alt-right' : 'bx-menu'} ${s.btn}`} id="btn"/>
+                <i className={`bx btn ${menu.isActive ? 'bx-menu-alt-right' : 'bx-menu'} ${s.btn}`} id="btn"/>
             </div>
             <ul className={s.item_list}>
                 {menuItems()}
@@ -63,4 +68,4 @@ const Menu = ({t, menu}) => {
 
 let mapStateToProps = (state) => ({menu: state.menuReducer});
 
-export default compose(withNamespaces(), connect(mapStateToProps, null))(Menu);
+export default compose(withNamespaces(), connect(mapStateToProps, {setActiveAC}))(Menu);

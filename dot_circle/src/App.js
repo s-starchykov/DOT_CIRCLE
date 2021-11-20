@@ -31,7 +31,6 @@ const App = () => {
                 <Route exact path={'/gallery'} render={() => <PhotoGallery name={'Gallery'}/>}/>
                 <Route exact path={'/individual_consulting'} render={() => <IndividualConsulting name={'Individual_consulting'}/>}/>
                 <Route exact path={'/time_management'} render={() => <TimeManagement name={'Time_management'}/>}/>
-
                 <Footer/>
             </div>
             <Route path={'/welcome'} render={() => <WelcomePage/>}/>
