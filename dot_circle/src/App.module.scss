@@ -8,16 +8,17 @@
 }
 
 .app {
-  position: relative;
+  //position: relative;
   display: flex;
   justify-content: space-between;
 
-  height: 100vh;
-  overflow: hidden;
+  //height: 100vh;
+  //overflow: hidden;
+  //overflow-y: scroll;
 
 
   .menuWrapper {
-    position: absolute;
+    position: fixed;
     z-index: 3;
     width: 250px;
     height: 100%;
@@ -25,7 +26,7 @@
 
   .appContent {
     width: 100%;
-    overflow-y: scroll;
+    //overflow-y: scroll;
 
     padding: 0 12% 0 calc(12% + 78px);
 

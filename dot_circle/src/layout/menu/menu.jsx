@@ -2,7 +2,6 @@ import s from "./menu.module.scss";
 import {useLocation, NavLink} from "react-router-dom";
 import i18n from "i18next";
 import {withNamespaces} from 'react-i18next';
-import {useState} from "react";
 import Logo from '../../assets/logo_title.png';
 import {connect} from "react-redux";
 import {compose} from "redux";

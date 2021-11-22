@@ -9,7 +9,7 @@ const PhotoGallery = ({t, name, photos}) => {
     let tagStyle = () => ({
         display: 'inline',
         padding: '0.2em 0.6em 0.3em',
-        fontSize: '75%',
+        fontSize: '63%',
         fontWeight: 600,
         lineHeight: 1,
         color: 'white',

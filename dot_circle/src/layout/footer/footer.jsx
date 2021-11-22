@@ -4,7 +4,7 @@ import logo from "../../assets/logo.png"
 import {Link} from "react-router-dom";
 import {
     FaEnvelope,
-    FaFacebookF,
+    FaFacebookSquare,
     FaInstagram,
     FaLinkedinIn,
     FaMapMarkerAlt,
@@ -59,7 +59,7 @@ const Footer = ({t}) => {
                                 <div className={s.footerSocialIcon}>
                                     <h3 className={s.title}>Follow us</h3>
                                     <Link to={'/'}>
-                                        <FaFacebookF className={s.faLogo}/>
+                                        <FaFacebookSquare className={s.faLogo}/>
                                     </Link>
                                     <Link to={'/'}>
                                         <FaInstagram className={s.faLogo}/>
