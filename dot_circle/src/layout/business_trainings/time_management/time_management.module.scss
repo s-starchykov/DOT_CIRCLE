@@ -1,0 +1,58 @@
+.timeManagement {
+  .header {
+    h1 {
+      width: 100%;
+      text-align: center;
+    }
+    p {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .blockOne {
+    p {
+      text-align:center;
+      width: 100%;
+    }
+
+  }
+  .blockTwo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    h1 {
+      width: 100%;
+      text-align: center;
+
+    }
+    p {
+      width: 40%;
+      border-top: 1px #ef7f1a solid;
+      min-height: 60px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+
+
+    }
+  }
+
+  .blockThree {
+    .topContent {
+      width: 100%;
+    }
+    .botContent {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .item {
+      width: 15%;
+    }
+  }
+
+}

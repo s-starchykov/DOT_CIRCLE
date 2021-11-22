@@ -1,49 +1,51 @@
 import s from "./time_management.module.scss"
-import time_management from "../../../assets/time_managment.png";
+
 import {withNamespaces} from "react-i18next";
-import style from "../../about/coopereation_process/cooperation_process.module.scss";
 import {compose} from "redux";
 import {connect} from "react-redux";
 
 
-const TimeManagement =({t, training}) => {
+const TimeManagement = ({t, training}) => {
 
-   const numberRange = training.data1.map(i => <div className={style.item}>
-       <h1>{i.number}</h1>
-       <p>{t(i.massage)}</p>
-   </div>)
+
+    const numberRange = training.timeManagement.bottomContent.map(i => <div className={s.item}>
+        <h1>{i.number}</h1>
+        <p>{t(i.content)}</p>
+    </div>)
+
+    const targets = training.timeManagement.middleContent.map(i => <p className={s.targets}>{t(i)}</p>
+    )
+
     return (
         <div className={s.timeManagement}>
-            <img src={time_management} alt="" className={s.bgImage}/>
 
             <div className={s.header}>
-                <h1>{t('Time Management')}</h1>
+                <h1>{t(training.timeManagement.headerTitle)}</h1>
                 <p>
-                    {t('What is time and how is it valuable to us')}
+                    {t(training.timeManagement.headerMessage)}
                 </p>
             </div>
 
 
             <div className={s.blockOne}>
                 <p>
-                    {t('The general approach does not work here')}
+                    {t(training.timeManagement.content)}
                 </p>
             </div>
 
             <div className={s.blockTwo}>
-                <h1>{t('Target audience for the training')}</h1>
-                <p className={s.targets}>{t('Top-Management')}</p>
-                <p className={s.targets}> {t('Heads of Departments')}</p>
-                <p className={s.targets}>{t('All those interested in the effective time management')}</p>
-                <p className={s.targets}> {t('Managers')}</p>
+                <h1>{t(training.timeManagement.middleTitle)}</h1>
+                {targets}
             </div>
 
             <div className={s.blockThree}>
 
-                <h1 className={s.topConent}>kfokvksv</h1>
-                {numberRange};
-            </div>
+                <h1 className={s.topConent}>{t(training.timeManagement.bottomTitle)}</h1>
+                <div className={s.botContent}>
+                    {numberRange}
+                </div>
 
+            </div>
 
 
         </div>

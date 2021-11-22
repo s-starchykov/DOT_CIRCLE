@@ -53,10 +53,19 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    border-radius: 50%;
+    align-items: center;
+   h1 {
+     height: 200px;
+     width: 200px;
+     border-radius: 50%;
+     background: #ef7f1a;
+   }
+
   }
   h1 {
     width: 20%;
     text-align: center;
+    display: flex;
+    align-items: center;
   }
 }
