@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/DOT_CIRCLE/static/css/main.03aeaf41.chunk.css",
+    "main.css": "/DOT_CIRCLE/static/css/main.cb9c5334.chunk.css",
     "main.js": "/DOT_CIRCLE/static/js/main.90f62132.chunk.js",
     "main.js.map": "/DOT_CIRCLE/static/js/main.90f62132.chunk.js.map",
     "runtime-main.js": "/DOT_CIRCLE/static/js/runtime-main.b17396a3.js",
@@ -10,7 +10,7 @@
     "static/js/2.aa47f590.chunk.js.map": "/DOT_CIRCLE/static/js/2.aa47f590.chunk.js.map",
     "index.html": "/DOT_CIRCLE/index.html",
     "static/css/2.fb305abb.chunk.css.map": "/DOT_CIRCLE/static/css/2.fb305abb.chunk.css.map",
-    "static/css/main.03aeaf41.chunk.css.map": "/DOT_CIRCLE/static/css/main.03aeaf41.chunk.css.map",
+    "static/css/main.cb9c5334.chunk.css.map": "/DOT_CIRCLE/static/css/main.cb9c5334.chunk.css.map",
     "static/js/2.aa47f590.chunk.js.LICENSE.txt": "/DOT_CIRCLE/static/js/2.aa47f590.chunk.js.LICENSE.txt",
     "static/media/Anar_dream_team.747b6e87.png": "/DOT_CIRCLE/static/media/Anar_dream_team.747b6e87.png",
     "static/media/Nurtac_dream_team.8fc70f12.png": "/DOT_CIRCLE/static/media/Nurtac_dream_team.8fc70f12.png",
@@ -42,7 +42,7 @@
     "static/js/runtime-main.b17396a3.js",
     "static/css/2.fb305abb.chunk.css",
     "static/js/2.aa47f590.chunk.js",
-    "static/css/main.03aeaf41.chunk.css",
+    "static/css/main.cb9c5334.chunk.css",
     "static/js/main.90f62132.chunk.js"
   ]
 }
