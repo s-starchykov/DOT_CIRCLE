@@ -15,7 +15,7 @@ const DreamTeam = ({t}) => {
             position: 'Executive Director',
             image: executiveDirector,
             social: [
-                {icon: 'facebook', link: '/'},
+                {icon: 'facebook', link: 'facebook.com'},
                 {icon: 'instagram', link: '/'},
                 {icon: 'linkedin', link: '/'},
             ]
@@ -63,7 +63,7 @@ const DreamTeam = ({t}) => {
     return (
         <div className={s.dreamTeam}>
             <img className={s.bgImage} src={dreamTeam} alt=""/>
-            <h1> Dream team</h1>
+            <h1>Dream team</h1>
             {card}
         </div>
     );

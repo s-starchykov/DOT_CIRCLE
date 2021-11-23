@@ -1,30 +1,33 @@
 import s from "./welcome_consalting.module.scss"
 import {withNamespaces} from "react-i18next";
 import consulting from "../../assets/consalting.png"
-import {NavLink} from "react-router-dom";
-
+import {Link, NavLink, useRouteMatch} from "react-router-dom";
 
 const Consulting = ({t}) => {
+    const match = useRouteMatch();
+
     return (
         <div className={s.consultingPage}>
+
             <img src={consulting} alt="" className={s.bgImage}/>
 
-            <div className={s.consultingType}>
-                <h1>{t('Individual consulting')}</h1>
-                <p>
-                    <NavLink to={"individual_consulting"} className={s.link}>{t('Discover your talents')}</NavLink>
+            <h1 className={s.pageTitle}>{t('Individual consulting')}</h1>
 
+            <NavLink to={`${match.url}/individual_consulting`} className={s.consultingType}>
+                <div>
+                    <h1>{t('Individual consulting')}</h1>
+                    <p>{t('Discover your talents')}</p>
+                </div>
+            </NavLink>
 
-                </p>
-            </div>
             <i className={'bx bx-sort-alt-2'}/>
 
-            <div className={s.consultingType}>
-                <h1>{t('Management consulting')}</h1>
-                <p>
-                    {t('www.altempuscapital.com')}
-                </p>
-            </div>
+            <Link className={s.consultingType}>
+                <div>
+                    <h1>{t('Management consulting')}</h1>
+                    <p>{t('www.altempuscapital.com')}</p>
+                </div>
+            </Link>
         </div>
     )
 };

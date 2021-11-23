@@ -1,12 +1,11 @@
 import s from './webinars.module.scss'
 import {withNamespaces} from "react-i18next";
-import faq from "../../assets/webinar_bg.png";
 
 const Webinars = ({t}) => {
     return (
         <div className={s.webinars}>
             <h1 className={s.title}>{t('Webinars')}</h1>
-            <img className={s.bgImage} src={faq} alt=""/>
+            <img className={s.bgImage} src={`${process.env.PUBLIC_URL}/assets/webinar_bg.png`} alt=""/>
 
             <div className={s.topContent}>
                 <h1 className={s.containerTitle}><i className={'bx bx-info-square'}/>{t('Webinars')}</h1>

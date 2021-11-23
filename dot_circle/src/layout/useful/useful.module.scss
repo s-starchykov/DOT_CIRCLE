@@ -39,6 +39,7 @@
     min-height: 50px;
     padding: 15px;
 
+    border: 2px transparent solid;
     background: rgba( 232, 232, 232, 0.2 );
     box-shadow: 0 8px 32px 0 rgb(62 62 62 / 37%);
     backdrop-filter: blur( 4px );
@@ -48,6 +49,17 @@
     white-space: pre-line;
     color: white;
 
+    &:hover {
+      color: white;
+      border: 2px #8fa9b5 solid;
+      background: #4682b454;
+    }
+
+    &[open] {
+      background: #7c7c7c33;
+      border: 2px transparent solid;
+      backdrop-filter: blur(100px);
+    }
 
     &[open] > .dropdownTitle::after {
       content: "-";
