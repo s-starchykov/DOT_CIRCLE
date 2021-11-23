@@ -15,7 +15,7 @@ import IndividualConsulting from "./layout/consalting/individual_consalting/indi
 import BusinessTrainings from "./layout/business_trainings/business_trainings";
 import TimeManagement from "./layout/business_trainings/time_management/time management";
 import StressManagement from "./layout/business_trainings/stres_management/stress.management";
-
+import ScrollTop from "./layout/common/scroll_top/scroll_top";
 
 const App = () => {
     return (
@@ -23,17 +23,18 @@ const App = () => {
             <Header/>
             <div className={s.appContent}>
                 <Route exact path={'/'} render={() => <About/>}/>
-                <Route exact path={'/trainings'} render={() => <BusinessTrainings name={'Business trainings'}/>}/>
-                <Route exact path={'/open_programs'} render={() => <NoPage name={'Open programs'}/>}/>
-                <Route exact path={'/team'} render={() => <DreamTeam name={'Team'}/>}/>
-                <Route exact path={'/consulting'} render={() => <Consulting name={'Consulting'}/>}/>
-                <Route exact path={'/webinars'} render={() => <Webinars name={'Webinars'}/>}/>
-                <Route exact path={'/useful'} render={() => <Useful name={'Useful'}/>}/>
-                <Route exact path={'/gallery'} render={() => <PhotoGallery name={'Gallery'}/>}/>
-                <Route exact path={'/individual_consulting'} render={() => <IndividualConsulting name={'Individual_consulting'}/>}/>
-                <Route exact path={'/time_management'} render={() => <TimeManagement name={'Time_management'}/>}/>
-                <Route exact path={'/stress_management'} render={() => <StressManagement name={'Stress_management'}/>}/>
+                <Route path={'/trainings'} render={() => <BusinessTrainings name={'Business trainings'}/>}/>
+                <Route path={'/open_programs'} render={() => <NoPage name={'Open programs'}/>}/>
+                <Route path={'/team'} render={() => <DreamTeam name={'Team'}/>}/>
+                <Route path={'/consulting/:individual_consulting'} render={() => <IndividualConsulting/>}/>
+                <Route path={'/consulting'} render={() => <Consulting name={'Consulting'}/>}/>
+                <Route path={'/webinars'} render={() => <Webinars name={'Webinars'}/>}/>
+                <Route path={'/useful'} render={() => <Useful name={'Useful'}/>}/>
+                <Route path={'/gallery'} render={() => <PhotoGallery name={'Gallery'}/>}/>
+                <Route path={'/time_management'} render={() => <TimeManagement name={'Time_management'}/>}/>
+                <Route path={'/stress_management'} render={() => <StressManagement name={'Stress_management'}/>}/>
                 <Footer/>
+                <ScrollTop/>
             </div>
             <Route path={'/welcome'} render={() => <WelcomePage/>}/>
         </div>
