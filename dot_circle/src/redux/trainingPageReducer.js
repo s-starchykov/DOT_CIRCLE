@@ -1,29 +1,35 @@
 const initialState = {
-    businessTraining: [
-        {
-            name: 'Time Management',
-            massage: 'What is time and how is it valuable to us',
-            link: 'time_management',
-            src: 'time_management.png'
-        },
-        {
-            name: 'Stress management',
-            massage: 'Stress is the body’s response to external challenges',
-            link: 'stress_management', src: 'stress_management.png'
-        },
-        {
-            name: 'Self-development',
-            massage: 'Authorial program',
-            link: 'self_development',
-            src: 'self_development.png'
-        },
-        {
-            name: 'The intuitive management',
-            massage: 'The training is aimed at awakening',
-            link: 'intuitive_management',
-            src: 'intuitive_management.png'
-        }
-    ],
+    businessTraining: {
+        topContent: [
+
+            {
+                name: 'Time Management',
+                massage: 'What is time and how is it valuable to us',
+                link: 'time_management',
+                src: 'time_management.png'
+            },
+            {
+                name: 'Stress management',
+                massage: 'Stress is the body’s response to external challenges',
+                link: 'stress_management', src: 'stress_management.png'
+            },
+
+        ],
+        middleContent: 'Business trainings',
+        bottomContent: [
+            {
+                name: 'Self-development',
+                massage: 'Authorial program',
+                link: 'self_development',
+                src: 'self_development.png'
+            },
+            {
+                name: 'The intuitive management',
+                massage: 'The training is aimed at awakening',
+                link: 'intuitive_management',
+                src: 'intuitive_management.png'
+            }],
+    },
 
     timeManagement: {
         headerTitle: 'Time Management',
@@ -44,11 +50,17 @@ const initialState = {
     },
 
     stressManagement: {
-        header:[{title:'The intuitive management', content: 'The training is aimed at awakening intuitive ability and further development of creative thinking skills.'}],
+        header: [{
+            title: '“Stress management”', content: 'Stress is the body’s response to external challenges,\n' +
+                'negative emotions or problems'
+        }],
         bgImage: '',
-        blockOne: [{title:'Response to these factors is the mobilization', content: 'We should cultivate our own abilities in order to'} ],
+        blockOne: [{
+            title: 'Response to these factors is the mobilization',
+            content: 'We should cultivate our own abilities in order to'
+        }],
         blockTwo: [
-            {title:'Aims and goals of this course'},
+            {title: 'Aims and goals of this course'},
             {number: '1', content: '- learn unique ways to relieve stress and learn how to use them'},
             {number: '2', content: '- develop skills to restore physical and mental strength;'},
             {number: '3', content: '- get acquainted with the methods of stress management methods in'},
@@ -63,10 +75,18 @@ const initialState = {
         ],
         blockThree: [
             {title: 'Targeted audience'},
-            {number: '1', content: 'Managers of all levels, middle-rank managers, who need to improve personal stress resistance and strive to improve the level of stress management in'},
-            {number: '2', content: '\n' +
-                    'Service employees who want to increase the quality of client service'},
-            {number: '3', content: 'Individuals who want to improve personal efficiency and avoid bad emotions in stressful situations'}
+            {
+                number: '1',
+                content: 'Managers of all levels, middle-rank managers, who need to improve personal stress resistance and strive to improve the level of stress management in'
+            },
+            {
+                number: '2', content: '\n' +
+                    'Service employees who want to increase the quality of client service'
+            },
+            {
+                number: '3',
+                content: 'Individuals who want to improve personal efficiency and avoid bad emotions in stressful situations'
+            }
 
         ]
     },
@@ -77,11 +97,24 @@ const initialState = {
         ],
         topContent: [
             {title: 'For whom is this programme?'},
-            {image:'', content:'Business owners'},
-            {image:'', content:'Top-Management'},
-            {image:'', content:'Managers'},
-            {image:'', content:'Employees'},
+            {image: '', content: 'Business owners'},
+            {image: '', content: 'Top-Management'},
+            {image: '', content: 'Managers'},
+            {image: '', content: 'Employees'},
         ],
+        middleContent: [{content: 'Self-development is a continuous improvement of'}],
+        bottomContent: [
+            {firstTitle: 'Aims and goals of self-development training:'},
+            {secondTitle: 'Training program'},
+            {number: 'Series 1', content: 'Self-determination'},
+            {number: 'Series 2', content: 'Planning'},
+            {number: 'Series 3', content: 'Health potential'},
+            {number: 'Series 4', content: 'Continuous practice'},
+            {number: 'Series 5', content: 'Mission'},
+            {number: 'Series 6', content: '“How I can be better” Project'},
+            {thirdTitle: 'Trainings are held in a corporate and individual formats'},
+            {fourthTitle: 'Targeted audience is managers of all levels'},
+        ]
 
     },
 

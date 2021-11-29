@@ -7,7 +7,17 @@ import {connect} from "react-redux";
 
 const BusinessTrainings = ({t, trainings, name}) => {
 
-    let businessTrainings = trainings.businessTraining.map(i => <div className={s.trainingType}>
+    let topContent = trainings.businessTraining.topContent.map(i => <div className={s.trainingType}>
+        <NavLink to={i.link} className={s.link}>
+            <img src= {`${process.env.PUBLIC_URL}/images/${i.src}`} alt=""/>
+            <h1>{t(i.name)}</h1>
+            <p>
+                {t(i.massage)}
+            </p>
+        </NavLink>
+    </div> )
+
+    let botContent = trainings.businessTraining.bottomContent.map(i => <div className={s.trainingType}>
         <NavLink to={i.link} className={s.link}>
             <img src= {`${process.env.PUBLIC_URL}/images/${i.src}`} alt=""/>
             <h1>{t(i.name)}</h1>
@@ -21,8 +31,9 @@ const BusinessTrainings = ({t, trainings, name}) => {
 
     return (
         <div className={s.businessTrainings}>
-            <div className={s.central}><h1>{t(name)}</h1></div>
-            {businessTrainings}
+            {topContent}
+            <div className={s.central}><h1>{t(trainings.businessTraining.middleContent)}</h1></div>
+            {botContent}
         </div>
 
 

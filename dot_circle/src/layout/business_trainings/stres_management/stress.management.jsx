@@ -1,7 +1,6 @@
 import s from "./stress_management.module.scss"
 import {withNamespaces} from "react-i18next";
 import {compose} from "redux";
-import mapDispatchToProps from "react-redux/lib/connect/mapDispatchToProps";
 import {connect} from "react-redux";
 
 

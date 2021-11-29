@@ -3,6 +3,7 @@ import s from "./time_management.module.scss"
 import {withNamespaces} from "react-i18next";
 import {compose} from "redux";
 import {connect} from "react-redux";
+import bgImage from "../../../assets/time_management.png"
 
 
 const TimeManagement = ({t, training}) => {
@@ -18,6 +19,7 @@ const TimeManagement = ({t, training}) => {
 
     return (
         <div className={s.timeManagement}>
+            <img src={bgImage} alt=""/>
 
             <div className={s.header}>
                 <h1>{t(training.timeManagement.headerTitle)}</h1>

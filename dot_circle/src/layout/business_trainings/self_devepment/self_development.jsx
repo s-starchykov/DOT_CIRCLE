@@ -17,14 +17,27 @@ const SelfDevelopment = ({t, trainings}) => {
         <div className={s.topContent}>
             <h1>{t(i.title)}</h1>
             <div className={s.item}><img src={(i.image)} alt=""/>
-            <p>{t(i.content)}</p></div>
-        </div> )
+                <p>{t(i.content)}</p></div>
+        </div>)
+
+    const middleContent = trainings.selfDevelopment.middleContent.map(i => <div
+        className={s.middleContent}><p>{t(i.content)}</p></div>)
+
+
+    const bottomContent = trainings.selfDevelopment.bottomContent.map(i => <div
+        className={s.bottomContent}>
+        <h1>{t(i.firstTitle)}</h1>
+        <h1>{t(i.secondTitle)}</h1>
+        <div className={s.bottomContainer}>{t(i.number + i.content)}</div>
+        <h2>{t(i.thirdTitle)}</h2>
+        <h2>{t(i.fourthTitle)}</h2>
+    </div>)
     return (
         <div className={s.selfDevelopment}>
             {header}
             {topContent}
-
-
+            {middleContent}
+            {bottomContent}
         </div>
     )
 }

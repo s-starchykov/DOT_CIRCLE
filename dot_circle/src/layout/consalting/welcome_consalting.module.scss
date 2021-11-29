@@ -125,4 +125,32 @@
       color: black;
     }
   }
+  .individualConsulting {
+    position: absolute;
+    top: 5%;
+
+    z-index: 3;
+    height: 50%;
+    width: 50%;
+    background: black;
+    button {
+      height: 50px;
+      width: 50px;
+      background: red;
+    }
+  }
+  .appear {
+    position: absolute;
+    top: 5%;
+
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    background: black;
+    button {
+      height: 50px;
+      width: 50px;
+      background: red;
+    }
+  }
 }
