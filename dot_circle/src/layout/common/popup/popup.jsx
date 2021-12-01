@@ -5,9 +5,14 @@ import PropTypes from "prop-types";
 const CustomPopup = (props) => {
 
     const [show, setShow] = useState(false);
-    const closeHandler = (e) => {setShow(false);props.onClose(false);};
 
-    useEffect(() => {setShow(props.show);}, [props.show]);
+    useEffect(() => setShow(props.show), [props.show]);
+
+    const closeHandler = (e) => {
+        console.log(e);
+        setShow(false);
+        props.onClose(false);
+    };
 
     return (
         <div style={{visibility: show ? "visible" : "hidden", opacity: show ? "1" : "0"}}
@@ -18,6 +23,7 @@ const CustomPopup = (props) => {
                 <span className={popupStyles.close} onClick={closeHandler}>&times;</span>
                 <div className={popupStyles.content}>{props.children}</div>
             </div>
+
         </div>
     );
 };

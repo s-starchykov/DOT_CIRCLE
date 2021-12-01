@@ -13,7 +13,12 @@ const Background = (props) => {
         backgroundImage: `url(${props.background})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        backgroundAttachment: 'fixed'
+        backgroundAttachment: 'fixed',
+
+        /// Add the blur effect
+        filter: 'blur(4px)',
+        webkitFilter:' blur(4px)',
+        //transform: 'scale(1.1)',
     };
 
     return <div style={background}/>
