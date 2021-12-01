@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/DOT_CIRCLE/static/css/main.817147d6.chunk.css",
-    "main.js": "/DOT_CIRCLE/static/js/main.797fd876.chunk.js",
-    "main.js.map": "/DOT_CIRCLE/static/js/main.797fd876.chunk.js.map",
+    "main.css": "/DOT_CIRCLE/static/css/main.148acb2c.chunk.css",
+    "main.js": "/DOT_CIRCLE/static/js/main.01ab4223.chunk.js",
+    "main.js.map": "/DOT_CIRCLE/static/js/main.01ab4223.chunk.js.map",
     "runtime-main.js": "/DOT_CIRCLE/static/js/runtime-main.b17396a3.js",
     "runtime-main.js.map": "/DOT_CIRCLE/static/js/runtime-main.b17396a3.js.map",
     "static/css/2.fb305abb.chunk.css": "/DOT_CIRCLE/static/css/2.fb305abb.chunk.css",
-    "static/js/2.de2acf32.chunk.js": "/DOT_CIRCLE/static/js/2.de2acf32.chunk.js",
-    "static/js/2.de2acf32.chunk.js.map": "/DOT_CIRCLE/static/js/2.de2acf32.chunk.js.map",
+    "static/js/2.6bedc023.chunk.js": "/DOT_CIRCLE/static/js/2.6bedc023.chunk.js",
+    "static/js/2.6bedc023.chunk.js.map": "/DOT_CIRCLE/static/js/2.6bedc023.chunk.js.map",
     "index.html": "/DOT_CIRCLE/index.html",
     "static/css/2.fb305abb.chunk.css.map": "/DOT_CIRCLE/static/css/2.fb305abb.chunk.css.map",
-    "static/css/main.817147d6.chunk.css.map": "/DOT_CIRCLE/static/css/main.817147d6.chunk.css.map",
-    "static/js/2.de2acf32.chunk.js.LICENSE.txt": "/DOT_CIRCLE/static/js/2.de2acf32.chunk.js.LICENSE.txt",
-    "static/media/Anar_dream_team.747b6e87.png": "/DOT_CIRCLE/static/media/Anar_dream_team.747b6e87.png",
+    "static/css/main.148acb2c.chunk.css.map": "/DOT_CIRCLE/static/css/main.148acb2c.chunk.css.map",
+    "static/js/2.6bedc023.chunk.js.LICENSE.txt": "/DOT_CIRCLE/static/js/2.6bedc023.chunk.js.LICENSE.txt",
     "static/media/Nurtac_dream_team.8fc70f12.png": "/DOT_CIRCLE/static/media/Nurtac_dream_team.8fc70f12.png",
     "static/media/Zulfia_dream_team.dc2a4f89.png": "/DOT_CIRCLE/static/media/Zulfia_dream_team.dc2a4f89.png",
     "static/media/about_me.babf2a44.png": "/DOT_CIRCLE/static/media/about_me.babf2a44.png",
+    "static/media/anar_dream_team.f575f720.png": "/DOT_CIRCLE/static/media/anar_dream_team.f575f720.png",
     "static/media/anar_why_we.103d31f3.png": "/DOT_CIRCLE/static/media/anar_why_we.103d31f3.png",
     "static/media/arrow_cooperation_process.f1a92a90.svg": "/DOT_CIRCLE/static/media/arrow_cooperation_process.f1a92a90.svg",
     "static/media/consalting.4c0b6c52.png": "/DOT_CIRCLE/static/media/consalting.4c0b6c52.png",
@@ -35,14 +35,15 @@
     "static/media/open_training.1a70a0cd.png": "/DOT_CIRCLE/static/media/open_training.1a70a0cd.png",
     "static/media/personal-consalting.365d4f33.png": "/DOT_CIRCLE/static/media/personal-consalting.365d4f33.png",
     "static/media/t&d_creterias.1ee2a44d.png": "/DOT_CIRCLE/static/media/t&d_creterias.1ee2a44d.png",
+    "static/media/time_management.a0bc89d5.png": "/DOT_CIRCLE/static/media/time_management.a0bc89d5.png",
     "static/media/top_slider_bg.a1121640.png": "/DOT_CIRCLE/static/media/top_slider_bg.a1121640.png",
     "static/media/useful_bg.9da6f7ae.png": "/DOT_CIRCLE/static/media/useful_bg.9da6f7ae.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b17396a3.js",
     "static/css/2.fb305abb.chunk.css",
-    "static/js/2.de2acf32.chunk.js",
-    "static/css/main.817147d6.chunk.css",
-    "static/js/main.797fd876.chunk.js"
+    "static/js/2.6bedc023.chunk.js",
+    "static/css/main.148acb2c.chunk.css",
+    "static/js/main.01ab4223.chunk.js"
   ]
 }
