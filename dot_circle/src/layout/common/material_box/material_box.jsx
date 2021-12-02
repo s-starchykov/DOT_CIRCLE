@@ -1,7 +1,7 @@
 import s from './material_box.module.scss'
 
 const MaterialBox = (props) => {
-    return <div className={s.materialBox}>
+    return <div className={s.materialBox} style={props.style}>
         {props.content}
     </div>
 };

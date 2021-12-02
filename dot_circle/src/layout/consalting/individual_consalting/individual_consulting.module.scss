@@ -25,11 +25,8 @@
     text-shadow: 0 2px 4px rgb(71 97 206 / 36%);
   }
 
-  h2, h3 {
-    color: white;
-  }
-
-  h1 {
+  h1, h2, h3  {
+    width: 100%;
     color: white;
     text-transform: uppercase;
   }
@@ -40,20 +37,26 @@
   }
 
   .blockTwo {
-    width: 100%;
-    border-radius: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-
     display: flex;
     justify-content: space-around;
     text-align: center;
     flex-wrap: wrap;
     z-index: 2;
 
+    column-gap: 30px;
+
+    width: 100%;
+    margin: 50px 0;
+
+    border-radius: 20px;
+
     :nth-child(2) {
       transform: rotate(45deg);
       padding-left: 100px;
+    }
+
+    :nth-child(3) {
+      transform: rotate(360deg);
     }
 
     :nth-child(4) {
@@ -77,14 +80,9 @@
 
     }
 
-    h1 {
-      width: 90%;
-    }
-
-
     .reasons {
       width: 300px;
-      height: 300px;
+      height: inherit;
     }
   }
 

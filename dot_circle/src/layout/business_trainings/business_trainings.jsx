@@ -50,12 +50,12 @@ const BusinessTrainings = ({t, trainings, name}) => {
 
     return (
         <div className={`${s.businessTrainings} ${showPopup != null && s.mute}`}>
-            <PageTitle title={t(name)} color={'dimgray'}/>
+            <PageTitle title={t(name)}/>
             <Background background={currentBackground}/>
             <Content/>
             <CustomPopup onClose={() => setShowPopup(null)}
                          show={showPopup != null}
-                         children={getComponent(showPopup) ?? <NoPage name={showPopup}/>}/>
+                         children={getComponent(showPopup)}/>
         </div>
     );
 };

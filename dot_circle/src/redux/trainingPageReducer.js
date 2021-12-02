@@ -32,7 +32,7 @@ const initialState = {
         headerTitle: 'Time management',
         headerMessage: 'What is time and how is it valuable to us',
         headerBg: 'time_management.png',
-        content: 'The general approach does not work here',
+        content: 'The general approach does not',
         middleTitle: 'Target audience for the training',
         middleContent: ['Top-Management', 'Heads of Departments', 'All those interested in the effective time management', 'Managers'],
         bottomTitle: 'Purpose of the training',
@@ -41,7 +41,7 @@ const initialState = {
             {number: '2', content: 'You do not know how harmoniously combine personal and work goals'},
             {number: '3', content: 'You want to figure out which method of planning will be most effective for you'},
             {number: '4', content: 'It is necessary to determine how to motivate yourself to achieve your goals'},
-            {number: '5', content: 'You postpone important things "for later"'},
+            {number: '5', content: 'You postpone important things'},
             {number: '6', content: 'Want to say “NO” to unnecessary time-eaters?'}]
     },
 
@@ -75,10 +75,7 @@ const initialState = {
                 number: '1',
                 content: 'Managers of all levels, middle-rank managers, who need to improve personal stress resistance and strive to improve the level of stress management in'
             },
-            {
-                number: '2', content: '\n' +
-                    'Service employees who want to increase the quality of client service'
-            },
+            {number: '2', content: 'Service employees who want to increase the quality of client service'},
             {
                 number: '3',
                 content: 'Individuals who want to improve personal efficiency and avoid bad emotions in stressful situations'

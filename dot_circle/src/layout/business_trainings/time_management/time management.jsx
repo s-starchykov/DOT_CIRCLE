@@ -1,60 +1,59 @@
 import s from "./time_management.module.scss"
-
 import {withNamespaces} from "react-i18next";
 import {compose} from "redux";
 import {connect} from "react-redux";
-import bgImage from "../../../assets/time_management.png"
+import background from "../../../assets/time_management.png"
+import Background from "../../common/background/background";
+import PageTitle from "../../common/page_title/page_title";
+import MaterialBox from "../../common/material_box/material_box";
+import {FaUserTie} from "react-icons/all";
 
 
 const TimeManagement = ({t, training}) => {
 
+    const InfoContent = () => {
+        let h = training.timeManagement.headerMessage;
+        return <div className={s.topContent}>
+            {t(h).split(`\n`).map(e => <h1 className={s.title}><i className={'bx bx-message-square-detail'}/>{e}</h1>)}
+            {t(training.timeManagement.content).split(`\n`).map(e => <p className={`${s.listItem}`}>{e}</p>)}
+        </div>
+    };
 
-    const numberRange = training.timeManagement.bottomContent.map(i => <div className={s.item}>
-        <h1>{i.number}</h1>
-        <p>{t(i.content)}</p>
-    </div>)
+    const NumberRange = () => {
+        return <div className={s.botContent}>
+            {training.timeManagement.bottomContent.map(i => <div className={s.item}>
+                <h1>{i.number}</h1>
+                <p>{t(i.content)}</p>
+            </div>)}
+        </div>
+    };
 
-    const targets = training.timeManagement.middleContent.map(i => <p className={s.targets}>{t(i)}</p>
-    )
+    const Targets = () => {
+        return <div className={s.botContent}>
+            {training.timeManagement.middleContent.map(i => <div className={s.targets}>
+                <FaUserTie/>
+                <p>{t(i)}</p>
+            </div>)}
+        </div>
+    };
 
     return (
         <div className={s.timeManagement}>
-            <img src={bgImage} alt=""/>
+            <Background background={background}/>
 
-            <div className={s.header}>
-                <h1>{t(training.timeManagement.headerTitle)}</h1>
-                <p>
-                    {t(training.timeManagement.headerMessage)}
-                </p>
-            </div>
+            <PageTitle title={t(training.timeManagement.headerTitle)}/>
+            <InfoContent/>
 
+            <h1 className={s.pageTitle}>{t(training.timeManagement.middleTitle)}</h1>
+            <MaterialBox style={{width: '100%'}} content={<Targets/>}/>
 
-            <div className={s.blockOne}>
-                <p>
-                    {t(training.timeManagement.content)}
-                </p>
-            </div>
-
-            <div className={s.blockTwo}>
-                <h1>{t(training.timeManagement.middleTitle)}</h1>
-                {targets}
-            </div>
-
-            <div className={s.blockThree}>
-
-                <h1 className={s.topConent}>{t(training.timeManagement.bottomTitle)}</h1>
-                <div className={s.botContent}>
-                    {numberRange}
-                </div>
-
-            </div>
-
-
+            <h1 className={s.pageTitle}>{t(training.timeManagement.bottomTitle)}</h1>
+            <MaterialBox content={<NumberRange/>}/>
         </div>
     )
 };
-let mapStateToProps = (state) => ({training: state.trainingPageReducer});
 
+let mapStateToProps = (state) => ({training: state.trainingPageReducer});
 
 export default compose(withNamespaces(), connect(mapStateToProps, null))(TimeManagement);
 
