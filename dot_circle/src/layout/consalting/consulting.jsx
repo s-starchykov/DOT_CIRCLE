@@ -7,13 +7,14 @@ import IndividualConsulting from "./individual_consalting/individual_consalting"
 import CustomPopup from "../common/popup/popup";
 import Background from "../common/background/background";
 import PageTitle from "../common/page_title/page_title";
+import HoveredItem from "../common/hovered_item/hovered_item";
 
 const Consulting = ({t}) => {
 
     // Set document title wia hook effect
     useEffect(() => document.title = t('Consulting'));
 
-    const [showPopup, setShowPopup] = useState(false);
+    const [showPopup, setShowPopup] = useState(null);
     const [showIndividual, setShowIndividual] = useState(false);
 
 
@@ -22,22 +23,25 @@ const Consulting = ({t}) => {
             <Background background={consulting}/>
             <PageTitle title={t('Consulting')}/>
 
-            <div className={s.consultingType} onClick={() => setShowIndividual(!showIndividual)}>
+            <HoveredItem content={
+                <div onClick={() => setShowIndividual(!showIndividual)}>
                     <h1>{t('Individual consulting')}</h1>
                     <p>{t('Discover your talents')}</p>
-            </div>
+                </div>
+            }/>
 
             <CustomPopup onClose={() => setShowIndividual(!showIndividual)}
                          show={showIndividual}
-                         title="Hello Jeetendra"
                          children={<IndividualConsulting/>}/>
 
             <i className={'bx bx-sort-alt-2'}/>
 
-            <div className={s.consultingType} onClick={() => setShowPopup(!showPopup)}>
+            <HoveredItem content={
+                <div onClick={() => setShowPopup(!showPopup)}>
                     <h1>{t('Management consulting')}</h1>
                     <p>{t('www.altempuscapital.com')}</p>
-            </div>
+                </div>
+            }/>
 
             <CustomPopup onClose={() => setShowPopup(!showPopup)}
                          show={showPopup}
@@ -45,7 +49,7 @@ const Consulting = ({t}) => {
                          children={<Iframe source={'https://dot-circle.com/pages/consulting.html'}/>}/>
         </div>
     )
-}
+};
 
 
 export default withNamespaces()(Consulting);

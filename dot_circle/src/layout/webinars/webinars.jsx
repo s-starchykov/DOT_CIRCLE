@@ -1,11 +1,18 @@
 import s from './webinars.module.scss'
 import {withNamespaces} from "react-i18next";
+import {useEffect} from "react";
+import Background from "../common/background/background";
 
 const Webinars = ({t}) => {
+
+    // Set document title wia hook effect
+    useEffect(() => document.title = t('Webinars'));
+
     return (
         <div className={s.webinars}>
+            <Background background={`${process.env.PUBLIC_URL}/assets/webinar_bg.png`}/>
+
             <h1 className={s.title}>{t('Webinars')}</h1>
-            <img className={s.bgImage} src={`${process.env.PUBLIC_URL}/assets/webinar_bg.png`} alt=""/>
 
             <div className={s.topContent}>
                 <h1 className={s.containerTitle}><i className={'bx bx-info-square'}/>{t('Webinars')}</h1>

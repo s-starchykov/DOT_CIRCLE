@@ -1,14 +1,20 @@
 import s from "./dream_team.module.scss"
 import {withNamespaces} from "react-i18next";
-import executiveDirector from '../../assets/Anar_dream_team.png'
+import executiveDirector from '../../assets/anar_dream_team.png'
 import trainingAssistant from '../../assets/Zulfia_dream_team.png'
 import challenger from '../../assets/Nurtac_dream_team.png'
-import dreamTeam from "../../assets/dream_team.png";
+import background from "../../assets/dream_team.png";
 import {Link} from "react-router-dom";
 import {FaFacebookSquare, FaInstagram, FaLinkedinIn} from "react-icons/fa";
+import {useEffect} from "react";
+import Background from "../common/background/background";
 
 
 const DreamTeam = ({t}) => {
+
+    // Set document title wia hook effect
+    useEffect(() => document.title = t('Dream team'));
+
     const data = [
         {
             name: 'Anar Mammadov',
@@ -62,8 +68,8 @@ const DreamTeam = ({t}) => {
 
     return (
         <div className={s.dreamTeam}>
-            <img className={s.bgImage} src={dreamTeam} alt=""/>
-            <h1>Dream team</h1>
+            <Background background={background}/>
+            <h1>{t('Dream team')}</h1>
             {card}
         </div>
     );

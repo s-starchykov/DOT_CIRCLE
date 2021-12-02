@@ -1,30 +1,41 @@
 import s from "./individual_consulting.module.scss"
 import {withNamespaces} from "react-i18next";
-import bgImage from "../../../assets/personal-consalting.png"
+import background from "../../../assets/personal-consalting.png"
+import Background from "../../common/background/background";
+import MaterialBox from "../../common/material_box/material_box";
+import PageTitle from "../../common/page_title/page_title";
 
 const IndividualConsulting = ({t}) => {
+
+    let reasons = [
+        'We are result-oriented',
+        'Conscious choice. Life management',
+        'High efficiency. Close cooperation gives'
+    ]
+
     return (
         <div className={s.individual}>
-            <img src={bgImage} alt=""/>
+            <Background background={background}/>
 
+            <PageTitle title={t('Individual consulting')}/>
 
-            <div className={s.blockOne}>
-                <h2>
-                    {t('Immerse yourself')}
-                </h2>
-                <p>{t('Life Management consultation')}</p>
-                <p>{t('We will show you the way out of difficult life')}</p>
-            </div>
+            <MaterialBox content={
+                <>
+                    <h2>{t('Immerse yourself')}</h2>
+                    <p>{t('Life Management consultation')}</p>
+                    <p>{t('We will show you the way out of difficult life')}</p>
+                </>
+            }/>
 
 
             <div className={s.blockTwo}>
                 <h1>{t('3 reasons to choose us')}</h1>
+
                 <i className={'bx bx-down-arrow-alt'}/>
                 <i className={'bx bx-down-arrow-alt'}/>
                 <i className={'bx bx-down-arrow-alt'}/>
-                <p>{t('We are result-oriented')}</p>
-                <p>{t('Conscious choice. Life management')}</p>
-                <p>{t('High efficiency. Close cooperation gives')}</p>
+
+                {reasons.map((item) => <MaterialBox content={<p className={s.reasons}>{t(item)}</p>}/>)}
             </div>
 
 
@@ -67,10 +78,10 @@ const IndividualConsulting = ({t}) => {
                 <div className={s.item1}>
                     <p>In</p>
                     <p>why</p>
-                <span>#RESULTS</span>
-                <span>#GOALS</span>
-                <span>#CHANGES</span>
-                <span>#STEPS</span>
+                    <span>#RESULTS</span>
+                    <span>#GOALS</span>
+                    <span>#CHANGES</span>
+                    <span>#STEPS</span>
                 </div>
 
                 <div className={s.item2}>

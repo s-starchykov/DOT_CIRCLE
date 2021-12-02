@@ -1,6 +1,4 @@
 .webinars {
-  position: relative;
-
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -26,18 +24,6 @@
     color: white;
     text-shadow: 0 2px 4px rgb(71 97 206 / 36%);
   }
-
-  .bgImage {
-    position: fixed;
-    z-index: 1;
-    overflow-y: scroll;
-
-    width: 100vw;
-    height: 100vh;
-    filter: blur(4px);
-    transform: scale(1.1);
-  }
-
 
   .topContent, .middleContent, .bottomContent {
     position: relative;

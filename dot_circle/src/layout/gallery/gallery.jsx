@@ -3,8 +3,12 @@ import Gallery from 'react-grid-gallery';
 import {withNamespaces} from "react-i18next";
 import {compose} from "redux";
 import {connect} from "react-redux";
+import {useEffect} from "react";
 
 const PhotoGallery = ({t, name, photos}) => {
+
+    // Set document title wia hook effect
+    useEffect(() => document.title = t('Gallery'));
 
     let tagStyle = () => ({
         display: 'inline',
@@ -18,7 +22,7 @@ const PhotoGallery = ({t, name, photos}) => {
         whiteSpace: 'nowrap',
         verticalAlign: 'baseline',
         borderRadius: '0.25em'
-    })
+    });
 
     let data = photos.images.map((i) => ({
         src: `${process.env.PUBLIC_URL}/gallery/${i.src}`,
@@ -27,17 +31,16 @@ const PhotoGallery = ({t, name, photos}) => {
         thumbnailHeight: i.thumbnailHeight ?? 250,
         tags: [{value: `${t(i.tags[0].value)}`, title: "Open programs"}],
         caption: i.caption ?? 'Some text'
-    }))
+    }));
 
 
     return (
-
         <div className={s.gallery}>
             <h1>{t(name)}</h1>
             <Gallery enableImageSelection={false} images={data} tagStyle={tagStyle()}/>
         </div>
-    )
-}
+    );
+};
 
 let mapStateToProps = (state) => ({photos: state.galleryReducer});
 

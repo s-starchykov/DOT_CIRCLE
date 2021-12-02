@@ -14,6 +14,7 @@ const Background = (props) => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: 'fixed',
+        opacity: 0.5,
 
         /// Add the blur effect
         filter: 'blur(4px)',

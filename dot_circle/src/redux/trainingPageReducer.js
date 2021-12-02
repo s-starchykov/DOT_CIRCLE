@@ -1,9 +1,9 @@
 const initialState = {
     businessTraining: {
-        topContent: [
+        content: [
 
             {
-                name: 'Time Management',
+                name: 'Time management',
                 massage: 'What is time and how is it valuable to us',
                 link: 'time_management',
                 src: 'time_management.png'
@@ -13,10 +13,6 @@ const initialState = {
                 massage: 'Stress is the body’s response to external challenges',
                 link: 'stress_management', src: 'stress_management.png'
             },
-
-        ],
-        middleContent: 'Business trainings',
-        bottomContent: [
             {
                 name: 'Self-development',
                 massage: 'Authorial program',
@@ -28,11 +24,12 @@ const initialState = {
                 massage: 'The training is aimed at awakening',
                 link: 'intuitive_management',
                 src: 'intuitive_management.png'
-            }],
+            }
+        ]
     },
 
     timeManagement: {
-        headerTitle: 'Time Management',
+        headerTitle: 'Time management',
         headerMessage: 'What is time and how is it valuable to us',
         headerBg: 'time_management.png',
         content: 'The general approach does not work here',
@@ -45,14 +42,13 @@ const initialState = {
             {number: '3', content: 'You want to figure out which method of planning will be most effective for you'},
             {number: '4', content: 'It is necessary to determine how to motivate yourself to achieve your goals'},
             {number: '5', content: 'You postpone important things "for later"'},
-            {number: '6', content: 'Want to say “NO” to unnecessary time-eaters?'}],
-
+            {number: '6', content: 'Want to say “NO” to unnecessary time-eaters?'}]
     },
 
     stressManagement: {
         header: [{
-            title: '“Stress management”', content: 'Stress is the body’s response to external challenges,\n' +
-                'negative emotions or problems'
+            title: 'Stress management',
+            content: 'Stress is the body’s response to external challenges,\nnegative emotions or problems'
         }],
         bgImage: '',
         blockOne: [{

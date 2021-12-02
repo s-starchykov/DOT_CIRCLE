@@ -214,9 +214,10 @@
 
     .langPanel {
       position: absolute;
-      display: flex;
       bottom: calc(100vh - 90%);
       z-index: 100;
+
+      display: flex;
 
       button {
         display: none;
@@ -224,6 +225,7 @@
         margin: 5px;
         background: 0;
         border: none;
+        text-transform: uppercase;
         color: black;
       }
 
