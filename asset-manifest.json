@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/DOT_CIRCLE/static/css/main.139ff02c.chunk.css",
-    "main.js": "/DOT_CIRCLE/static/js/main.c90ebd00.chunk.js",
-    "main.js.map": "/DOT_CIRCLE/static/js/main.c90ebd00.chunk.js.map",
+    "main.js": "/DOT_CIRCLE/static/js/main.1042167d.chunk.js",
+    "main.js.map": "/DOT_CIRCLE/static/js/main.1042167d.chunk.js.map",
     "runtime-main.js": "/DOT_CIRCLE/static/js/runtime-main.b17396a3.js",
     "runtime-main.js.map": "/DOT_CIRCLE/static/js/runtime-main.b17396a3.js.map",
     "static/css/2.fb305abb.chunk.css": "/DOT_CIRCLE/static/css/2.fb305abb.chunk.css",
@@ -14,7 +14,7 @@
     "static/js/2.58fbe266.chunk.js.LICENSE.txt": "/DOT_CIRCLE/static/js/2.58fbe266.chunk.js.LICENSE.txt",
     "static/media/Nurtac_dream_team.8fc70f12.png": "/DOT_CIRCLE/static/media/Nurtac_dream_team.8fc70f12.png",
     "static/media/Zulfia_dream_team.dc2a4f89.png": "/DOT_CIRCLE/static/media/Zulfia_dream_team.dc2a4f89.png",
-    "static/media/about_me.babf2a44.png": "/DOT_CIRCLE/static/media/about_me.babf2a44.png",
+    "static/media/about_me.60349ddb.png": "/DOT_CIRCLE/static/media/about_me.60349ddb.png",
     "static/media/anar_dream_team.f575f720.png": "/DOT_CIRCLE/static/media/anar_dream_team.f575f720.png",
     "static/media/anar_why_we.103d31f3.png": "/DOT_CIRCLE/static/media/anar_why_we.103d31f3.png",
     "static/media/arrow_cooperation_process.f1a92a90.svg": "/DOT_CIRCLE/static/media/arrow_cooperation_process.f1a92a90.svg",
@@ -45,6 +45,6 @@
     "static/css/2.fb305abb.chunk.css",
     "static/js/2.58fbe266.chunk.js",
     "static/css/main.139ff02c.chunk.css",
-    "static/js/main.c90ebd00.chunk.js"
+    "static/js/main.1042167d.chunk.js"
   ]
 }
