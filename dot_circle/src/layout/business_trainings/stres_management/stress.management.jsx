@@ -2,43 +2,56 @@ import s from "./stress_management.module.scss"
 import {withNamespaces} from "react-i18next";
 import {compose} from "redux";
 import {connect} from "react-redux";
+import Background from "../../common/background/background";
+import background from "../../../assets/stress_management.png";
+import PageTitle from "../../common/page_title/page_title";
+import MaterialBox from "../../common/material_box/material_box";
 
 
 const StressManagement = ({t, trainings}) => {
-    const header = trainings.stressManagement.header.map(i => <div className={s.header}>
-        <h1>{t(i.title)}</h1>
-        <p>{t(i.content)}</p>
-    </div>
-)
 
-    const blockOne = trainings.stressManagement.blockOne.map(i=>  <div className={s.blockOne}>
-        <p>{t(i.title)}</p>
-        <p className={s.bold}>{t(i.content)}</p>
-    </div>
-)
-    const blockTwo = trainings.stressManagement.blockTwo.map(i  =>
-        <div className={s.blockTwo}>
-        <h1>{t(i.title)}</h1>
-        <div className={s.item}>
-            <h1>{t(i.number)}</h1>
-            <p>{t(i.content)}</p>
+    const InfoContent = () => {
+        let h = trainings.stressManagement.headerMessage;
+        return <div className={s.topContent}>
+            {t(h).split(`\n`).map(e => <h1 className={s.title}><i className={'bx bx-message-square-detail'}/>{e}</h1>)}
         </div>
-    </div>)
+    };
 
-    const blockThree = trainings.stressManagement.blockThree.map( i =>  <div className={s.blockThree}>
-        <h1>{t(i.title)}</h1>
-        <div><h1>{t(i.number)}</h1>
-            <p>{i.content}</p>
+    const BlockOne = () => {
+        return <div className={s.blockOne}>
+            {<InfoContent/>}
+            <p className={s.normal}>{t(trainings.stressManagement.blockOneTitle)}</p>
+            <p className={s.normal}>{t(trainings.stressManagement.blockOneContent)}</p>
         </div>
+    };
 
-    </div>)
+    const BlockTwo = () => {
+        return <div className={s.numberRange}>
+            <h1 className={s.pageTitle}>{t(trainings.stressManagement.blockTwoTitle)}</h1>
+            {trainings.stressManagement.blockTwoContent.map(i => <div className={s.item}>
+                <h1>{i.number}</h1>
+                <p>{t(i.content)}</p>
+            </div>)}
+        </div>
+    };
+
+    const BlockThree = () => {
+        return <div className={s.numberRange}>
+            <h1 className={s.pageTitle}>{t(trainings.stressManagement.blockThreeTitle)}</h1>
+            {trainings.stressManagement.blockThreeContent.map(i => <div className={s.item}>
+                <h1>{i.number}</h1>
+                <p>{t(i.content)}</p>
+            </div>)}
+        </div>
+    };
+
     return (
-
         <div className={s.stressManagement}>
-            {header}
-            {blockOne}
-            {blockTwo}
-            {blockThree}
+            <Background background={background}/>
+            <PageTitle title={t(trainings.stressManagement.headerTitle)}/>
+            <MaterialBox content={<BlockOne/>}/>
+            <MaterialBox content={<BlockTwo/>}/>
+            <MaterialBox content={<BlockThree/>}/>
         </div>
     )
 }

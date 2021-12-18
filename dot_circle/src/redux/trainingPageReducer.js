@@ -46,41 +46,38 @@ const initialState = {
     },
 
     stressManagement: {
-        header: [{
-            title: 'Stress management',
-            content: 'Stress is the body’s response to external challenges,\nnegative emotions or problems'
-        }],
-        bgImage: '',
-        blockOne: [{
-            title: 'Response to these factors is the mobilization',
-            content: 'We should cultivate our own abilities in order to'
-        }],
-        blockTwo: [
-            {title: 'Aims and goals of this course'},
-            {number: '1', content: '- learn unique ways to relieve stress and learn how to use them'},
-            {number: '2', content: '- develop skills to restore physical and mental strength;'},
-            {number: '3', content: '- get acquainted with the methods of stress management methods in'},
-            {number: '4', content: '- learn how to respond appropriately to various circumstances and'},
-            {number: '5', content: '- master the technique of instant relaxation in the routine of everyday'},
-            {number: '6', content: '- master the breathing technique for rapid regulation of psycho'},
-            {number: '7', content: '- master the techniques of anti-stress meditation;'},
-            {number: '8', content: '- learn how to build effective communication and relationships in the'},
-            {number: '9', content: '- form a joyful and optimistic inner determination, which would allow you'},
-            {number: '10', content: '- increase the level of internal concentration and efficiency;'},
-            {number: '11', content: '- master the techniques of behavior management and psycho-energetic'},
+        headerTitle: 'Stress management',
+        headerMessage: 'Stress is the body’s response to external challenges',
+        headerBg: 'stress_management.png',
+        blockOneTitle: 'Response to these factors is the mobilization',
+        blockOneContent: 'We should cultivate our own abilities in order to',
+        blockTwoTitle: 'Aims and goals of this course',
+        blockTwoContent: [
+            {number: '1', content: 'Learn unique ways to relieve stress and learn how to use them'},
+            {number: '2', content: 'Develop skills to restore physical and mental strength'},
+            {number: '3', content: 'Get acquainted with the methods of stress management methods in'},
+            {number: '4', content: 'Learn how to respond appropriately to various circumstances and'},
+            {number: '5', content: 'Master the technique of instant relaxation in the routine of everyday'},
+            {number: '6', content: 'Master the breathing technique for rapid regulation of psycho'},
+            {number: '7', content: 'Master the techniques of anti-stress meditation;'},
+            {number: '8', content: 'Learn how to build effective communication and relationships in the'},
+            {number: '9', content: 'Form a joyful and optimistic inner determination, which would allow you'},
+            {number: '10', content: 'Increase the level of internal concentration and efficiency'},
+            {number: '11', content: 'Master the techniques of behavior management and psycho-energetic'},
         ],
-        blockThree: [
-            {title: 'Targeted audience'},
+        blockThreeTitle: 'Targeted audience',
+        blockThreeContent: [
             {
                 number: '1',
-                content: 'Managers of all levels, middle-rank managers, who need to improve personal stress resistance and strive to improve the level of stress management in'
+                content: 'Managers of all levels, middle-rank managers'
             },
-            {number: '2', content: 'Service employees who want to increase the quality of client service'},
+            {
+                number: '2',
+                content: 'Service employees who want to increase the quality of client service'},
             {
                 number: '3',
-                content: 'Individuals who want to improve personal efficiency and avoid bad emotions in stressful situations'
+                content: 'Individuals who want to improve personal efficiency'
             }
-
         ]
     },
 

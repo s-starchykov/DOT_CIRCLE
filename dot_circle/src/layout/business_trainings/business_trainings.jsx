@@ -5,7 +5,7 @@ import {connect} from "react-redux";
 import HoveredItem from "../common/hovered_item/hovered_item";
 import PageTitle from "../common/page_title/page_title";
 import Background from "../common/background/background";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import CustomPopup from "../common/popup/popup";
 import SelfDevelopment from "./self_devepment/self_development";
 import NoPage from "../common/no_page/no_page";
@@ -15,8 +15,11 @@ import StressManagement from "./stres_management/stress.management";
 
 const BusinessTrainings = ({t, trainings, name}) => {
 
+    // Set document title wia hook effect
+    useEffect(() => document.title = t('Business trainings'));
+
     // Set page background image on mouse enter event
-    const [currentBackground, setActive] = useState(`${process.env.PUBLIC_URL}/images/time_management.png`);
+    const [currentBackground, setActive] = useState(`${process.env.PUBLIC_URL}/assets/time_management.png`);
 
     // Set current component to show in popup menu
     const [showPopup, setShowPopup] = useState(null);
@@ -40,7 +43,7 @@ const BusinessTrainings = ({t, trainings, name}) => {
 
     let Content = () => trainings.businessTraining.content.map(i =>
         <HoveredItem content={
-            <div onMouseEnter={() => setActive(`${process.env.PUBLIC_URL}/images/${i.src}`)}
+            <div onMouseEnter={() => setActive(`${process.env.PUBLIC_URL}/assets/${i.src}`)}
                  onClick={() => setShowPopup(i.link)}>
                 <h1>{t(i.name)}</h1>
                 <p>{t(i.massage)}</p>
