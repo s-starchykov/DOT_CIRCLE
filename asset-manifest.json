@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/DOT_CIRCLE/static/css/main.d5433370.chunk.css",
-    "main.js": "/DOT_CIRCLE/static/js/main.52d67b25.chunk.js",
-    "main.js.map": "/DOT_CIRCLE/static/js/main.52d67b25.chunk.js.map",
+    "main.css": "/DOT_CIRCLE/static/css/main.66a707da.chunk.css",
+    "main.js": "/DOT_CIRCLE/static/js/main.2fe2b668.chunk.js",
+    "main.js.map": "/DOT_CIRCLE/static/js/main.2fe2b668.chunk.js.map",
     "runtime-main.js": "/DOT_CIRCLE/static/js/runtime-main.b17396a3.js",
     "runtime-main.js.map": "/DOT_CIRCLE/static/js/runtime-main.b17396a3.js.map",
     "static/css/2.fb305abb.chunk.css": "/DOT_CIRCLE/static/css/2.fb305abb.chunk.css",
-    "static/js/2.16ea4378.chunk.js": "/DOT_CIRCLE/static/js/2.16ea4378.chunk.js",
-    "static/js/2.16ea4378.chunk.js.map": "/DOT_CIRCLE/static/js/2.16ea4378.chunk.js.map",
+    "static/js/2.33258cd5.chunk.js": "/DOT_CIRCLE/static/js/2.33258cd5.chunk.js",
+    "static/js/2.33258cd5.chunk.js.map": "/DOT_CIRCLE/static/js/2.33258cd5.chunk.js.map",
     "index.html": "/DOT_CIRCLE/index.html",
     "static/css/2.fb305abb.chunk.css.map": "/DOT_CIRCLE/static/css/2.fb305abb.chunk.css.map",
-    "static/css/main.d5433370.chunk.css.map": "/DOT_CIRCLE/static/css/main.d5433370.chunk.css.map",
-    "static/js/2.16ea4378.chunk.js.LICENSE.txt": "/DOT_CIRCLE/static/js/2.16ea4378.chunk.js.LICENSE.txt",
+    "static/css/main.66a707da.chunk.css.map": "/DOT_CIRCLE/static/css/main.66a707da.chunk.css.map",
+    "static/js/2.33258cd5.chunk.js.LICENSE.txt": "/DOT_CIRCLE/static/js/2.33258cd5.chunk.js.LICENSE.txt",
     "static/media/Nurtac_dream_team.8fc70f12.png": "/DOT_CIRCLE/static/media/Nurtac_dream_team.8fc70f12.png",
     "static/media/Zulfia_dream_team.dc2a4f89.png": "/DOT_CIRCLE/static/media/Zulfia_dream_team.dc2a4f89.png",
     "static/media/about_me.60349ddb.png": "/DOT_CIRCLE/static/media/about_me.60349ddb.png",
@@ -35,6 +35,7 @@
     "static/media/mwm_title_image.46199113.png": "/DOT_CIRCLE/static/media/mwm_title_image.46199113.png",
     "static/media/open_training.1a70a0cd.png": "/DOT_CIRCLE/static/media/open_training.1a70a0cd.png",
     "static/media/personal-consalting.365d4f33.png": "/DOT_CIRCLE/static/media/personal-consalting.365d4f33.png",
+    "static/media/self_development.94863f01.png": "/DOT_CIRCLE/static/media/self_development.94863f01.png",
     "static/media/stress_management.82e6ee75.png": "/DOT_CIRCLE/static/media/stress_management.82e6ee75.png",
     "static/media/t&d_creterias.1ee2a44d.png": "/DOT_CIRCLE/static/media/t&d_creterias.1ee2a44d.png",
     "static/media/time_management.a0bc89d5.png": "/DOT_CIRCLE/static/media/time_management.a0bc89d5.png",
@@ -44,8 +45,8 @@
   "entrypoints": [
     "static/js/runtime-main.b17396a3.js",
     "static/css/2.fb305abb.chunk.css",
-    "static/js/2.16ea4378.chunk.js",
-    "static/css/main.d5433370.chunk.css",
-    "static/js/main.52d67b25.chunk.js"
+    "static/js/2.33258cd5.chunk.js",
+    "static/css/main.66a707da.chunk.css",
+    "static/js/main.2fe2b668.chunk.js"
   ]
 }
