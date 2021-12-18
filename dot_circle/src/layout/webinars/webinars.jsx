@@ -14,7 +14,7 @@ const Webinars = ({t}) => {
 
             <h1 className={s.title}>{t('Webinars')}</h1>
 
-            <div className={s.topContent}>
+            <div className={s.contentBox}>
                 <h1 className={s.containerTitle}><i className={'bx bx-info-square'}/>{t('Webinars')}</h1>
                 <p className={s.normal}>{t('This is a modern and effective consultation')}</p>
                 <p className={s.normal}>{t('This type of training is useful for those who have')}</p>
@@ -23,13 +23,13 @@ const Webinars = ({t}) => {
                 <p className={`${s.listItem}`}>{t('At the next session')}</p>
             </div>
 
-            <div className={s.middleContent}>
+            <div className={s.contentBox}>
                 <h1 className={s.containerTitle}><i className={'bx bx-error-circle'}/>{t('The advantages of webinars')}</h1>
                 <p className={`${s.listItem}`}>{t('Saving time and money')}</p>
                 <p className={`${s.listItem}`}>{t('Obtaining knowledge')}</p>
             </div>
 
-            <div className={s.bottomContent}>
+            <div className={s.contentBox}>
                 <h1 className={s.containerTitle}><i className={'bx bx-message-square-edit'}/>{t('Features')}</h1>
                 <p className={`${s.listItem}`}>{t('The formation of groups of no more than 10 people')}</p>
                 <p className={`${s.listItem}`}>{t('The duration and cost of training')}</p>

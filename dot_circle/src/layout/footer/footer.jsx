@@ -28,7 +28,7 @@ const Footer = ({t}) => {
                             <div className={s.singleCta}>
                                 <FaMapMarkerAlt className={s.faLogo}/>
                                 <h4 className={s.title}>Find us</h4>
-                                <span>1010 Avenue, sw 54321</span>
+                                <span>{'Sabit Rahman 72 A , Baku'}</span>
                             </div>
                         </div>
 
@@ -36,7 +36,7 @@ const Footer = ({t}) => {
                             <div className={s.singleCta}>
                                 <FaPhone className={s.faLogo}/>
                                 <h4 className={s.title}>Call us</h4>
-                                <span>9876543210 0</span>
+                                <span><a href="tel:+1234567890"><span>{'+994503353548'}</span></a></span>
                             </div>
                         </div>
 
@@ -77,7 +77,7 @@ const Footer = ({t}) => {
                                     <li><NavLink to={'/'}>{t('About')}</NavLink></li>
                                     <li><NavLink to={'/trainings'}>{t('Business trainings')}</NavLink></li>
                                     <li><NavLink to={'/consulting'}>{t('Consulting')}</NavLink></li>
-                                    <li><NavLink to={'/open_programs'}>{t('Open programs')}</NavLink></li>
+                                    <li><NavLink to={'/programs'}>{t('Open programs')}</NavLink></li>
                                     <li><NavLink to={'/webinars'}>{t('Webinars')}</NavLink></li>
                                     <li><NavLink to={'/useful'}>{t('Useful')}</NavLink></li>
                                 </ul>
@@ -115,6 +115,6 @@ const Footer = ({t}) => {
 
         </footer>
     );
-}
+};
 
 export default compose(withNamespaces(), connect(null, null))(Footer);

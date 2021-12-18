@@ -3,20 +3,18 @@ import s from './App.module.scss'
 import About from './layout/about/about'
 import Header from './layout/menu/menu';
 import WelcomePage from "./layout/welcome_page/welcome_page";
-import NoPage from "./layout/common/no_page/no_page";
 import Useful from "./layout/useful/useful";
 import Webinars from "./layout/webinars/webinars";
 import DreamTeam from "./layout/dream_team/dream_team";
 import Consulting from "./layout/consalting/consulting";
-
 import PhotoGallery from "./layout/gallery/gallery";
 import Footer from "./layout/footer/footer";
-import IndividualConsulting from "./layout/consalting/individual_consalting/individual_consalting";
 import BusinessTrainings from "./layout/business_trainings/business_trainings";
 import TimeManagement from "./layout/business_trainings/time_management/time management";
 import StressManagement from "./layout/business_trainings/stres_management/stress.management";
 import ScrollTop from "./layout/common/scroll_top/scroll_top";
 import SelfDevelopment from "./layout/business_trainings/self_devepment/self_development";
+import Programs from "./layout/programs/programs";
 
 
 const App = () => {
@@ -26,9 +24,8 @@ const App = () => {
             <div className={s.appContent}>
                 <Route exact path={'/'} render={() => <About/>}/>
                 <Route path={'/trainings'} render={() => <BusinessTrainings name={'Business trainings'}/>}/>
-                <Route path={'/open_programs'} render={() => <NoPage name={'Open programs'}/>}/>
+                <Route path={'/programs'} render={() => <Programs name={'Open programs'}/>}/>
                 <Route path={'/team'} render={() => <DreamTeam name={'Team'}/>}/>
-                <Route path={'/consulting/:individual_consulting'} render={() => <IndividualConsulting/>}/>
                 <Route path={'/consulting'} render={() => <Consulting name={'Consulting'}/>}/>
                 <Route path={'/webinars'} render={() => <Webinars name={'Webinars'}/>}/>
                 <Route path={'/useful'} render={() => <Useful name={'Useful'}/>}/>
@@ -41,7 +38,7 @@ const App = () => {
             </div>
             <Route path={'/welcome'} render={() => <WelcomePage/>}/>
         </div>
-    )
+    );
 };
 
 export default App;

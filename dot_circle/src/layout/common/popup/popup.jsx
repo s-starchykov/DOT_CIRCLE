@@ -19,7 +19,7 @@ const CustomPopup = (props) => {
              className={popupStyles.overlay}>
 
             <div className={popupStyles.popup}>
-                <h2>{props.title}</h2>
+                {props.title != null && <h2>{props.title}</h2>}
                 <span className={popupStyles.close} onClick={closeHandler}>&times;</span>
                 <div className={popupStyles.content}>{props.children}</div>
             </div>

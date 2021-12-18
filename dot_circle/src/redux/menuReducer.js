@@ -6,7 +6,7 @@ const initialState = {
     headerItems: [
         {title: 'About', icon: 'bx bx-grid-alt', path: '/'},
         {title: 'Business trainings', icon: 'bx bx-task', path: '/trainings'},
-        {title: 'Open programs', icon: 'bx bx-conversation', path: '/open_programs'},
+        {title: 'Open programs', icon: 'bx bx-conversation', path: '/programs'},
         {title: 'Dream team', icon: 'bx bx-group', path: '/team'},
         {title: 'Consulting', icon: 'bx bx-user-voice', path: '/consulting'},
         {title: 'Webinars', icon: 'bx bx-microphone', path: '/webinars'},
