@@ -4,8 +4,12 @@ import background from "../../../assets/personal-consalting.png"
 import Background from "../../common/background/background";
 import MaterialBox from "../../common/material_box/material_box";
 import PageTitle from "../../common/page_title/page_title";
+import {useCallback} from "react";
 
 const IndividualConsulting = ({t}) => {
+
+    // Generate UUID key
+    const uuid = useCallback((idx) => encodeURI(`${idx}`), []);
 
     let reasons = [
         'We are result-oriented',
@@ -35,7 +39,7 @@ const IndividualConsulting = ({t}) => {
                 <i className={'bx bx-down-arrow-alt'}/>
                 <i className={'bx bx-down-arrow-alt'}/>
 
-                {reasons.map((item) => <MaterialBox content={<p className={s.reasons}>{t(item)}</p>}/>)}
+                {reasons.map((item, idx) => <MaterialBox key={uuid(idx)} content={<p className={s.reasons}>{t(item)}</p>}/>)}
             </div>
 
 

@@ -3,12 +3,15 @@ import Gallery from 'react-grid-gallery';
 import {withNamespaces} from "react-i18next";
 import {compose} from "redux";
 import {connect} from "react-redux";
-import {useEffect} from "react";
+import {useCallback, useEffect} from "react";
 
 const PhotoGallery = ({t, name, photos}) => {
 
     // Set document title wia hook effect
     useEffect(() => document.title = t('Gallery'));
+
+    // Generate UUID key
+    const uuid = useCallback((idx) => encodeURI(`${idx}`), [])
 
     let tagStyle = () => ({
         display: 'inline',
@@ -24,7 +27,8 @@ const PhotoGallery = ({t, name, photos}) => {
         borderRadius: '0.25em'
     });
 
-    let data = photos.images.map((i) => ({
+    let data = photos.images.map((i, idx) => ({
+        key: `${uuid(idx)}`,
         src: `${process.env.PUBLIC_URL}/gallery/${i.src}`,
         thumbnail: `${process.env.PUBLIC_URL}/gallery/thumbs/${i.thumbnail}`,
         thumbnailWidth: i.thumbnailWidth ?? 350,

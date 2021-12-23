@@ -6,19 +6,23 @@ import Background from "../../common/background/background";
 import background from "../../../assets/self_development.png";
 import PageTitle from "../../common/page_title/page_title";
 import MaterialBox from "../../common/material_box/material_box";
+import {useCallback} from "react";
 
 
 const SelfDevelopment = ({t, trainings}) => {
 
+    // Generate UUID key
+    const uuid = useCallback((idx) => encodeURI(`${idx}`), [])
+
     const InfoContent = (str) => {
-        return <>{t(str).split(`\n`).map(e => <h2 className={s.title}><i className={'bx bx-message-square-detail'}/>{e}
+        return <>{t(str).split(`\n`).map((e, idx) => <h2 key={uuid(idx)} className={s.title}><i className={'bx bx-message-square-detail'}/>{e}
         </h2>)}</>
     };
 
     const BlockOne = () => {
         return <div className={s.numberRange}>
             {InfoContent(trainings.selfDevelopment.headerMessage)}
-            {trainings.selfDevelopment.blockOneContent.map(i => <div className={s.item}>
+            {trainings.selfDevelopment.blockOneContent.map((i, idx) => <div key={uuid(idx)} className={s.item}>
                 <h2>{i.number}</h2>
                 <p>{t(i.content)}</p>
             </div>)}
@@ -27,7 +31,7 @@ const SelfDevelopment = ({t, trainings}) => {
 
 
     const BlockTwo = () => {
-        return trainings.selfDevelopment.middleContent.map(i => <div className={s.blockTwo}>
+        return trainings.selfDevelopment.middleContent.map((i, idx) => <div key={uuid(idx)} className={s.blockTwo}>
             <p className={s.normal}>{t(i.content)}</p>
         </div>);
     };
@@ -35,8 +39,8 @@ const SelfDevelopment = ({t, trainings}) => {
     const BlockThree = () => {
         return <div className={s.numberRange}>
             {InfoContent(trainings.selfDevelopment.bottomFirstTitle)}
-            {trainings.selfDevelopment.bottomContent.map(i =>
-                <div className={s.item}>
+            {trainings.selfDevelopment.bottomContent.map((i, idx) =>
+                <div key={uuid(idx)} className={s.item}>
                     <h2>{(t(i.content)).split('-')[0]}</h2>
                     <p>{(t(i.content)).split('-')[1]}</p>
                 </div>)}
@@ -57,7 +61,8 @@ const SelfDevelopment = ({t, trainings}) => {
             <PageTitle title={t(trainings.selfDevelopment.headerTitle)}/>
             <MaterialBox content={<><BlockOne/><BlockTwo/></>}/>
             <MaterialBox content={<BlockThree/>}/>
-            <MaterialBox content={<InfoBox/>}/>
+            <MaterialBox content={<InfoBox/>}
+                         style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
         </div>
     );
 };

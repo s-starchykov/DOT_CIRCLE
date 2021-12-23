@@ -1,15 +1,16 @@
 import s from "./programs.module.scss"
 import {withNamespaces} from "react-i18next";
-import {useEffect, useState} from "react";
+import {useCallback, useEffect, useState} from "react";
 import CustomPopup from "../common/popup/popup";
 import Background from "../common/background/background";
 import PageTitle from "../common/page_title/page_title";
 import HoveredItem from "../common/hovered_item/hovered_item";
-import NoPage from "../common/no_page/no_page";
 import {connect} from "react-redux";
 import {compose} from "redux";
 import Immersion from "./immersion/immersion";
 import Transformation from "./transformation/transformation";
+import NoPage from "../common/no_page/no_page";
+import LifeManagement from "./life_management/life_management";
 
 const Programs = ({t, name, programs}) => {
 
@@ -22,25 +23,29 @@ const Programs = ({t, name, programs}) => {
     // Set current component to show in popup menu
     const [showPopup, setShowPopup] = useState(null);
 
+    // Generate UUID key
+    const uuid = useCallback((idx) => encodeURI(`${idx}`), [])
+
     let getComponent = (cn) => {
         switch (cn) {
-            case 'time_management':
-                return '';
-
-            case 'stress_management':
-                return '';
 
             case 'immersion':
                 return <Immersion/>;
 
+            case 'transformation':
+                return <Transformation/>;
+
+            case 'life_management':
+                return <LifeManagement/>;
+
             default:
-                return <Transformation/>
+                return <NoPage name={cn}/>
         }
     };
 
 
-    let Content = () => programs.programs.content.map(i =>
-        <HoveredItem content={
+    let Content = () => programs.programs.content.map((i, idx) =>
+        <HoveredItem key={uuid(idx)} content={
             <div onMouseEnter={() => setActive(`${process.env.PUBLIC_URL}/assets/${i.src}.png`)}
                  onClick={() => setShowPopup(i.link)}>
                 <h1>{t(i.name)}</h1>

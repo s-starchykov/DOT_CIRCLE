@@ -6,14 +6,18 @@ import Background from "../../common/background/background";
 import background from "../../../assets/stress_management.png";
 import PageTitle from "../../common/page_title/page_title";
 import MaterialBox from "../../common/material_box/material_box";
+import {useCallback} from "react";
 
 
 const StressManagement = ({t, trainings}) => {
 
+    // Generate UUID key
+    const uuid = useCallback((idx) => encodeURI(`${idx}`), [])
+
     const InfoContent = () => {
         let h = trainings.stressManagement.headerMessage;
         return <div className={s.topContent}>
-            {t(h).split(`\n`).map(e => <h2 className={s.title}><i className={'bx bx-message-square-detail'}/>{e}</h2>)}
+            {t(h).split(`\n`).map((e, idx) => <h2 key={uuid(idx)} className={s.title}><i className={'bx bx-message-square-detail'}/>{e}</h2>)}
         </div>
     };
 
@@ -28,7 +32,7 @@ const StressManagement = ({t, trainings}) => {
     const BlockTwo = () => {
         return <div className={s.numberRange}>
             <h1 className={s.pageTitle}>{t(trainings.stressManagement.blockTwoTitle)}</h1>
-            {trainings.stressManagement.blockTwoContent.map(i => <div className={s.item}>
+            {trainings.stressManagement.blockTwoContent.map((i, idx) => <div key={uuid(idx)} className={s.item}>
                 <h2>{i.number}</h2>
                 <p>{t(i.content)}</p>
             </div>)}
@@ -38,7 +42,7 @@ const StressManagement = ({t, trainings}) => {
     const BlockThree = () => {
         return <div className={s.numberRange}>
             <h1 className={s.pageTitle}>{t(trainings.stressManagement.blockThreeTitle)}</h1>
-            {trainings.stressManagement.blockThreeContent.map(i => <div className={s.item}>
+            {trainings.stressManagement.blockThreeContent.map((i, idx) => <div key={uuid(idx)} className={s.item}>
                 <h1>{i.number}</h1>
                 <p>{t(i.content)}</p>
             </div>)}

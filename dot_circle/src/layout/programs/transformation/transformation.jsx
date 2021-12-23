@@ -60,7 +60,7 @@ const Transformation = ({t}) => {
     };
 
     return (
-        <div className={s.webinars}>
+        <div className={s.transformation}>
             <Background background={`${process.env.PUBLIC_URL}/assets/transformation.png`}/>
 
             <h1 className={s.title}>{t('Transformation')}</h1>

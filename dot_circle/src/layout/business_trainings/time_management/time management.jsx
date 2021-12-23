@@ -7,21 +7,25 @@ import Background from "../../common/background/background";
 import PageTitle from "../../common/page_title/page_title";
 import MaterialBox from "../../common/material_box/material_box";
 import {FaUserTie} from "react-icons/all";
+import {useCallback} from "react";
 
 
 const TimeManagement = ({t, training}) => {
 
+    // Generate UUID key
+    const uuid = useCallback((idx) => encodeURI(`${idx}`), []);
+
     const InfoContent = () => {
         let h = training.timeManagement.headerMessage;
         return <div className={s.topContent}>
-            {t(h).split(`\n`).map(e => <h1 className={s.title}><i className={'bx bx-message-square-detail'}/>{e}</h1>)}
-            {t(training.timeManagement.content).split(`\n`).map(e => <p className={`${s.listItem}`}>{e}</p>)}
+            {t(h).split(`\n`).map((e, idx) => <h1 key={uuid(idx)} className={s.title}><i className={'bx bx-message-square-detail'}/>{e}</h1>)}
+            {t(training.timeManagement.content).split(`\n`).map((e, idx) => <p key={uuid(idx)} className={`${s.listItem}`}>{e}</p>)}
         </div>
     };
 
     const NumberRange = () => {
         return <div className={s.botContent}>
-            {training.timeManagement.bottomContent.map(i => <div className={s.item}>
+            {training.timeManagement.bottomContent.map((i, idx) => <div key={uuid(idx)} className={s.item}>
                 <h1>{i.number}</h1>
                 <p>{t(i.content)}</p>
             </div>)}
@@ -30,7 +34,7 @@ const TimeManagement = ({t, training}) => {
 
     const Targets = () => {
         return <div className={s.botContent}>
-            {training.timeManagement.middleContent.map(i => <div className={s.targets}>
+            {training.timeManagement.middleContent.map((i, idx) => <div key={uuid(idx)} className={s.targets}>
                 <FaUserTie/>
                 <p>{t(i)}</p>
             </div>)}

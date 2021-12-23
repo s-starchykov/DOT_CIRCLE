@@ -5,12 +5,13 @@ import {connect} from "react-redux";
 import HoveredItem from "../common/hovered_item/hovered_item";
 import PageTitle from "../common/page_title/page_title";
 import Background from "../common/background/background";
-import {useEffect, useState} from "react";
+import {useCallback, useEffect, useState} from "react";
 import CustomPopup from "../common/popup/popup";
 import SelfDevelopment from "./self_devepment/self_development";
 import NoPage from "../common/no_page/no_page";
 import TimeManagement from "./time_management/time management";
 import StressManagement from "./stres_management/stress.management";
+import OrganizationalDevelopment from "./organizational_development/organizational_development";
 
 
 const BusinessTrainings = ({t, trainings, name}) => {
@@ -24,6 +25,9 @@ const BusinessTrainings = ({t, trainings, name}) => {
     // Set current component to show in popup menu
     const [showPopup, setShowPopup] = useState(null);
 
+    // Generate UUID key
+    const uuid = useCallback((idx) => encodeURI(`${idx}`), [])
+
     let getComponent = (cn) => {
         switch (cn) {
             case 'time_management':
@@ -35,14 +39,17 @@ const BusinessTrainings = ({t, trainings, name}) => {
             case 'self_development':
                 return <SelfDevelopment/>;
 
+            case 'organizational_development':
+                return <OrganizationalDevelopment/>;
+
             default:
                 return <NoPage name={cn}/>
         }
     }
 
 
-    let Content = () => trainings.businessTraining.content.map(i =>
-        <HoveredItem content={
+    let Content = () => trainings.businessTraining.content.map((i, idx) =>
+        <HoveredItem key={uuid(idx)} content={
             <div onMouseEnter={() => setActive(`${process.env.PUBLIC_URL}/assets/${i.src}`)}
                  onClick={() => setShowPopup(i.link)}>
                 <h1>{t(i.name)}</h1>
