@@ -9,7 +9,7 @@ const initialState = {
             },
             {
                 name: 'Transformation program',
-                massage: 'This program was created in the basis of a profound',
+                massage: 'This program was created in the basis',
                 link: 'transformation',
                 src: 'transformation'
             },
@@ -103,9 +103,7 @@ const initialState = {
             {fourthTitle: 'Targeted audience is managers of all levels'},
         ]
 
-    },
-
-
+    }
 }
 
 

@@ -9,6 +9,7 @@ import NoPage from "../common/no_page/no_page";
 import {connect} from "react-redux";
 import {compose} from "redux";
 import Immersion from "./immersion/immersion";
+import Transformation from "./transformation/transformation";
 
 const Programs = ({t, name, programs}) => {
 
@@ -33,7 +34,7 @@ const Programs = ({t, name, programs}) => {
                 return <Immersion/>;
 
             default:
-                return <NoPage name={cn}/>
+                return <Transformation/>
         }
     };
 
