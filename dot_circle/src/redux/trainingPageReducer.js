@@ -20,7 +20,7 @@ const initialState = {
                 src: 'self_development.png'
             },
             {
-                name: 'Organizational Development',
+                name: 'Organizational development',
                 massage: 'Organizational development, or as OD experts call it, is the most important business competence as a key employee',
                 link: 'organizational_development',
                 src: 'organizational_development.png'
@@ -105,6 +105,21 @@ const initialState = {
         ],
         thirdTitle: 'Trainings are held in a corporate and individual formats',
         fourthTitle: 'Targeted audience is managers of all levels'
+    },
+
+    organizationalDevelopment: {
+        headerTitle: 'Organizational development',
+        headerMessage: 'Organizational development, or as OD experts call it',
+        blockOneTitle: 'Four reasons to sign up for this training now',
+        blockOneContent: 'For key specialists, including HR',
+        middleTitle: 'Goals and objectives of the Training',
+        middleContent: [
+            {title: 'Intensive work', content: 'At the training, you are not a passive listener'},
+            {title: 'Tools', content: 'You will get proven tools that the author has tested'},
+            {title: 'Ready-made solutions', content: 'You will be able to independently develop solutions'}
+        ],
+        bottomTitle: 'How does the training about OD take place',
+        bottomContent: 'The training is interactive - hybrid'
     }
 }
 
