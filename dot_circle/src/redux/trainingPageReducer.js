@@ -20,10 +20,10 @@ const initialState = {
                 src: 'self_development.png'
             },
             {
-                name: 'The intuitive management',
-                massage: 'The training is aimed at awakening',
-                link: 'intuitive_management',
-                src: 'intuitive_management.png'
+                name: 'Organizational Development',
+                massage: 'Organizational development, or as OD experts call it, is the most important business competence as a key employee',
+                link: 'organizational_development',
+                src: 'organizational_development.png'
             }
         ]
     },
@@ -73,7 +73,8 @@ const initialState = {
             },
             {
                 number: '2',
-                content: 'Service employees who want to increase the quality of client service'},
+                content: 'Service employees who want to increase the quality of client service'
+            },
             {
                 number: '3',
                 content: 'Individuals who want to improve personal efficiency'
@@ -82,33 +83,29 @@ const initialState = {
     },
 
     selfDevelopment: {
-        header: [
-            {title: 'Self-development', content: 'Authorial program.What is self-development and what is it for'}
-        ],
-        topContent: [
-            {title: 'For whom is this programme?'},
-            {image: '', content: 'Business owners'},
-            {image: '', content: 'Top-Management'},
-            {image: '', content: 'Managers'},
-            {image: '', content: 'Employees'},
+        headerTitle: 'Self-development',
+        headerMessage: 'Authorial program',
+        blockOneTitle: 'For whom is this programme?',
+        blockOneContent: [
+            {number: '1', content: 'Business owners'},
+            {number: '2', content: 'Top-Management'},
+            {number: '3', content: 'Managers'},
+            {number: '4', content: 'Employees'},
         ],
         middleContent: [{content: 'Self-development is a continuous improvement of'}],
+        bottomFirstTitle: 'Aims and goals of self-development training',
+        bottomSecondTitle: 'Training program',
         bottomContent: [
-            {firstTitle: 'Aims and goals of self-development training:'},
-            {secondTitle: 'Training program'},
-            {number: 'Series 1', content: 'Self-determination'},
-            {number: 'Series 2', content: 'Planning'},
-            {number: 'Series 3', content: 'Health potential'},
-            {number: 'Series 4', content: 'Continuous practice'},
-            {number: 'Series 5', content: 'Mission'},
-            {number: 'Series 6', content: '“How I can be better” Project'},
-            {thirdTitle: 'Trainings are held in a corporate and individual formats'},
-            {fourthTitle: 'Targeted audience is managers of all levels'},
-        ]
-
-    },
-
-
+            {content: 'Series 1 - Self-determination'},
+            {content: 'Series 2 - Planning'},
+            {content: 'Series 3 - Health potential'},
+            {content: 'Series 4 - Continuous practice'},
+            {content: 'Series 5 - Mission'},
+            {content: 'Series 6 - “How I can be better” Project'},
+        ],
+        thirdTitle: 'Trainings are held in a corporate and individual formats',
+        fourthTitle: 'Targeted audience is managers of all levels'
+    }
 }
 
 

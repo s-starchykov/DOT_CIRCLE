@@ -13,7 +13,7 @@ const StressManagement = ({t, trainings}) => {
     const InfoContent = () => {
         let h = trainings.stressManagement.headerMessage;
         return <div className={s.topContent}>
-            {t(h).split(`\n`).map(e => <h1 className={s.title}><i className={'bx bx-message-square-detail'}/>{e}</h1>)}
+            {t(h).split(`\n`).map(e => <h2 className={s.title}><i className={'bx bx-message-square-detail'}/>{e}</h2>)}
         </div>
     };
 
@@ -29,7 +29,7 @@ const StressManagement = ({t, trainings}) => {
         return <div className={s.numberRange}>
             <h1 className={s.pageTitle}>{t(trainings.stressManagement.blockTwoTitle)}</h1>
             {trainings.stressManagement.blockTwoContent.map(i => <div className={s.item}>
-                <h1>{i.number}</h1>
+                <h2>{i.number}</h2>
                 <p>{t(i.content)}</p>
             </div>)}
         </div>

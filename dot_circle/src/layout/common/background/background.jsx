@@ -18,7 +18,7 @@ const Background = (props) => {
 
         /// Add the blur effect
         filter: 'blur(4px)',
-        webkitFilter:' blur(4px)',
+        WebkitFilter:' blur(4px)',
         //transform: 'scale(1.1)',
     };
 

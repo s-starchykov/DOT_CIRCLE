@@ -1,46 +1,66 @@
 import s from './self_development.module.scss'
-
-
 import {withNamespaces} from "react-i18next";
-
 import {connect} from "react-redux";
 import {compose} from "redux";
+import Background from "../../common/background/background";
+import background from "../../../assets/self_development.png";
+import PageTitle from "../../common/page_title/page_title";
+import MaterialBox from "../../common/material_box/material_box";
 
 
 const SelfDevelopment = ({t, trainings}) => {
-    const header = trainings.selfDevelopment.header.map(i => <div className={s.header}>
-            <h1>{t(i.title)}</h1>
-            <p>{t(i.content)}</p>
+
+    const InfoContent = (str) => {
+        return <>{t(str).split(`\n`).map(e => <h2 className={s.title}><i className={'bx bx-message-square-detail'}/>{e}
+        </h2>)}</>
+    };
+
+    const BlockOne = () => {
+        return <div className={s.numberRange}>
+            {InfoContent(trainings.selfDevelopment.headerMessage)}
+            {trainings.selfDevelopment.blockOneContent.map(i => <div className={s.item}>
+                <h2>{i.number}</h2>
+                <p>{t(i.content)}</p>
+            </div>)}
         </div>
-    )
-    const topContent = trainings.selfDevelopment.topContent.map(i =>
-        <div className={s.topContent}>
-            <h1>{t(i.title)}</h1>
-            <div className={s.item}><img src={(i.image)} alt=""/>
-                <p>{t(i.content)}</p></div>
-        </div>)
-
-    const middleContent = trainings.selfDevelopment.middleContent.map(i => <div
-        className={s.middleContent}><p>{t(i.content)}</p></div>)
+    };
 
 
-    const bottomContent = trainings.selfDevelopment.bottomContent.map(i => <div
-        className={s.bottomContent}>
-        <h1>{t(i.firstTitle)}</h1>
-        <h1>{t(i.secondTitle)}</h1>
-        <div className={s.bottomContainer}>{t(i.number + i.content)}</div>
-        <h2>{t(i.thirdTitle)}</h2>
-        <h2>{t(i.fourthTitle)}</h2>
-    </div>)
+    const BlockTwo = () => {
+        return trainings.selfDevelopment.middleContent.map(i => <div className={s.blockTwo}>
+            <p className={s.normal}>{t(i.content)}</p>
+        </div>);
+    };
+
+    const BlockThree = () => {
+        return <div className={s.numberRange}>
+            {InfoContent(trainings.selfDevelopment.bottomFirstTitle)}
+            {trainings.selfDevelopment.bottomContent.map(i =>
+                <div className={s.item}>
+                    <h2>{(t(i.content)).split('-')[0]}</h2>
+                    <p>{(t(i.content)).split('-')[1]}</p>
+                </div>)}
+        </div>
+    };
+
+    const InfoBox = () => {
+        return <>
+            {InfoContent(trainings.selfDevelopment.thirdTitle)}
+            {InfoContent(trainings.selfDevelopment.fourthTitle)}
+        </>
+    };
+
+
     return (
         <div className={s.selfDevelopment}>
-            {header}
-            {topContent}
-            {middleContent}
-            {bottomContent}
+            <Background background={background}/>
+            <PageTitle title={t(trainings.selfDevelopment.headerTitle)}/>
+            <MaterialBox content={<><BlockOne/><BlockTwo/></>}/>
+            <MaterialBox content={<BlockThree/>}/>
+            <MaterialBox content={<InfoBox/>}/>
         </div>
-    )
-}
+    );
+};
 
 
 const mapStateToProps = (state) => ({trainings: state.trainingPageReducer});
