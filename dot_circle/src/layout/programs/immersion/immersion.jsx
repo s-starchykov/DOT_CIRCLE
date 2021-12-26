@@ -1,6 +1,6 @@
 import s from './immersion.module.scss'
 import {withNamespaces} from "react-i18next";
-import PageTitle from "../../common/page_title/page_title";
+import PageTitle from "../../common/title/title";
 import video from './../../../assets/immersion.mp4'
 import {useCallback, useRef} from "react";
 import {

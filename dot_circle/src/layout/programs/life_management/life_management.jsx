@@ -3,7 +3,7 @@ import {withNamespaces} from "react-i18next";
 import {useCallback, useEffect} from "react";
 import Background from "../../common/background/background";
 import MaterialBox from "../../common/material_box/material_box";
-import PageTitle from "../../common/page_title/page_title";
+import PageTitle from "../../common/title/title";
 
 const LifeManagement = ({t}) => {
 

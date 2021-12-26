@@ -3,8 +3,8 @@ import {withNamespaces} from "react-i18next";
 import background from "../../../assets/personal-consalting.png"
 import Background from "../../common/background/background";
 import MaterialBox from "../../common/material_box/material_box";
-import PageTitle from "../../common/page_title/page_title";
 import {useCallback} from "react";
+import {Title, PageTitle, ContainerTitle} from "../../common/title/title";
 
 const IndividualConsulting = ({t}) => {
 
@@ -21,11 +21,11 @@ const IndividualConsulting = ({t}) => {
         <div className={s.individual}>
             <Background background={background}/>
 
-            <PageTitle title={t('Individual consulting')}/>
+            <Title title={t('Individual consulting')}/>
 
             <MaterialBox content={
                 <>
-                    <h2>{t('Immerse yourself')}</h2>
+                    <PageTitle title={t('Immerse yourself')}/>
                     <p>{t('Life Management consultation')}</p>
                     <p>{t('We will show you the way out of difficult life')}</p>
                 </>
@@ -33,33 +33,33 @@ const IndividualConsulting = ({t}) => {
 
 
             <div className={s.blockTwo}>
-                <h1>{t('3 reasons to choose us')}</h1>
+                <Title title={t('3 reasons to choose us')}/>
 
                 <i className={'bx bx-down-arrow-alt'}/>
                 <i className={'bx bx-down-arrow-alt'}/>
                 <i className={'bx bx-down-arrow-alt'}/>
 
-                {reasons.map((item, idx) => <MaterialBox key={uuid(idx)} content={<p className={s.reasons}>{t(item)}</p>}/>)}
+                {reasons.map((item, idx) => <MaterialBox key={uuid(idx)}
+                                                         content={<p className={s.reasons}>{t(item)}</p>}/>)}
             </div>
 
 
             <div className={s.blockThree}>
 
-                <h2>{t('What is the essence of the individual')}</h2>
+                <PageTitle title={t('What is the essence of the individual')}/>
 
 
                 <details className={s.dropdownBox}>
                     <summary className={s.dropdownTitle}>
-                        <h2>{t("Individual consulting is necessary in the following cases")}</h2>
+                        <ContainerTitle title={t("Individual consulting is necessary in the following cases")}/>
                     </summary>
-
                     <p className={s.dropdownMassage}>{t('constant challenge at work')}</p>
                 </details>
 
 
                 <details className={s.dropdownBox}>
                     <summary className={s.dropdownTitle}>
-                        <h2>{t("How to make a difference")}</h2>
+                        <ContainerTitle title={t("How to make a difference")}/>
                     </summary>
                     <p className={s.dropdownMassage}>
                         {t('First of all, you need to get rid of the burden of unnecessary memories')}
@@ -69,7 +69,7 @@ const IndividualConsulting = ({t}) => {
 
                 <details className={s.dropdownBox}>
                     <summary className={s.dropdownTitle}>
-                        <h2>{t("We can’t help")}</h2>
+                        <ContainerTitle title={t("We can’t help")}/>
                     </summary>
                     <p className={s.dropdownMassage}>
                         {t('An applicant who is trying to collect a confidential')}
@@ -79,25 +79,24 @@ const IndividualConsulting = ({t}) => {
 
 
             <div className={s.blockFour}>
-                <div className={s.item1}>
-                    <p>In</p>
-                    <p>why</p>
+                <div className={s.item}>
+                    <PageTitle title={'In why'} style={{textAlign: 'center'}}/>
                     <span>#RESULTS</span>
                     <span>#GOALS</span>
                     <span>#CHANGES</span>
                     <span>#STEPS</span>
                 </div>
 
-                <div className={s.item2}>
-                    <p>Process</p>
+                <div className={s.item}>
+                    <PageTitle title={'Process'} style={{textAlign: 'center'}}/>
                     <span>#MODELS</span>
                     <span>#TOOLS</span>
                     <span>#PROCESSES</span>
                     <span>#SYSTEMS</span>
                 </div>
 
-                <div className={s.item3}>
-                    <p>Out</p>
+                <div className={s.item}>
+                    <PageTitle title={'Out'} style={{textAlign: 'center'}}/>
                     <span>#INFORMATION</span>
                     <span>#PERCEPTION</span>
                     <span>#UNDERSTANDING</span>

@@ -6,7 +6,7 @@ import Iframe from "../common/iframe/iframe";
 import IndividualConsulting from "./individual_consalting/individual_consalting";
 import CustomPopup from "../common/popup/popup";
 import Background from "../common/background/background";
-import PageTitle from "../common/page_title/page_title";
+import PageTitle from "../common/title/title";
 import HoveredItem from "../common/hovered_item/hovered_item";
 
 const Consulting = ({t}) => {

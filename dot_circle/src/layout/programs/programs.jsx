@@ -3,7 +3,7 @@ import {withNamespaces} from "react-i18next";
 import {useCallback, useEffect, useState} from "react";
 import CustomPopup from "../common/popup/popup";
 import Background from "../common/background/background";
-import PageTitle from "../common/page_title/page_title";
+import PageTitle from "../common/title/title";
 import HoveredItem from "../common/hovered_item/hovered_item";
 import {connect} from "react-redux";
 import {compose} from "redux";

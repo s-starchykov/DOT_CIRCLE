@@ -3,7 +3,7 @@ import {useCallback, useEffect} from "react";
 import {withNamespaces} from "react-i18next";
 import Background from "../../common/background/background";
 import background from "../../../assets/organizational_development.png";
-import PageTitle from "../../common/page_title/page_title";
+import PageTitle from "../../common/title/title";
 import MaterialBox from "../../common/material_box/material_box";
 import {compose} from "redux";
 import {connect} from "react-redux";

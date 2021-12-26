@@ -5,7 +5,7 @@ import {compose} from "redux";
 import {connect} from "react-redux";
 import {useCallback, useEffect} from "react";
 import Background from "../common/background/background";
-import PageTitle from "../common/page_title/page_title";
+import PageTitle from "../common/title/title";
 
 
 const Useful = ({t, name, useful}) => {

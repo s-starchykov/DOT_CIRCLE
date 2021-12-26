@@ -4,7 +4,7 @@ import {compose} from "redux";
 import {connect} from "react-redux";
 import Background from "../../common/background/background";
 import background from "../../../assets/stress_management.png";
-import PageTitle from "../../common/page_title/page_title";
+import PageTitle from "../../common/title/title";
 import MaterialBox from "../../common/material_box/material_box";
 import {useCallback} from "react";
 
