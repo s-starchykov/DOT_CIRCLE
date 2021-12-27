@@ -33,6 +33,10 @@
       gap: 15px;
 
       width: 49%;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
     }
 
     .containerTitle {
@@ -117,6 +121,10 @@
         }
       }
 
+      @media (max-width: 768px) {
+        width: 100%;
+        margin: 0;
+      }
     }
 
     .rightContent {
@@ -141,6 +149,10 @@
         width: 100%;
       }
 
+      @media (max-width: 768px) {
+        width: 100%;
+        margin: 0;
+      }
     }
 
   }
@@ -150,7 +162,6 @@
     align-items: center;
     justify-content: center;
 
-    margin: 15px;
     flex: 1;
     min-width: 40%;
     aspect-ratio: 11/7;

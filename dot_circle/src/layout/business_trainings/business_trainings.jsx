@@ -26,7 +26,7 @@ const BusinessTrainings = ({t, trainings, name}) => {
     const [showPopup, setShowPopup] = useState(null);
 
     // Generate UUID key
-    const uuid = useCallback((idx) => encodeURI(`${idx}`), [])
+    const uuid = useCallback((idx) => encodeURI(`${idx}`), []);
 
     let getComponent = (cn) => {
         switch (cn) {
@@ -45,7 +45,7 @@ const BusinessTrainings = ({t, trainings, name}) => {
             default:
                 return <NoPage name={cn}/>
         }
-    }
+    };
 
 
     let Content = () => trainings.businessTraining.content.map((i, idx) =>

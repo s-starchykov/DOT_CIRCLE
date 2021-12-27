@@ -12,6 +12,7 @@ import mwmBg from "./../../assets/mwm_bg_image.png"
 
 import {NavLink} from "react-router-dom";
 import React, {useEffect, useState} from "react";
+import Background from "../common/background/background";
 
 const WelcomePage = ({t}) => {
 
@@ -25,7 +26,7 @@ const WelcomePage = ({t}) => {
 
     return (
         <div className={s.welcomePage}>
-            <img src={currentBackground} alt="" className={s.bgImage}/>
+            <Background background={currentBackground}/>
 
             <div className={s.logoHead}>
                 <NavLink to={'/'} className={s.socialLink}>
@@ -45,10 +46,7 @@ const WelcomePage = ({t}) => {
                         <div className={s.cardImg}><img src={dtTitleImage} alt=""/></div>
                         <div className={s.cardText}>
                             <h3>DOT&CIRCLE</h3>
-                            <span>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                commodo ligula eget dolor. Aenean massa.
-                            </span>
+                            <span>{t('Learn more about us and our programs')}</span>
                         </div>
                     </NavLink>
                 </div>
@@ -57,10 +55,7 @@ const WelcomePage = ({t}) => {
                     <div className={s.cardContent}>
                         <div className={s.cardImg}><img src={jlyTitle} alt=""/></div>
                         <div className={s.cardText}><h3>Just love yourself</h3>
-                            <span>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                commodo ligula eget dolor. Aenean massa.
-                            </span>
+                            <span>{t('Anar Mammadov\'s online program how')}</span>
                         </div>
                     </div>
                 </div>
@@ -70,9 +65,7 @@ const WelcomePage = ({t}) => {
                         <div className={s.cardImg}><img src={mwmTitle} alt=""/></div>
                         <div className={s.cardText}>
                             <h3>Meditate with me</h3>
-                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                commodo ligula eget dolor. Aenean massa.
-                            </span>
+                            <span>{t('Meditate with me description')}</span>
                         </div>
                     </div>
                 </div>

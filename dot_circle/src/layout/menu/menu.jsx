@@ -22,6 +22,13 @@ const Menu = (props) => {
         i18n.changeLanguage(lng).then(() => console.log(`Current language: ${lng}`));
     };
 
+    const isMobile = () => {
+        const ua = navigator.userAgent;
+        if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) return false;
+        else if (/Mobile|iP(hone|od)|Android|Kindle|Silk-Accelerated|(hpw|web)OS|(obi|ini)/.test(ua)) return true;
+        return false;
+    };
+
     // Define menu state wia hook
     // const [isActive, setActive] = useState(false);
     // Set menu className to state
@@ -40,7 +47,8 @@ const Menu = (props) => {
     // Render menu item
     let menuItems = () => menu.headerItems.map(i => {
         return (
-            <li key={i.path}>
+            <li key={i.path}
+                onClick={() => window.innerWidth <=500 && toggleClass()}>
                 <NavLink to={i.path} activeClassName={`${location === i.path && s.activeLink}`}>
                     <i className={i.icon}/>
                     <span className={s.links_name}>{t(i.title)}</span>
@@ -51,9 +59,11 @@ const Menu = (props) => {
     });
 
     return (
-        <div className={`${s.sidebar} ${menu.isActive && s.open}`} onMouseEnter={() => toggleClass()}
-             onMouseLeave={() => toggleClass()}>
-            <div className={s.logo_details}>
+        <div className={`${s.sidebar} ${menu.isActive && s.open}`}
+             onMouseEnter={() => !isMobile() && toggleClass()}
+             onMouseLeave={() => !isMobile() && toggleClass()}>
+            <div className={s.logo_details}
+                 onClick={() => isMobile() && toggleClass()}>
                 <div className={s.logo_name}><img src={Logo} alt="Logo"/>DOT&CIRCLE</div>
                 <i className={`bx btn ${menu.isActive ? 'bx-menu-alt-right' : 'bx-menu'} ${s.btn}`} id="btn"/>
             </div>

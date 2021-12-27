@@ -21,6 +21,10 @@
   white-space: pre-line;
 
   text-shadow: 0 2px 4px rgb(71 97 206 / 36%);
+
+  @media (max-width: 768px) {
+    font-size: large;
+  }
 }
 
 .pageTitle {
@@ -28,6 +32,10 @@
 
   text-align: left;
   text-shadow: 0 2px 4px #3e4c589e;
+
+  @media (max-width: 768px) {
+    font-size: small;
+  }
 }
 
 .containerTitle {

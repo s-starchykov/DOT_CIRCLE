@@ -33,10 +33,10 @@ const App = () => {
                 <Route path={'/time_management'} render={() => <TimeManagement name={'Time_management'}/>}/>
                 <Route path={'/stress_management'} render={() => <StressManagement name={'Stress_management'}/>}/>
                 <Route exact path={'/self_development'} render={() => <SelfDevelopment name={'Self_development'}/>}/>
+                <Route path={'/welcome'} render={() => <WelcomePage/>}/>
                 <Footer/>
                 <ScrollTop/>
             </div>
-            <Route path={'/welcome'} render={() => <WelcomePage/>}/>
         </div>
     );
 };
