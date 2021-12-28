@@ -21,6 +21,10 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+
     .items {
       display: flex;
       flex-wrap: wrap;
@@ -33,6 +37,10 @@
       border-radius: 20px;
       background: linear-gradient(to right, white, #ff8c21);
       box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
 
       .lineOne {
         display: flex;
@@ -92,6 +100,15 @@
       border-radius: 20px;
       background: #ff8c21;
       box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        margin: 0;
+
+        h2 {
+          transform: none !important;
+        }
+      }
 
       h2 {
         width: 100%;

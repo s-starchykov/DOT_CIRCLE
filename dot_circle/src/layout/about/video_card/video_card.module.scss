@@ -7,8 +7,11 @@
   border-radius: 20px;
   box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
 
-
+  @media (max-width: 768px) {
+    height: 500px;
+  }
 }
+
 .videoBox {
   display: flex;
   flex-wrap: wrap;
@@ -24,6 +27,11 @@
     display: flex;
     align-items: center;
     margin-right: 50px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin: 0;
+    }
 
     iframe {
       border: none;
@@ -49,16 +57,19 @@
     margin-bottom: 50px;
     margin-top: 50px;
 
+    @media (max-width: 768px) {
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+    }
+
     h1 {
       width: 100%;
       color: #ff8c21;
-
     }
 
     span {
       width: 100%;
     }
-
   }
-
 }

@@ -54,6 +54,15 @@
         text-align: center;
         color: #878787;
       }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 30px !important;
+        }
+        P {
+          font-size: 9px !important;
+        }
+      }
     }
   }
 

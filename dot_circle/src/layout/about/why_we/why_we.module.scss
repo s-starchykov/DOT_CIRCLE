@@ -9,6 +9,11 @@
   box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
   color: dimgray;
 
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    height: 700px;
+  }
+
   .topLine {
     border-radius: 20px 0 0 20px;
     display: flex;
@@ -16,8 +21,16 @@
     background: linear-gradient(to right, white, #ff8c21);
     padding: 0 0 0 15px;
 
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
     .leftContent {
       width: 67%;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
 
       h1 {
         color: #ff962e;
@@ -30,6 +43,10 @@
       display: flex;
       align-items: flex-end;
 
+      @media (max-width: 768px) {
+        display: none;
+      }
+
       img {
         height: 90%;
       }
@@ -39,5 +56,10 @@
   .whyWeSlider {
     height: 100%;
     width: 35%;
+
+    @media (max-width: 768px) {
+      height: 50%;
+      width: 100%;
+    }
   }
 }
